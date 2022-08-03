@@ -1,0 +1,68 @@
+{
+    "name": "Solar Weakness",
+    "description": "The bright light of the sun is too strong for you. It makes you sick.",
+    "hidden": true,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:exposed_to_sun"
+                    },
+                    {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:precipitation",
+                            "precipitation": "none"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:exposed_to_sun"
+                    },
+                    {
+                        "inverted": true,
+                        "type": "origins:predicate",
+                        "predicate": "*:weather/is_raining"
+                    }
+                ]
+            }
+        ]
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 40,
+    "tick_rate": 10,
+    "effects": [
+        {
+            "effect": "minecraft:slowness",
+            "duration": 40,
+            "amplifier": 0,
+            "is_ambient": false,
+            "show_particles": true,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:weakness",
+            "duration": 40,
+            "amplifier": 0,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:nausea",
+            "duration": 100,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": true
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "type": "origins:toggle",
+    "active_by_default": true,
+    "key": {},
+    "retain_state": true
+}

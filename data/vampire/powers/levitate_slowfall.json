@@ -1,0 +1,19 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:status_effect",
+        "effect": "minecraft:levitation"
+    },
+    "type": "origins:action_over_time",
+    "interval": 50,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:slow_fall",
+            "duration": 5000,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": false
+        }
+    }
+}

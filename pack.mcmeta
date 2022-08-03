@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "vampire",
+        "id": "vampire",
+        "pack_format": 8,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "A datapack to add a Vampire origin that doesn't suck ass."
+    }
+}

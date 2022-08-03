@@ -1,0 +1,19 @@
+{
+    "name": "Vampire",
+    "description": "A creature of the night, your bloodlust is insatiable.",
+    "powers": [
+        "vampire:nightfall",
+        "vampire:levitate",
+        "vampire:levitate_gravity",
+        "vampire:levitate_lift",
+        "vampire:levitate_slowfall",
+        "vampire:solarweak",
+        "vampire:hypnosis"
+    ],
+    "icon": {
+        "item": "bat_spawn_egg",
+        "amount": 1
+    },
+    "order": 99,
+    "impact": 2
+}
