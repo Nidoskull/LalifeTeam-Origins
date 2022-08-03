@@ -1,6 +1,9 @@
 {
     "name": "Hypnotic Gaze",
-    "description": "If someone looks into your eyes, they cannot look away... Creatures you can see will be slowed dramatically. (Toggle by pressing Y)",
+    "description": "If someone looks into your eyes, they cannot look away... Creatures you can see while sneaking will be slowed dramatically. ",
+    "condition": {
+        "type": "origins:sneaking"
+    },
     "type": "origins:action_over_time",
     "interval": 2,
     "entity_action": {
