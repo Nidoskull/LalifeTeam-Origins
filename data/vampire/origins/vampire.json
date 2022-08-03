@@ -11,7 +11,9 @@
         "vampire:hypnosis",
         "vampire:nodoors",
         "vampire:woodweak",
-        "vampire:teleport"
+        "vampire:teleport",
+        "vampire:sanguivore_visible",
+        "vampire:sanguivore_nofood"
     ],
     "icon": {
         "item": "bat_spawn_egg",
