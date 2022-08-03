@@ -1,0 +1,247 @@
+{
+    "name": "Invite Only",
+    "description": "You cannot open doors, fence gates, or trapdoors on your own.",
+    "type": "origins:prevent_block_use",
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:block",
+                "block": "minecraft:acacia_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:acacia_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:acacia_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:birch_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:birch_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:birch_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:crimson_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:crimson_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:crimson_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:dark_oak_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:dark_oak_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:dark_oak_trapdoor"
+            },
+
+            {
+                "type": "origins:block",
+                "block": "minecraft:dark_oak_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:jungle_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:jungle_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:jungle_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:oak_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:oak_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:oak_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:spruce_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:spruce_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:spruce_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:warped_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:warped_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "minecraft:warped_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:stalagnate_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:stalagnate_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:stalagnate_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:willow_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:willow_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:willow_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:rubeus_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:rubeus_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_reed_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_reed_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_reed_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:wart_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:wart_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:wart_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:mushroom_fir_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:mushroom_fir_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:mushroom_fir_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_mushroom_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_mushroom_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_mushroom_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:anchor_tree_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:anchor_tree_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:anchor_tree_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_sakura_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_sakura_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:nether_sakura_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:bone_reed_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betternether:bone_cincinnasite_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betterend:mossy_glowshroom_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betterend:mossy_glowshroom_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betterend:mossy_glowshroom_trapdoor"
+            },
+            {
+                "type": "origins:block",
+                "block": "betterend:pythadendron_door"
+            },
+            {
+                "type": "origins:block",
+                "block": "betterend:pythadendron_fence_gate"
+            },
+            {
+                "type": "origins:block",
+                "block": "betterend:pythadendron_trapdoor"
+            }
+        ]
+    }
+}
