@@ -1,0 +1,32 @@
+{
+    "name": "teleport",
+    "description": "teleport go brrrrr",
+    "type": "origins:active_self",
+    "cooldown": 60,
+    "hud_render": {"should_render": false},
+    "key": "secondary",
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 15,
+        "block": true,
+        "entity": false,
+        "shape_type": "visual",
+        "fluid_handling": "none",
+        "command_at_hit": "tp @s ~ ~ ~",
+        "command_along_ray_only_on_hit": "particle crimson_spore",
+        "command_step": 0.2,
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle electric_spark"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.bat.takeoff player @a"
+                }
+            ]
+        }
+    }
+}

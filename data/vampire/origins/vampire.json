@@ -8,7 +8,7 @@
         "vampire:levitate_lift",
         "vampire:levitate_slowfall",
         "vampire:solarweak",
-        "vampire:hypnosis"
+        "vampire:teleport"
     ],
     "icon": {
         "item": "bat_spawn_egg",
