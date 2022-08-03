@@ -15,7 +15,7 @@
         "shape_type": "visual",
         "fluid_handling": "none",
         "command_at_hit": "tp @s ~ ~ ~",
-        "command_along_ray_only_on_hit": "particle crimson_spore",
+        "command_along_ray_only_on_hit": "particle crimson_spore ~ ~1 ~ 0 0 0 0 10",
         "command_step": 0.2,
         "block_action": {
             "type": "origins:and",
