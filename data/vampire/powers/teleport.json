@@ -1,10 +1,12 @@
 {
-    "name": "teleport",
-    "description": "teleport go brrrrr",
+    "name": "Blink",
+    "description": "Blink and you'll miss it.",
     "type": "origins:active_self",
     "cooldown": 60,
-    "hud_render": {"should_render": false},
-    "key": "secondary",
+    "hud_render": {
+        "should_render": false
+    },
+    "key": "key.origins.secondary_active",
     "entity_action": {
         "type": "origins:raycast",
         "distance": 15,

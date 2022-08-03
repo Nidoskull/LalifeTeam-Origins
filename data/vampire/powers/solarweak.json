@@ -39,11 +39,11 @@
     "min_stacks": 1,
     "max_stacks": 30,
     "duration_per_stack": 40,
-    "tick_rate": 10,
+    "tick_rate": 20,
     "effects": [
         {
             "effect": "minecraft:slowness",
-            "duration": 40,
+            "duration": 25,
             "amplifier": 0,
             "is_ambient": false,
             "show_particles": true,
@@ -51,15 +51,15 @@
         },
         {
             "effect": "minecraft:weakness",
-            "duration": 40,
+            "duration": 25,
             "amplifier": 0,
             "is_ambient": false,
             "show_particles": false,
             "show_icon": true
         },
         {
-            "effect": "minecraft:nausea",
-            "duration": 200,
+            "effect": "minecraft:mining_fatigue",
+            "duration": 25,
             "amplifier": 0,
             "show_particles": false,
             "show_icon": true
