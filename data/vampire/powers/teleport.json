@@ -1,6 +1,6 @@
 {
     "name": "Blink",
-    "description": "Blink and you'll miss it. It being you moving faster than the eye can see. ",
+    "description": "Blink and you'll miss it. \"It\" being you moving faster than the eye can see. ",
     "type": "origins:active_self",
     "cooldown": 60,
     "hud_render": {
@@ -15,8 +15,8 @@
         "shape_type": "visual",
         "fluid_handling": "none",
         "command_at_hit": "tp @s ~ ~ ~",
-        "command_along_ray_only_on_hit": 1,
-	"command_along_ray": "particle crimson_spore",
+        "command_along_ray_only_on_hit": "true",
+        "command_along_ray": "particle crimson_spore",
         "command_step": 0.2,
         "block_action": {
             "type": "origins:and",
