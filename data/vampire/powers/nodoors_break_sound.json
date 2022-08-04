@@ -3,7 +3,7 @@
     "type": "origins:action_on_block_break",
     "entity_action": {
         "type": "origins:play_sound",
-        "sound": "entity.zombie.break_door_wood",
+        "sound": "entity.zombie.break_wooden_door",
         "volume": 1,
         "pitch": 1
     },

@@ -17,5 +17,9 @@
                 "tag": "wooden_trapdoors"
             }
         ]
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.5
     }
 }

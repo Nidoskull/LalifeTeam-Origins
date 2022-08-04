@@ -36,5 +36,9 @@
             }
         }
     },
-    "cooldown": 30
+    "cooldown": 30,
+    "key": {
+        "key": "key.attack",
+        "continuous": true
+    }
 }
