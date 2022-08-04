@@ -3,17 +3,18 @@
     "description": "A creature of the night, your bloodlust is insatiable.",
     "powers": [
         "vampire:nightfall",
+        "vampire:solarweak",
         "vampire:levitate",
         "vampire:levitate_gravity",
         "vampire:levitate_lift",
         "vampire:levitate_slowfall",
-        "vampire:solarweak",
+        "vampire:teleport",
         "vampire:hypnosis",
         "vampire:nodoors",
-        "vampire:woodweak",
-        "vampire:teleport",
         "vampire:sanguivore_visible",
-        "vampire:sanguivore_nofood"
+        "vampire:sanguivore_nofood",
+        "vampire:woodweak",
+        "vampire:novillagers"
     ],
     "icon": {
         "item": "bat_spawn_egg",

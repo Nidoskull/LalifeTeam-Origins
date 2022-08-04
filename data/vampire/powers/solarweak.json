@@ -1,7 +1,6 @@
 {
     "name": "Solar Weakness",
     "description": "The bright light of the sun is too strong for you. It makes you sick.",
-    "hidden": true,
     "condition": {
         "type": "origins:or",
         "conditions": [

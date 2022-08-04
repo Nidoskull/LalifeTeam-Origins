@@ -1,6 +1,6 @@
 {
     "name": "Sanguivore",
-    "description": "You do not require food- instead, you feast on the blood of the living.",
+    "description": "You do not digest food well- instead, you feast on the blood of the living. Sneak + rightclick to feed.",
     "condition": {
         "type": "origins:and",
         "conditions": [
@@ -31,7 +31,7 @@
                 "type": "origins:target_action",
                 "action": {
                     "type": "origins:damage",
-                    "amount": 1,
+                    "amount": 2,
                     "source": {
                         "name": "player",
                         "bypasses_armor": true,
