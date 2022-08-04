@@ -1,0 +1,28 @@
+{
+    "hidden": true,
+    "type": "origins:action_on_block_break",
+    "entity_action": {
+        "type": "origins:play_sound",
+        "sound": "entity.zombie.break_door_wood",
+        "volume": 1,
+        "pitch": 1
+    },
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_tag",
+                "tag": "wooden_doors"
+            },
+            {
+                "type": "origins:in_tag",
+                "tag": "fence_gates"
+            },
+            {
+                "type": "origins:in_tag",
+                "tag": "wooden_trapdoors"
+            }
+        ]
+    },
+    "only_when_harvested": false
+}
