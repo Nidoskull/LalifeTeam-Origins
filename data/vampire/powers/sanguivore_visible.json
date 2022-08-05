@@ -54,11 +54,6 @@
                             "type": "origins:health",
                             "comparison": ">=",
                             "compare_to": 3
-                        },
-                        {
-                            "type": "origins:food_level",
-                            "comparison": ">=",
-                            "compare_to": 18
                         }
                     ]
                 },
