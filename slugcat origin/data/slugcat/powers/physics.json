@@ -1,0 +1,31 @@
+{
+  "type": "origins:multiple",
+  "name": "Quick.",
+  "description": "You can move faster. (your physics are also slightly different)",
+  "quick": {
+    "type": "origins:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 1.1,
+      "operation": "multiply_total"
+    }
+  },
+  "falling": {
+    "type": "origins:modify_falling",
+    "velocity": 0.15
+  },
+  "quick_air": {
+    "type": "origins:modify_air_speed",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 1.1
+    }
+  },
+  "slow_water": {
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": -0.25
+    }
+  }
+}
