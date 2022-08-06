@@ -1,0 +1,22 @@
+{
+    "name": "Rain check",
+    "description": "Your vibes are rancid",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sky"
+            },
+            {
+                "type": "origins:predicate",
+                "predicate": "slugcat:weather/is_raining"
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 100,
+    "entity_action": {
+        "type": "origins:nothing"
+    }
+}

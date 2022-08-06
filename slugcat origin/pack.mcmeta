@@ -2,10 +2,10 @@
     "pack": {
         "name": "slugcat",
         "id": "slugcat",
-        "pack_format": 8,
+        "pack_format": 9,
         "authors": [
-            "Nidoskull"
+            "Nidoskull, ninty"
         ],
-        "description": "A datapack to add a The slugcat from rain world as an origin."
+        "description": ""
     }
 }
