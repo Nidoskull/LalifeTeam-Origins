@@ -1,0 +1,13 @@
+{
+    "name": "Slugcat",
+    "description": "the sug",
+    "powers": [
+
+    ],
+    "icon": {
+        "item": "bat_spawn_egg",
+        "amount": 1
+    },
+    "order": 99,
+    "impact": 2
+}
