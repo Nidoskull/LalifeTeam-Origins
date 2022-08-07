@@ -9,6 +9,9 @@
         "slugcat:pounce",
         "slugcat:hungry",
         "slugcat:shelter_food"
+        "slugcat:rain",
+        "slugcat:pounce",
+        "slugcat:shelter"
     ],
     "icon": {
         "item": "stick",
