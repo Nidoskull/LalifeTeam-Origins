@@ -1,0 +1,10 @@
+{
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": "<",
+        "compare_to": 12
+    },
+    "type": "origins:prevent_sleep",
+    "message": "You're too hungry to sleep.",
+    "set_spawn_point": false
+}

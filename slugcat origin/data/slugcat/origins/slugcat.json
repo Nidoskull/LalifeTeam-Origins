@@ -1,12 +1,14 @@
 {
     "name": "Slugcat",
-    "description": "the sug",
     "powers": [
         "slugcat:fragile",
         "slugcat:physics",
         "slugcat:nimble",
         "slugcat:scale",
         "slugcat:rain"
+        "slugcat:pounce",
+        "slugcat:hungry",
+        "slugcat:shelter_food"
     ],
     "icon": {
         "item": "stick",

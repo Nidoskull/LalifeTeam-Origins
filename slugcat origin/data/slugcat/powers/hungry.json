@@ -1,0 +1,7 @@
+{
+    "name": "Hungrier",
+    "description": "You need to eat more often.",
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 0.2
+}
