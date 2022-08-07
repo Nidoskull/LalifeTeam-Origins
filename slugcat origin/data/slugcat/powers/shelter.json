@@ -1,0 +1,44 @@
+{
+  "name": "Sheltered Rest",
+  "description": "You cannot sleep without a roof over your head.",
+  "condition": {
+    "type": "origins:and",
+    "inverted": true,
+    "conditions": [
+      {
+        "type": "origins:block_collision",
+        "offset_x": 3,
+        "offset_y": 0,
+        "offset_z": 0
+      },
+      {
+        "type": "origins:block_collision",
+        "offset_x": -3,
+        "offset_y": 0,
+        "offset_z": 0
+      },
+
+      {
+        "type": "origins:block_collision",
+        "offset_x": 0,
+        "offset_y": -3,
+        "offset_z": 0
+      },
+      {
+        "type": "origins:block_collision",
+        "offset_x": 0,
+        "offset_y": 0,
+        "offset_z": 3
+      },
+      {
+        "type": "origins:block_collision",
+        "offset_x": 0,
+        "offset_y": 0,
+        "offset_z": -3
+      }
+    ]
+  },
+  "type": "origins:prevent_sleep",
+  "message": "You do not feel safe in the open.",
+  "set_spawn_point": false
+}
