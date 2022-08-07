@@ -1,4 +1,6 @@
 {
+    "name": "Pounce-jump",
+    "description": "Charge up to jump quite far!",
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:delay",

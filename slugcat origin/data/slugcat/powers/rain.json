@@ -1,7 +1,7 @@
 {
   "type": "origins:multiple",
-  "name": "Rain World.",
-  "description": "Be weary of the rain.",
+  "name": "Rain World",
+  "description": "Be very, very wary of the Rain.",
   "raindamage": {
     "type": "origins:damage_over_time",
     "interval": 15,

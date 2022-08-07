@@ -1,14 +1,14 @@
 {
     "name": "Slugcat",
+    "description": "What fate, a slugcat.",
     "powers": [
         "slugcat:fragile",
         "slugcat:physics",
         "slugcat:nimble",
         "slugcat:scale",
-        "slugcat:rain"
         "slugcat:pounce",
         "slugcat:hungry",
-        "slugcat:shelter_food"
+        "slugcat:shelter_food",
         "slugcat:rain",
         "slugcat:pounce",
         "slugcat:shelter"

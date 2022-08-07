@@ -6,5 +6,6 @@
     },
     "type": "origins:prevent_sleep",
     "message": "You're too hungry to sleep.",
-    "set_spawn_point": false
+    "set_spawn_point": false,
+    "hidden": true
 }

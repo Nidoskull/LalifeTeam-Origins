@@ -1,7 +1,7 @@
 {
   "type": "origins:multiple",
-  "name": "Quick.",
-  "description": "You can move faster. (your physics are also slightly different)",
+  "name": "Quick",
+  "description": "You're faster than usual. (Your physics are also slightly changed.)",
   "quick": {
     "type": "origins:attribute",
     "modifier": {

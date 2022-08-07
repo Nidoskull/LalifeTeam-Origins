@@ -1,6 +1,6 @@
 {
   "type": "origins:multiple",
-  "name": "Nimble.",
+  "name": "Nimble",
   "description": "You can climb up a few blocks.",
   "climbed_blocks": {
     "type": "origins:resource",
