@@ -5,7 +5,7 @@
   "climbed_blocks": {
     "type": "origins:resource",
     "min": 0,
-    "max": 17,
+    "max": 24,
     "hud_render": {
       "should_render": true,
       "inverted": true,
@@ -25,7 +25,7 @@
           "type": "origins:resource",
           "resource": "*:*_climbed_blocks",
           "comparison": "<=",
-          "compare_to": 16
+          "compare_to": 23
         }
       ]
     }

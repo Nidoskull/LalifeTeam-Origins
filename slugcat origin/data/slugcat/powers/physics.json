@@ -7,7 +7,11 @@
     "modifier": {
       "attribute": "minecraft:generic.movement_speed",
       "value": 1.1,
-      "operation": "multiply_total"
+      "operation": "multiply_total",
+      "condition": {
+        "type": "origins:power_active",
+        "power": "slugcat:raincheck"
+      }
     }
   },
   "falling": {
@@ -18,7 +22,11 @@
     "type": "origins:modify_air_speed",
     "modifier": {
       "operation": "multiply_total",
-      "value": 1.1
+      "value": 1.1,
+      "condition": {
+        "type": "origins:power_active",
+        "power": "slugcat:raincheck"
+      }
     }
   },
   "slow_water": {

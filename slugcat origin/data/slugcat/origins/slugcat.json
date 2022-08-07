@@ -4,7 +4,9 @@
     "powers": [
         "slugcat:fragile",
         "slugcat:physics",
-        "slugcat:nimble"
+        "slugcat:nimble",
+        "slugcat:scale",
+        "slugcat:rain"
     ],
     "icon": {
         "item": "stick",
