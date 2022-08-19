@@ -23,8 +23,8 @@
                 "type": "origins:actor_action",
                 "action": {
                     "type": "origins:feed",
-                    "food": 3,
-                    "saturation": 0.2
+                    "food": 5,
+                    "saturation": 0.8
                 }
             },
             {
