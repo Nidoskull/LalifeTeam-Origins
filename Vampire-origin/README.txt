@@ -20,7 +20,7 @@ Sneak while looking at an entity to dramatically slow it and give it blindness! 
 Regular food makes you sick- you must drink the blood of living creatures to survive... *Any* edible item's effectiveness is reduced by 80%, and gives you nausea. To eat, you must instead sneak and use (right-click) an entity. You cannot kill anything by feeding on them.
 
 = Undead
-Well, vampires are undead, aren't they? You are affected by Smite, and the reversal of damage/healing potions. (Currently bugged)
+Well, vampires are undead, aren't they? You are affected by Smite, and the reversal of damage/healing potions.
 
 - Solar Weakness
 The bright light of the sun is too much for you. Whenever you are directly in the sun, you receive a stacking debuff of up to 1 minute each of Slowness, Weakness and Mining Fatigue. This sucks bad and is not good. ;P

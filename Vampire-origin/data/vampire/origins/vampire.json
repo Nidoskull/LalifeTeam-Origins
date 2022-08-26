@@ -12,6 +12,7 @@
         "vampire:hypnosis",
         "vampire:sanguivore_visible",
         "vampire:sanguivore_nofood",
+		"vampire:undead",
         "vampire:nodoors",
         "vampire:nodoors_break",
         "vampire:nodoors_breaking_sound",
