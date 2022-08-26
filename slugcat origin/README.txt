@@ -41,6 +41,11 @@ MONK
 + Takes less damage, no food requirement to sleep
 - Weaker spear
 
+VOIDCAT
++ ?
+- ?
+void
+
 SAINT
 + Grapple instead of spear
 - More velocity damage?
