@@ -13,5 +13,5 @@
         "sprite_location": "origins:textures/gui/resource_bar.png",
         "bar_index": 4
     },
-    "key": "primary"
+    "key": "secondary"
 }
