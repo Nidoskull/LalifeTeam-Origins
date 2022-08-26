@@ -6,7 +6,7 @@
     "hud_render": {
         "should_render": false
     },
-    "key": "key.origins.secondary_active",
+    "key": "key.origins.primary_active",
     "entity_action": {
         "type": "origins:raycast",
         "distance": 15,
