@@ -1,0 +1,30 @@
+{
+    "name": "Vampire",
+    "description": "A creature of the night, your bloodlust is insatiable.",
+    "powers": [
+        "vampire:nightfall",
+        "vampire:solarweak",
+        "vampire:levitate",
+        "vampire:levitate_gravity",
+        "vampire:levitate_lift",
+        "vampire:levitate_slowfall",
+        "vampire:teleport",
+        "vampire:hypnosis",
+        "vampire:sanguivore_visible",
+        "vampire:sanguivore_nofood",
+		"vampire:undead",
+        "vampire:nodoors",
+        "vampire:nodoors_break",
+        "vampire:nodoors_breaking_sound",
+        "vampire:nodoors_break_sound",
+        "vampire:woodweak",
+        "vampire:novillagers",
+		"vampire:nofalldmg"
+    ],
+    "icon": {
+        "item": "bat_spawn_egg",
+        "amount": 1
+    },
+    "order": 99,
+    "impact": 2
+}

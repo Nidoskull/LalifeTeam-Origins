@@ -1,0 +1,6 @@
+{
+    "name": "Undead",
+    "description": "Vampires are dead. What else is there to say?",
+    "type": "origins:entity_group",
+    "group": "undead"
+}
