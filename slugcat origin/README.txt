@@ -1,5 +1,10 @@
 Heavily WIP, almost entirely coded by Ninty
 
+Power Library usage:
+Climbing power by eggohito#9048
+Pounce power by HeckingBiggestBoy#6564 // will be changed heavily tbh
+WIP pounce power edited from StormDragon_64#5369
+
 Features marked with * are not or only partially implemented.
 
 + Speedy 
