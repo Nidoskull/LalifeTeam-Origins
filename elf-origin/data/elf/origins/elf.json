@@ -5,7 +5,8 @@
         "elf:arrowace",
 		"elf:nofalldmg",
 		"elf:infinity",
-		"elf:flight"
+		"elf:winged",
+		"elf:ironweak"
     ],
     "icon": {
         "item": "oak_leaves",
