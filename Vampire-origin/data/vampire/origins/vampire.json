@@ -18,7 +18,8 @@
         "vampire:nodoors_breaking_sound",
         "vampire:nodoors_break_sound",
         "vampire:woodweak",
-        "vampire:novillagers"
+        "vampire:novillagers",
+		"vampire:nofalldmg"
     ],
     "icon": {
         "item": "bat_spawn_egg",
