@@ -1,0 +1,67 @@
+{
+    "name": "Ferrous Fiend",
+    "description": "Iron weapons deal more damage to you. You cannot wear iron armor. (All other armors are fair game!)",
+ "type": "origins:multiple", 
+	"iron_damage":{
+	"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:attacker",
+			"entity_condition": {
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"tag": "elf:iron_weapons"
+							}
+						}
+					},
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "offhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"tag": "elf:iron_weapons"
+							}
+						}
+					}
+				]
+			}
+		},
+		"modifier": {
+			"operation": "addition",
+			"value": 3
+		}
+	},
+	"no_armor": {
+		"type": "origins:restrict_armor",
+		"head": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:iron_helmet"
+			}
+		},
+		"chest": {
+			"type:": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:iron_chestplate"
+			}
+		},
+		"legs": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:iron_leggings"
+			}
+		},
+		"feet": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:iron_boots"
+			}
+		}
+}
+}

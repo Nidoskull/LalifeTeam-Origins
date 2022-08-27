@@ -3,7 +3,7 @@
     "description": "A magic-wielder of the forest, you serve nature best you can.",
     "powers": [
         "elf:arrowace",
-		"elf:nofall",
+		"elf:nofalldmg",
 		"elf:infinity",
 		"elf:flight"
     ],

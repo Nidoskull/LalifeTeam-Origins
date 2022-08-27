@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "elf",
+        "id": "elf",
+        "pack_format": 8,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "A datapack to add an Elf origin."
+    }
+}
