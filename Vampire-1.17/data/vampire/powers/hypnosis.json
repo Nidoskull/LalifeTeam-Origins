@@ -1,0 +1,43 @@
+{
+    "name": "Hypnotic Gaze",
+    "description": "If someone looks into your eyes, they cannot look away... Creatures you can see while sneaking will be slowed dramatically. ",
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:action_over_time",
+    "interval": 2,
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 20,
+        "block": false,
+        "entity": true,
+        "shape_type": "visual",
+        "fluid_handling": "any",
+        "bientity_condition": {
+            "type": "origins:can_see"
+        },
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slowness",
+                    "duration": 20,
+                    "amplifier": 3,
+                    "show_particles": true,
+                    "show_icon": true
+                },
+                "effects": [
+                    {
+                        "effect": "minecraft:blindness",
+                        "duration": 5,
+                        "amplifier": 0,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                ]
+            }
+        },
+        "command_at_hit": "particle instant_effect"
+    }
+}

@@ -10,6 +10,9 @@ Blink and you'll miss it! Teleport up to 15 blocks away with your primary abilit
 + (TOGGLED) Levitation
 Press your secondary key to toggle between regular physics, and maintaining your vertical height! Comes pre-equipped with a launch on cooldown.
 
++ Cushioned Fall
+You do not take fall damage.
+
 + Nightfall
 Your predator abilities are strengthened in the dark. You gain Speed I, Haste I and Night Vision whenever you are not in the sun. 
 

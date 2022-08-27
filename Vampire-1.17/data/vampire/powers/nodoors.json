@@ -1,0 +1,22 @@
+{
+    "name": "Invite Only",
+    "description": "You must be invited into spaces gated off. (Cannot open doors, trapdoors or fence gates.)",
+    "type": "origins:prevent_block_use",
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_tag",
+                "tag": "wooden_doors"
+            },
+            {
+                "type": "origins:in_tag",
+                "tag": "wooden_trapdoors"
+            },
+            {
+                "type": "origins:in_tag",
+                "tag": "fence_gates"
+            }
+        ]
+    }
+}
