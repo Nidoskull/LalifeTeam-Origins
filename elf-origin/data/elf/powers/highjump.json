@@ -1,0 +1,30 @@
+{
+	"name": "High Jump",
+	"description": "There's a spring in your step- almost literally! You can jump one and a half blocks, or two and a half in a densely forested biome.",
+	"type": "origins:multiple",
+	"normal_jump": {
+		"type": "origins:modify_jump",
+			"modifier": {
+				"operation": "addition",
+				"value": 0.10
+			},
+		    "entity_action": {
+				"type": "origins:execute_command",
+				"command": "particle cloud ~ ~ ~ 0.3 0.3 0.3 0.01 16 normal @a"
+			}
+	},
+	"forest_jump": {
+		"type": "origins:modify_jump",
+			"modifier": {
+				"operation": "addition",
+				"value": 0.15
+			},
+		"condition": {
+		"type": "origins:biome",
+			"condition": {
+			"type": "origins:category",
+			"category": "forest"
+			}
+		}
+	}
+}

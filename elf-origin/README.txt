@@ -6,10 +6,10 @@ Infinity coded by Apellonyx#6036
 
 Featuring: (*-marked features are planned/WIP)
 
-+ High Jump*
++ High Jump
 There's a spring in your step- almost literally! You can jump one and a half blocks, or two and a half in a densely forested biome.
 
-+ Swift-Footed*
++ Swift-Footed
 Nature aids your movement, and actively helps you move around! You move faster than most players.
 
 + Cushioned Fall
@@ -27,14 +27,14 @@ You know exactly how to use bows to your advantage! Arrows deal two more hearts 
 + Infinity
 If you hit a target with an arrow, it is automatically returned to you!
 
-+ Long-Lived*
++ Long-Lived
 You have 15 hearts!
 
 - Vegetarian
 No meat for you :)
 
 - Pacifist*
-You're a bit hesitant to hurt things, dealing less meelee damage (to passives?). (Don't ask why bows and tridents are exempt from this)
+You're hesitant to hurt things- your power wanes if you kill. (details below)
 
 - Ferrous Fiend
 Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, Gold, Diamond and Netherite are fair game, though. 
@@ -43,12 +43,18 @@ Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, G
 
 + probably more once i think of anything at all
 ideas:
-phasing through leaves
 == nerfs if you kill stuff:
-	- hostiles slight nerf
-	- 
-quicker draw speed for bows (BIG maybe. like it fits thematically but sir your bow powers)
-== if in range of an active jukebox get powerful regen & resistance? 
-misty step? other magic? i could theoretically reuse the hypnosis effect from the vampire...
+	- hostiles -5
+	- sentient hostiles -15
+	- passives -20
+	- sentient passives & zillagers -35
+	- bosses -50
+	- players -100
 
+== if in range of an active jukebox get powerful regen & resistance? the question is what the range should be lol
+
+other ideas:
+phasing through leaves
+misty step? other magic? i could theoretically reuse the hypnosis effect from the vampire...
+quicker draw speed for bows (BIG maybe. like it fits thematically but sir your bow powers)
 i need nerfs :/

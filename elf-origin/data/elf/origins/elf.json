@@ -3,10 +3,14 @@
     "description": "A magic-wielder of the forest, you serve nature best you can.",
     "powers": [
         "elf:arrowace",
-		"elf:nofalldmg",
-		"elf:infinity",
 		"elf:winged",
-		"elf:ironweak"
+		"elf:highjump",
+		"elf:nofalldmg",
+		"elf:swiftfooted",
+		"elf:infinity",
+		"elf:ironweak",
+		"elf:health_buff",
+		"elf:pacifism"
     ],
     "icon": {
         "item": "oak_leaves",

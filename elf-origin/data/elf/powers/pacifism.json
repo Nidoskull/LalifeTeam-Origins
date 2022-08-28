@@ -1,0 +1,39 @@
+{
+	"name": "Pacifist",
+	"description": "You don't like killing things. Your power wanes when you do. BEPIS",
+	"type": "origins:multiple",
+		"pacifist": {
+			"type":"origins:resource",
+			"min": 0,
+			"max": 100,
+			"hud_render": {
+				"should_render": true,
+				"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+				"bar_index": 6
+				}
+		},
+		"fill_over_time": {
+			"type":"origins:action_over_time",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"elf:pacifism_pacifist",
+				"change": 1
+			},
+			"interval": 20
+		},
+		"change_hostile": {
+			"type":"origins:self_action_on_kill",
+			"bientity_condition": {
+				"type": "origins:target_condition",
+					"entity_condition": {
+					"type": "origins:in_tag",
+					"tag": "minecraft:skeletons"
+					}
+				},
+				"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -100
+		}
+	}
+}

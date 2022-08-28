@@ -1,0 +1,27 @@
+{
+	"name": "Swift-Footed",
+	"description": "Nature aids your movement, and actively helps you move around! You move faster than most players.",
+    "type": "origins:multiple",
+	"normal_speed": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": 0.1,
+			"name": "Increased speed"
+		}
+	},
+	"sprint_speed": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": 0.05,
+			"name": "Increased sprinting speed"
+		},
+		"tick_rate": 1,
+		"condition": {
+			"type": "origins:sprinting"
+		}
+	}
+}
