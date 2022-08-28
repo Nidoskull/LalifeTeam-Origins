@@ -23,17 +23,18 @@
 		},
 		"change_hostile": {
 			"type":"origins:self_action_on_kill",
+			"cooldown": 0,
 			"bientity_condition": {
 				"type": "origins:target_condition",
 					"entity_condition": {
 					"type": "origins:in_tag",
-					"tag": "minecraft:skeletons"
+					"tag": "elf:hostiles"
 					}
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
-				"change": -100
+				"change": -10
 		}
 	}
 }
