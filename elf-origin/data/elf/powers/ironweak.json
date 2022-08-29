@@ -46,7 +46,7 @@
 				}
 			},
 			"chest": {
-				"type:": "origins:ingredient",
+				"type": "origins:ingredient",
 				"ingredient": {
 					"item": "minecraft:iron_chestplate"
 				}

@@ -1,6 +1,6 @@
 {
 	"name": "Pacifist",
-	"description": "You don't like killing things. Your power wanes when you do. BEPIS",
+	"description": "You don't like killing things. Your power wanes when you do.",
 	"type": "origins:multiple",
 		"pacifist": {
 			"type":"origins:resource",
@@ -23,45 +23,36 @@
 		},
 		"change_hostile": {
 			"type":"origins:self_action_on_kill",
-			"cooldown": 0,
-			"bientity_condition": {
-				"type": "origins:target_condition",
-					"entity_condition": {
+			"cooldown": 1,
+			"target_condition": {
 					"type": "origins:in_tag",
 					"tag": "elf:hostiles"
-					}
-				},
+			},
 				"entity_action": {
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
 				"change": -10
-			}
-		},
+			}	
+	},
 		"change_hostile_smart": {
 			"type":"origins:self_action_on_kill",
-			"cooldown": 0,
-			"bientity_condition": {
-				"type": "origins:target_condition",
-					"entity_condition": {
+			"cooldown": 1,
+			"target_condition": {
 					"type": "origins:in_tag",
 					"tag": "elf:hostile_smart"
-					}
-				},
+			},
 				"entity_action": {
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
 				"change": -15
-				}
-			},
+			}	
+	},
 		"change_passive": {
 			"type":"origins:self_action_on_kill",
-			"cooldown": 0,
-			"bientity_condition": {
-				"type": "origins:target_condition",
-					"entity_condition": {
+			"cooldown": 1,
+				"target_condition": {
 					"type": "origins:in_tag",
 					"tag": "elf:passives"
-					}
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
@@ -71,43 +62,33 @@
 		},
 		"change_passive_smart": {
 			"type":"origins:self_action_on_kill",
-			"cooldown": 0,
-			"condition":"origins:or",
-					"conditions": [
-						{
-						"bientity_condition": {
-							"type": "origins:target_condition",
-								"entity_condition": {
+			"cooldown": 1,
+							"target_condition": {
 								"type": "origins:in_tag",
 								"tag": "elf:passive_smart"
 								}
-							}
-						},
-						{
-						"bientity_condition": {
-							"type": "origins:target_condition",
-								"entity_condition": {
-								"type": "origins:is_tamed"
-								}
-							}
-						}
-					]
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
 				"change": -40
-			
 				},
+		"change_tamed": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+			"target_condition": "origins:tamed",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -40
+				}
+		},
 		"change_boss": {
 			"type":"origins:self_action_on_kill",
-			"cooldown": 0,
-			"bientity_condition": {
-				"type": "origins:target_condition",
-					"entity_condition": {
+			"cooldown": 1,
+				"target_condition": {
 					"type": "origins:in_tag",
 					"tag": "elf:consequences"
-					}
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
@@ -117,13 +98,10 @@
 		},
 		"change_neutral": {
 			"type":"origins:self_action_on_kill",
-			"cooldown": 0,
-			"bientity_condition": {
-				"type": "origins:target_condition",
-					"entity_condition": {
+			"cooldown": 1,
+				"target_condition": {
 					"type": "origins:in_tag",
 					"tag": "elf:neutral"
-					}
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
@@ -133,18 +111,15 @@
 		},
 		"change_player": {
 			"type":"origins:self_action_on_kill",
-			"cooldown": 0,
-			"bientity_condition": {
-				"type": "origins:target_condition",
-					"entity_condition": {
+			"cooldown": 1,
+				"target_condition": {
 					"type": "origins:entity_type",
 					"entity_type": "minecraft:player"
-					}
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
-				"change": -10
+				"change": -100
 		}
 	}
 }
