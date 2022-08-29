@@ -10,7 +10,8 @@
 		"elf:infinity",
 		"elf:ironweak",
 		"elf:health_buff",
-		"elf:pacifism"
+		"elf:pacifism",
+		"elf:pacifism_nerfs"
     ],
     "icon": {
         "item": "oak_leaves",
