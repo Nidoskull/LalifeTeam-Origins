@@ -1,0 +1,22 @@
+{
+    "name": "Elf",
+    "description": "A magic-wielder of the forest, you serve nature best you can.",
+    "powers": [
+        "elf:arrowace",
+		"elf:winged",
+		"elf:highjump",
+		"elf:nofalldmg",
+		"elf:swiftfooted",
+		"elf:infinity",
+		"elf:ironweak",
+		"elf:health_buff",
+		"elf:pacifism",
+		"elf:pacifism_nerfs"
+    ],
+    "icon": {
+        "item": "oak_leaves",
+        "amount": 1
+    },
+    "order": 1,
+    "impact": 1
+}

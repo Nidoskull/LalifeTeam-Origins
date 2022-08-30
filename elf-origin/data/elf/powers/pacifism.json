@@ -1,0 +1,125 @@
+{
+	"name": "Pacifist",
+	"description": "You don't like killing things. Your power wanes when you do.",
+	"type": "origins:multiple",
+		"pacifist": {
+			"type":"origins:resource",
+			"min": 0,
+			"max": 100,
+			"hud_render": {
+				"should_render": true,
+				"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+				"bar_index": 6
+				}
+		},
+		"fill_over_time": {
+			"type":"origins:action_over_time",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"elf:pacifism_pacifist",
+				"change": 1
+			},
+			"interval": 20
+		},
+		"change_hostile": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+			"target_condition": {
+					"type": "origins:in_tag",
+					"tag": "elf:hostiles"
+			},
+				"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -10
+			}	
+	},
+		"change_hostile_smart": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+			"target_condition": {
+					"type": "origins:in_tag",
+					"tag": "elf:hostile_smart"
+			},
+				"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -15
+			}	
+	},
+		"change_passive": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+				"target_condition": {
+					"type": "origins:in_tag",
+					"tag": "elf:passives"
+				},
+				"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -30
+			}
+		},
+		"change_passive_smart": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+							"target_condition": {
+								"type": "origins:in_tag",
+								"tag": "elf:passive_smart"
+								}
+				},
+				"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -40
+				},
+		"change_tamed": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+			"target_condition": "origins:tamed",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -40
+				}
+		},
+		"change_boss": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+				"target_condition": {
+					"type": "origins:in_tag",
+					"tag": "elf:consequences"
+				},
+				"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -70
+			}
+		},
+		"change_neutral": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+				"target_condition": {
+					"type": "origins:in_tag",
+					"tag": "elf:neutral"
+				},
+				"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -25
+			}
+		},
+		"change_player": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+				"target_condition": {
+					"type": "origins:entity_type",
+					"entity_type": "minecraft:player"
+				},
+				"entity_action": {
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -100
+		}
+	}
+}

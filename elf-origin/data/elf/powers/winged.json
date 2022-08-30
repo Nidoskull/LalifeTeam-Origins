@@ -1,0 +1,6 @@
+{
+"name": "Winged",
+"description": "You can glide using your wings!",
+"type": "origins:elytra_flight",
+"render_elytra": "false"
+}
