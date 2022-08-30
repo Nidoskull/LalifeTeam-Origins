@@ -1,0 +1,37 @@
+{
+    "name": "Timber Splinters",
+    "description": "Wooden weapons deal more damage to you.",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "vampire:wooden_weapons"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "vampire:wooden_weapons"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": 3
+    }
+}
