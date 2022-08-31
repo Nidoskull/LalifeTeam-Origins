@@ -16,7 +16,7 @@ You can climb up a few blocks to help you leap the gap!
 + Pounce*
 Stand still and sneak to charge up a BIG jump!
 
-+ Spear*
++ Spear
 Launch a spear that deals damage and pins down whatever it hits!
 
 = Weird Physics?? (Name wip)
