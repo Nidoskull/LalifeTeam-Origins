@@ -1,6 +1,6 @@
 {
-    "name": "Slugcat",
-    "description": "What fate, a slugcat.",
+    "name": "Monk",
+    "description": "Younger and weaker, but more resistant, in a way.",
     "powers": [
         "slugcat:fragile",
         "slugcat:physics",
@@ -8,17 +8,15 @@
         "slugcat:scale",
         "slugcat:pounce",
         "slugcat:hungry",
-        "slugcat:shelter_food",
         "slugcat:rain",
         "slugcat:lunge",
         "slugcat:shelter",
-		"slugcat:spear_survivor",
-		"slugcat:choose_var"
+		"slugcat:spear_survivor"
     ],
     "icon": {
         "item": "stick",
         "amount": 1
     },
     "order": 99,
-    "impact": 2
+    "impact": 0
 }
