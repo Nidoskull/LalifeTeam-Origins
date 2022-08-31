@@ -2,17 +2,11 @@
     "name": "Hunter",
     "description": "Dangerous and volatile, yet ailed by a strange disease.",
     "powers": [
-        "slugcat:fragile",
-        "slugcat:physics",
-        "slugcat:nimble",
-        "slugcat:scale",
-        "slugcat:pounce",
-        "slugcat:hungry",
         "slugcat:shelter_food",
-        "slugcat:rain",
-        "slugcat:lunge",
-        "slugcat:shelter",
-		"slugcat:spear_survivor"
+		"slugcat:spear_survivor",
+		"slugcat:spear_stronger",
+		"slugcat:spear_pins",
+		"origins:carnivore"
     ],
     "icon": {
         "item": "stick",

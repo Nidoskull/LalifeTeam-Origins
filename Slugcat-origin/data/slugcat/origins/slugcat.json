@@ -8,11 +8,9 @@
         "slugcat:scale",
         "slugcat:pounce",
         "slugcat:hungry",
-        "slugcat:shelter_food",
         "slugcat:rain",
         "slugcat:lunge",
         "slugcat:shelter",
-		"slugcat:spear_survivor",
 		"slugcat:choose_var"
     ],
     "icon": {

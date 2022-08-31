@@ -1,6 +1,6 @@
 {
-	"name": "Variants"
-	"description": "Upon selecting this origin, you will need to choose your variant of slugcat."
+	"name": "Variants",
+	"description": "Upon selecting this origin, you will need to choose your variant of slugcat.",
 	"type":"origins:action_on_callback",
 	"entity_action_gained": {
 		"type": "origins:execute_command",

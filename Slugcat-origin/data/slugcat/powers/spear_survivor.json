@@ -1,7 +1,9 @@
 {
+	"name": "sticc",
+	"description": "Throw a spear at your foes!",
 	"type":"origins:fire_projectile",
 	"entity_type": "minecraft:trident",
-	"cooldown": 600,
+	"cooldown": 300,
 	"hud_render": {
 		"should_render": true,
 		"bar_index": 2,

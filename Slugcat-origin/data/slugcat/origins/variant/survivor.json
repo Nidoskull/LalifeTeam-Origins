@@ -2,17 +2,10 @@
     "name": "Survivor",
     "description": "What fate, a slugcat.",
     "powers": [
-        "slugcat:fragile",
-        "slugcat:physics",
-        "slugcat:nimble",
-        "slugcat:scale",
-        "slugcat:pounce",
-        "slugcat:hungry",
+		"slugcat:survivor_jargon",
         "slugcat:shelter_food",
-        "slugcat:rain",
-        "slugcat:lunge",
-        "slugcat:shelter",
-		"slugcat:spear_survivor"
+		"slugcat:spear_survivor",
+		"slugcat:spear_pins"
     ],
     "icon": {
         "item": "stick",
