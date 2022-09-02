@@ -1,0 +1,19 @@
+{
+  "type": "origins:invisibility",
+  "render_armor": false,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:sneaking"
+      },
+      {
+        "type": "origins:biome",
+        "condition": {
+          "type": "origins:category",
+          "category": "forest"
+        }
+      }
+    ]
+  }
+}

@@ -11,7 +11,8 @@
 		"elf:ironweak",
 		"elf:health_buff",
 		"elf:pacifism",
-		"elf:pacifism_nerfs"
+		"elf:pacifism_nerfs",
+        "elf:invisible"
     ],
     "icon": {
         "item": "oak_leaves",
