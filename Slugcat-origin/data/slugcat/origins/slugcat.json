@@ -8,10 +8,10 @@
         "slugcat:scale",
         "slugcat:pounce",
         "slugcat:hungry",
-        "slugcat:shelter_food",
         "slugcat:rain",
         "slugcat:lunge",
-        "slugcat:shelter"
+        "slugcat:shelter",
+		"slugcat:choose_var"
     ],
     "icon": {
         "item": "stick",

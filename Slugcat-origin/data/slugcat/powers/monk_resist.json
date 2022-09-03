@@ -1,0 +1,16 @@
+{
+	"name": "Stronger Skin",
+	"description": "You shrug off damage a bit better than your relatives.",
+	"type":"origins:action_over_time",
+	"entity_action": {
+		"type":"origins:apply_effect",
+		"effect": {
+			"effect": "minecraft:resistance",
+			"duration": 400,
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": false
+		}
+	},
+	"interval": 100
+}

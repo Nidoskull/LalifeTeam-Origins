@@ -1,0 +1,17 @@
+{
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "slugcat:slugcat"
+            },
+            "origins": [
+                "slugcat:variant/survivor",
+                "slugcat:variant/monk",
+                "slugcat:variant/hunter"
+            ]
+        }
+    ],
+    "name": "Variant",
+	"description": "Choose which flavor of sug you are!"
+}

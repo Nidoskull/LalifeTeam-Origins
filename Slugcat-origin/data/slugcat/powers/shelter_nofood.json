@@ -1,0 +1,5 @@
+{
+	"name": "No food requirement",
+	"description": "You do not need to be full to sleep, unlike the other variants.",
+	"type":"origins:simple"
+}	

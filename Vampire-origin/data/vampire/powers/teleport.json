@@ -4,7 +4,8 @@
     "type": "origins:active_self",
     "cooldown": 60,
     "hud_render": {
-        "should_render": false
+        "should_render": true,
+		"bar_index": 6
     },
     "key": "key.origins.primary_active",
     "entity_action": {

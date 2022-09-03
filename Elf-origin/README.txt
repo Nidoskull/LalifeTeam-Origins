@@ -44,12 +44,23 @@ Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, G
 + probably more once i think of anything at all
 ideas:
 == nerfs if you kill stuff:
-	- hostiles -5
+	- hostiles -10
 	- sentient hostiles -15
-	- passives -20
-	- sentient passives & zillagers -35
-	- bosses -50
+	- neutral mobs (check json) -25
+	- sentient neutrals (endermen, piglins) -35
+	- passives -30
+	- sentient passives & zillagers -40
+	- bosses -70
 	- players -100
+	== nerfs are percentile-based
+	- 100% no nerfs, regeneration
+	- 90% no nerfs
+	- 75% slowness I
+	- 50% slowness II & weakness
+	- 25% slowness II, weakness, mining fatigue
+	- 10% nausea, slowness III, mining fatigue
+	- 5% nausea, slowness IV, mining fatigue, wither, blindness, bad luck
+	- 0% you just die lol bye
 
 == if in range of an active jukebox get powerful regen & resistance? the question is what the range should be lol
 

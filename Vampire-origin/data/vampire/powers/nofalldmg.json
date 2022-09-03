@@ -1,6 +1,6 @@
 {
-	"name": "Cushioned Fall"
-	"description": "You do not take fall damage."
+	"name": "Cushioned Fall",
+	"description": "You do not take fall damage.",
     "type": "origins:invulnerability",
     "damage_condition": {
         "type": "origins:name",

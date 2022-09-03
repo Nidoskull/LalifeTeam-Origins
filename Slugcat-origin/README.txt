@@ -16,7 +16,7 @@ You can climb up a few blocks to help you leap the gap!
 + Pounce*
 Stand still and sneak to charge up a BIG jump!
 
-+ Spear*
++ Spear
 Launch a spear that deals damage and pins down whatever it hits!
 
 = Weird Physics?? (Name wip)
@@ -46,26 +46,26 @@ MONK
 + Takes less damage, no food requirement to sleep
 - Weaker spear
 
-VOIDCAT
+VOIDCAT*
 + ?
 - ?
 void
 
-SAINT
+SAINT*
 + Grapple instead of spear
 - More velocity damage?
 
-ARTIFICER
+ARTIFICER*
 + Look Gordon, EXPLOSIVES!
 - ?
 
-GOURMET
+GOURMET*
 + Food gives more buffs?
 - chonky (slow)
 
-RIVULET
+RIVULET*
 + Doesn't need to hold its breath
 - ?
 
-SPEARMASTER
+SPEARMASTER*
 = i literally can't think of anything since the regular slugcat already summons spears from nothing

@@ -6,6 +6,9 @@ Features the following traits and abilities:
 + (ACTIVATED) Blink
 Blink and you'll miss it! Teleport up to 15 blocks away with your primary ability key, wherever you happen to be looking. (Ideal for precise changes in height while levitating!) Goes through water, collides with glass. Leaves a trail of particles behind on succesful teleport.
 (1.17 version has an ender pearl instead due to changes in mod functionality.)
+(NOTE: On Minimal particle settings, the particles do not render. If you really, really want particles to render, but you don't want to up your settings to at least Decreased, replace the 20th line in data/vampire/powers/teleport.json with the following:
+        "command_along_ray": "particle poof",
+This will replace the crimson particles with a particle that renders even on Minimal settings.)
 
 + (TOGGLED) Levitation
 Press your secondary key to toggle between regular physics, and maintaining your vertical height! Comes pre-equipped with a launch on cooldown.
