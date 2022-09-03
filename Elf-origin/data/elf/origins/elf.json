@@ -2,6 +2,7 @@
     "name": "Elf",
     "description": "A magic-wielder of the forest, you serve nature best you can.",
     "powers": [
+		"elf:pacifism",
         "elf:arrowace",
 		"elf:winged",
 		"elf:highjump",
@@ -10,8 +11,6 @@
 		"elf:infinity",
 		"elf:ironweak",
 		"elf:health_buff",
-		"elf:pacifism",
-		"elf:pacifism_nerfs",
         "elf:invisible"
     ],
     "icon": {
