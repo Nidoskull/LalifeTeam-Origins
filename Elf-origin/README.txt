@@ -34,7 +34,7 @@ You have 15 hearts!
 No meat for you :)
 
 - Pacifist
-You're hesitant to hurt things- your power wanes if you kill. (details below, currently only compatible with Vanilla)
+You're hesitant to hurt things- your power wanes if you kill. (details below, compatible with BetterAnimalsPlus)
 
 - Ferrous Fiend
 Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, Gold, Diamond and Netherite are fair game, though. 

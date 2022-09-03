@@ -24,5 +24,49 @@
         "minecraft:drowned",
 		"minecraft:spider",
 		"minecraft:cave_spider"
+		{
+            "id": "betteranimalsplus:feral_wolf",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:tarantula",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:boar",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:lamprey",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:shark",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:moose",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:bobbit_worm",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:barracuda",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:collosal_squid",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:giant_squid",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:piranha",
+            "required": false
+        }
     ]
 }

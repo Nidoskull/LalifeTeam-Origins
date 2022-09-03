@@ -2,6 +2,10 @@
 	"values": [
 		"minecraft:enderman",
 		"minecraft:iron_golem",
-		"minecraft:piglin"
+		"minecraft:piglin",
+			{
+                "id": "betteranimalsplus:octopus",
+                "required": false
+            }
 	]
 }
