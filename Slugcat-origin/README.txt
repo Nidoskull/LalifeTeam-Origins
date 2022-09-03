@@ -37,35 +37,16 @@ You're hungrier than most players.
 
 
 
-Planned variants:
+Variants:
 HUNTER
 + Stronger spear
 - Carnivore (but meat is more filling)
 
 MONK
 + Takes less damage, no food requirement to sleep
-- Weaker spear
+- Weaker spear, Vegetarian
 
 VOIDCAT*
-+ ?
-- ?
-void
-
-SAINT*
-+ Grapple instead of spear
-- More velocity damage?
-
-ARTIFICER*
-+ Look Gordon, EXPLOSIVES!
-- ?
-
-GOURMET*
-+ Food gives more buffs?
-- chonky (slow)
-
-RIVULET*
-+ Doesn't need to hold its breath
-- ?
-
-SPEARMASTER*
-= i literally can't think of anything since the regular slugcat already summons spears from nothing
++ ? (possibly nothing)
+= void :)
+- ? (possibly nothing)

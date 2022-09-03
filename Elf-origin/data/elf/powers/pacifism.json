@@ -50,11 +50,11 @@
 		"change_passive": {
 			"type":"origins:self_action_on_kill",
 			"cooldown": 1,
-				"target_condition": {
-					"type": "origins:in_tag",
-					"tag": "elf:passives"
-				},
-				"entity_action": {
+			"target_condition": {
+				"type": "origins:in_tag",
+				"tag": "elf:passives"
+			},
+			"entity_action": {
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
 				"change": -30
@@ -63,17 +63,17 @@
 		"change_passive_smart": {
 			"type":"origins:self_action_on_kill",
 			"cooldown": 1,
-							"target_condition": {
-								"type": "origins:in_tag",
-								"tag": "elf:passive_smart"
-								}
+			"target_condition": {
+				"type": "origins:in_tag",
+				"tag": "elf:passive_smart"
 				},
-				"entity_action": {
+			"entity_action": {
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
 				"change": -40
-				},
-		"change_tamed": {
+			}
+		},
+		"change_tamed": { 	
 			"type":"origins:self_action_on_kill",
 			"cooldown": 1,
 			"target_condition": "origins:tamed",
@@ -116,10 +116,10 @@
 					"type": "origins:entity_type",
 					"entity_type": "minecraft:player"
 				},
-				"entity_action": {
+			"entity_action": {
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
 				"change": -100
+			}
 		}
-	}
 }
