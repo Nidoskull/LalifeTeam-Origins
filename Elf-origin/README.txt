@@ -66,5 +66,6 @@ Pacifism has built-in compatibility with:
 - BetterAnimalsPlus
 - Bewitchment
 - BetterEnd
+- BetterNether
 
 Any mobs added by other mods will have a flat -25% penalty on kill. 

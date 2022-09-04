@@ -75,6 +75,18 @@
 	{
 		"id": "betterend:end_slime",
 		"required": false
+	},
+	{
+		"id": "betternether:skull",
+		"required": false
+	},
+	{
+		"id": "betternether:jungle_skeleton",
+		"required": false
+	},
+	{
+		"id": "betternether:naga",
+		"required": false
 	}
     ]
 }

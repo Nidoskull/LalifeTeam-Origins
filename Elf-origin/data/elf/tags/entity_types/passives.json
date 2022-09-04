@@ -69,7 +69,7 @@
 		{
             "id": "betteranimalsplus:flying_fish",
             "required": false
-        }
+        },
 		{
 			"id": "bewitchment:owl",
 			"required": false
@@ -94,8 +94,20 @@
 		"id": "betterend:end_fish",
 		"required": false
 	},
-		{
+	{
 		"id": "betterend:silk_moth",
+		"required": false
+	},
+	{
+		"id": "betternether:firefly",
+		"required": false
+	},
+	{
+		"id": "betternether:flying_pig",
+		"required": false
+	},
+	{
+		"id": "betternether:hydrogen_jellyfish",
 		"required": false
 	}
     ]
