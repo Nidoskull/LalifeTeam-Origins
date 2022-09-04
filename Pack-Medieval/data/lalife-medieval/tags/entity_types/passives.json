@@ -1,0 +1,114 @@
+{
+   "values": [
+		"minecraft:axolotl",
+		"minecraft:bat",
+		"minecraft:bee",
+		"minecraft:cat",
+		"minecraft:chicken",
+		"minecraft:cod",
+		"minecraft:cow",
+		"minecraft:donkey",
+		"minecraft:dolphin",
+		"minecraft:fox",
+		"minecraft:glow_squid",
+		"minecraft:horse",
+		"minecraft:llama",
+		"minecraft:mooshroom",
+		"minecraft:mule",
+		"minecraft:ocelot",
+		"minecraft:panda",
+		"minecraft:parrot",
+		"minecraft:pig",
+		"minecraft:pufferfish",
+		"minecraft:rabbit",
+		"minecraft:salmon",
+		"minecraft:sheep",
+		"minecraft:skeleton_horse",
+		"minecraft:snow_golem",
+		"minecraft:squid",
+		"minecraft:strider",
+		"minecraft:tropical_fish",
+		"minecraft:turtle",
+		"minecraft:zombie_horse",
+		{
+            "id": "betteranimalsplus:deer",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:lammergeier",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:pheasant",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:reindeer",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:squirrel",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:songbird",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:nautilus",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:butterfly",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:dragonfly",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:flying_fish",
+            "required": false
+        },
+		{
+			"id": "bewitchment:owl",
+			"required": false
+        },
+		{
+            "id": "bewitchment:raven",
+            "required": false
+        },
+	{
+            "id": "bewitchment:toad",
+            "required": false
+	},
+	{
+            "id": "bewitchment:snake",
+            "required": false
+	},
+	{
+		"id": "betterend:dragonfly",
+		"required": false
+	},
+	{
+		"id": "betterend:end_fish",
+		"required": false
+	},
+	{
+		"id": "betterend:silk_moth",
+		"required": false
+	},
+	{
+		"id": "betternether:firefly",
+		"required": false
+	},
+	{
+		"id": "betternether:flying_pig",
+		"required": false
+	},
+	{
+		"id": "betternether:hydrogen_jellyfish",
+		"required": false
+	}
+    ]
+}

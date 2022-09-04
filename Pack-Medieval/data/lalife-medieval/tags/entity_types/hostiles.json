@@ -1,0 +1,92 @@
+{
+    "values": [
+        "minecraft:blaze",
+        "minecraft:creeper",
+        "minecraft:endermite",
+        "minecraft:ghast",
+        "minecraft:guardian",
+        "minecraft:hoglin",
+        "minecraft:magma_cube",
+        "minecraft:ravager",
+        "minecraft:shulker",
+        "minecraft:silverfish",
+        "minecraft:slime",
+        "minecraft:vex",
+        "minecraft:wither_skeleton",
+        "minecraft:zoglin",
+        "minecraft:drowned",
+        "minecraft:zombie",
+        "minecraft:husk",
+        "minecraft:skeleton",
+        "minecraft:stray",
+        "minecraft:phantom",
+        "minecraft:zombified_piglin",
+        "minecraft:drowned",
+		"minecraft:spider",
+		"minecraft:cave_spider",
+		{
+            "id": "betteranimalsplus:feral_wolf",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:tarantula",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:boar",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:lamprey",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:shark",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:moose",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:bobbit_worm",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:barracuda",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:collosal_squid",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:giant_squid",
+            "required": false
+        },
+		{
+            "id": "betteranimalsplus:piranha",
+            "required": false
+        },
+		{
+            "id": "bewitchment:hellhound",
+            "required": false
+        },
+	{
+		"id": "betterend:end_slime",
+		"required": false
+	},
+	{
+		"id": "betternether:skull",
+		"required": false
+	},
+	{
+		"id": "betternether:jungle_skeleton",
+		"required": false
+	},
+	{
+		"id": "betternether:naga",
+		"required": false
+	}
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "values": [
+        "minecraft:evoker", 
+        "minecraft:piglin_brute",
+        "minecraft:pillager",
+        "minecraft:vindicator",
+        "minecraft:witch",
+		{
+            "id": "bewitchment:werewolf",
+            "required": false
+        },
+		{
+            "id": "bewitchment:vampire",
+            "required": false
+        },
+		{
+            "id": "bewitchment:demon",
+            "required": false
+        },
+		{
+            "id": "bewitchment:ghost",
+            "required": false
+        },
+	{
+		"id": "betterend:shadow_walker",
+		"required": false
+	}
+    ]
+}

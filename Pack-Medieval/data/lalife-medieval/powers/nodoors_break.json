@@ -1,0 +1,25 @@
+{
+    "hidden": true,
+    "type": "origins:modify_break_speed",
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_tag",
+                "tag": "wooden_doors"
+            },
+            {
+                "type": "origins:in_tag",
+                "tag": "fence_gates"
+            },
+            {
+                "type": "origins:in_tag",
+                "tag": "wooden_trapdoors"
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.5
+    }
+}

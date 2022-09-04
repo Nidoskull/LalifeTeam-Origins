@@ -1,0 +1,19 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:power_active",
+        "power": "lalife-medieval:levitate"
+    },
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:levitation",
+            "duration": 20,
+            "amplifier": 255,
+            "show_particles": true,
+            "show_icon": true
+        }
+    }
+}

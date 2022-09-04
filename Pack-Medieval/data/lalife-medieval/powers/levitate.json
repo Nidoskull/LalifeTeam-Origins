@@ -1,0 +1,8 @@
+{
+    "name": "Levitation",
+    "description": "You can simply refuse to fall.",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": "secondary",
+    "retain_state": true
+}

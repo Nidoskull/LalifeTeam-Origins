@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "Medieval Pack",
+        "id": "lalife-medieval",
+        "pack_format": 8,
+        "authors": [
+            "Nidoskull",
+            "ninty"
+        ],
+        "description": "The combined pack of all our Medieval origins!"
+    }
+}

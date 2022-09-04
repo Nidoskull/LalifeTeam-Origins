@@ -1,0 +1,1 @@
+This is a bundle of both the Elf and the Vampire! Check out their folders for more details :)

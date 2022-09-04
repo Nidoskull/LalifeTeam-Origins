@@ -1,0 +1,23 @@
+{
+    "name": "Elf",
+    "description": "A magic-wielder of the forest, you serve nature best you can.",
+    "powers": [
+		"lalife-medieval:pacifism",
+		"lalife-medieval:health_buff",
+        "lalife-medieval:arrowace",
+		"lalife-medieval:infinity",
+		"lalife-medieval:winged",
+		"lalife-medieval:highjump",
+		"lalife-medieval:nofalldmg",
+		"lalife-medieval:swiftfooted",
+	    "lalife-medieval:invisible",
+		"origins:vegetarian",
+		"lalife-medieval:ironweak"
+    ],
+    "icon": {
+        "item": "oak_leaves",
+        "amount": 1
+    },
+    "order": 1,
+    "impact": 2
+}

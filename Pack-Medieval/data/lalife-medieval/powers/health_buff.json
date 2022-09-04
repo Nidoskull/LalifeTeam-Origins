@@ -1,0 +1,11 @@
+{
+	"name": "Long-Lived",
+	"description": "You have 15 hearts!",
+  "type": "origins:attribute",
+  "modifier": {
+    "name": "Health buff",
+    "attribute": "minecraft:generic.max_health",
+    "value": 10.0,
+    "operation": "addition"
+  }
+}

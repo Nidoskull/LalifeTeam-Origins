@@ -1,0 +1,21 @@
+{
+	"name": "Mask of the Wild",
+	"description": "Sneak while in a forested biome to perfectly blend in with your surroundings.",
+  "type": "origins:invisibility",
+  "render_armor": false,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:sneaking"
+      },
+      {
+        "type": "origins:biome",
+        "condition": {
+          "type": "origins:category",
+          "category": "forest"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+    "values": [
+            "minecraft:iron_sword",
+            "minecraft:iron_axe",
+        	"minecraft:iron_shovel",
+        	"minecraft:iron_hoe",
+        	"minecraft:iron_pickaxe",
+                {
+                    "id": "campanion:iron_spear",
+                    "required": false,
+                },
+                {,
+                    "id": "medievalweapons:iron_small_axe",
+                    "required": false,
+                },
+                {
+                    "id": "medievalweapons:iron_long_sword",
+                    "required": false,
+                },
+                {
+                    "id": "medievalweapons:iron_dagger",
+                    "required": false,
+                },
+                {
+                    "id": "medievalweapons:iron_francisca",
+                    "required": false,
+                },
+                {
+                    "id": "medievalweapons:iron_big_axe",
+                    "required": false,
+                },
+                {
+                    "id": "medievalweapons:iron_javelin",
+                    "required": false",
+                },
+                {
+                    "id": "medievalweapons:iron_healing_staff",
+                    "required": false",
+                },
+                {
+                    "id": "medievalweapons:iron_ninjato",
+                    "required": false",
+                },
+                {,
+                    "id": "medievalweapons:iron_mace",
+                    "required": false,
+                }
+    ]
+}

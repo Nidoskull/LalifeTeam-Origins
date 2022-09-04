@@ -1,0 +1,29 @@
+{
+    "name": "Vampire",
+    "description": "A creature of the night, your bloodlust is insatiable.",
+    "powers": [
+        "lalife-medieval:nightfall",
+        "lalife-medieval:solarweak",
+        "lalife-medieval:levitate",
+        "lalife-medieval:levitate_gravity",
+        "lalife-medieval:levitate_lift",
+        "lalife-medieval:teleport",
+        "lalife-medieval:hypnosis",
+        "lalife-medieval:sanguivore_visible",
+        "lalife-medieval:sanguivore_nofood",
+		"lalife-medieval:undead",
+        "lalife-medieval:nodoors",
+        "lalife-medieval:nodoors_break",
+        "lalife-medieval:nodoors_breaking_sound",
+        "lalife-medieval:nodoors_break_sound",
+        "lalife-medieval:woodweak",
+        "lalife-medieval:novillagers",
+		"lalife-medieval:nofalldmg"
+    ],
+    "icon": {
+        "item": "bat_spawn_egg",
+        "amount": 1
+    },
+    "order": 99,
+    "impact": 2
+}

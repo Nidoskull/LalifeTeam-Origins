@@ -1,0 +1,7 @@
+{
+    "origins": [
+        "vampire:vampire",
+		"elf:elf"
+    ],
+    "enabled": true
+}

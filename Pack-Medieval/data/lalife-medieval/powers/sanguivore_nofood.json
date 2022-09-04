@@ -1,0 +1,19 @@
+{
+    "hidden": true,
+    "type": "origins:modify_food",
+    "food_modifier": {
+        "operation": "multiply_base",
+        "value": -0.8
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:nausea",
+            "duration": 200,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "always_edible": true
+}
