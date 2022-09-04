@@ -68,4 +68,4 @@ Pacifism has built-in compatibility with:
 - BetterEnd
 - BetterNether
 
-Any mobs added by other mods will have a flat -25% penalty on kill. 
+Any mobs added by other mods will have a flat -25% penalty on kill. Suggest mods for compatibility over in the thread at https://github.com/Nidoskull/LalifeTeam-Origins/issues/10 :)
