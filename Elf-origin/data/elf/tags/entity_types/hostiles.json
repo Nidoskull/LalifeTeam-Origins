@@ -71,6 +71,10 @@
 		{
             "id": "bewitchment:hellhound",
             "required": false
-        }
+        },
+	{
+		"id": "betterend:end_slime",
+		"required": false
+	}
     ]
 }

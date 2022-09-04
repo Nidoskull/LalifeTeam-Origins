@@ -1,56 +1,60 @@
 {
-	"values": [
-		"minecraft:goat",
-		"minecraft:polar_bear",
-		"minecraft:wolf",
-		"minecraft:zombified_piglin",
-			{
-                "id": "betteranimalsplus:brown_bear",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:black_bear",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:eel",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:coyote",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:jellyfish",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:badger",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:crab",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:turkey",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:goose",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:eel",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:whale",
-                "required": false
-            },
-			{
-                "id": "betteranimalsplus:walrus",
-                "required": false
-            }
-	]
+  "values": [
+    "minecraft:goat",
+    "minecraft:polar_bear",
+    "minecraft:wolf",
+    "minecraft:zombified_piglin",
+    {
+		"id": "betteranimalsplus:brown_bear",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:black_bear",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:eel",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:coyote",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:jellyfish",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:badger",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:crab",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:turkey",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:goose",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:eel",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:whale",
+		"required": false
+    },
+    {
+		"id": "betteranimalsplus:walrus",
+		"required": false
+    },
+	{
+		"id": "betterend:cubozoa",
+		"required": false
+	}
+  ]
 }

@@ -3,9 +3,9 @@
 		"minecraft:enderman",
 		"minecraft:iron_golem",
 		"minecraft:piglin",
-			{
-                "id": "betteranimalsplus:octopus",
-                "required": false
-            }
+		{
+            "id": "betteranimalsplus:octopus",
+            "required": false
+        }
 	]
 }

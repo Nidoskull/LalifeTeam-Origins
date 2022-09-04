@@ -65,5 +65,6 @@ Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, G
 Pacifism has built-in compatibility with:
 - BetterAnimalsPlus
 - Bewitchment
+- BetterEnd
 
 Any mobs added by other mods will have a flat -25% penalty on kill. 

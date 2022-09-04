@@ -20,6 +20,10 @@
 		{
             "id": "bewitchment:ghost",
             "required": false
-        }
+        },
+	{
+		"id": "betterend:shadow_walker",
+		"required": false
+	}
     ]
 }
