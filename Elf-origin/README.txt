@@ -3,6 +3,7 @@ Coded mostly by Nidoskull
 
 Power Library usage:
 Infinity coded by Apellonyx#6036 
+Mask of the Wild coded by Ninty#1337
 
 Featuring: (*-marked features are planned/WIP)
 
