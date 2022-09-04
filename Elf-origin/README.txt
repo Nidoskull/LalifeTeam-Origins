@@ -1,4 +1,4 @@
-WIP Elf origin.
+Elf origin.
 Coded mostly by Nidoskull
 
 Power Library usage:
@@ -49,6 +49,7 @@ Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, G
 	- sentient neutrals (endermen, piglins, iron golems) -35%
 	- passives -30%
 	- sentient passives & zillagers -40%
+	- tamed animals -40%
 	- bosses -70%
 	- players -100%
 	- non-registered modded entities, regardless of alignment -25%
