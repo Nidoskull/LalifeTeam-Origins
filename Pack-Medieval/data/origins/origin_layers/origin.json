@@ -1,7 +1,7 @@
 {
     "origins": [
-        "vampire:vampire",
-		"elf:elf"
+        "lalife-medieval:vampire",
+		"lalife-medieval:elf"
     ],
     "enabled": true
 }
