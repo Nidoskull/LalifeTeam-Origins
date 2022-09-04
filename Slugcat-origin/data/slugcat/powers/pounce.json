@@ -76,6 +76,12 @@
         },
         "key": {
             "key": "key.origins.secondary_active"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_storecharge",
+            "comparison": ">",
+            "compare_to": 55
         }
     }
 }
