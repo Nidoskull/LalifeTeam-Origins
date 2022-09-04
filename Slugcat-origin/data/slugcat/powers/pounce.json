@@ -75,7 +75,7 @@
             ]
         },
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.jump"
         },
         "condition": {
             "type": "origins:resource",
