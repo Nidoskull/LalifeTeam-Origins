@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "skeleton",
+        "id": "skeleton",
+        "pack_format": 8,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "A datapack to add a Skeleton origin."
+    }
+}

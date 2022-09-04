@@ -1,0 +1,13 @@
+{
+    "name": "Skeleton",
+    "description": "Oh, throw me a bone!",
+    "powers": [
+		"skeleton:undead"
+    ],
+    "icon": {
+        "item": "minecraft:bone",
+        "amount": 1
+    },
+    "order": 1,
+    "impact": 2
+}
