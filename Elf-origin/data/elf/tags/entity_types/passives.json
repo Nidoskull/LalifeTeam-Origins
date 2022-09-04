@@ -70,5 +70,21 @@
                 "id": "betteranimalsplus:flying_fish",
                 "required": false
             }
+		{
+			"id": "bewitchment:owl",
+			"required": false
+        },
+		{
+            "id": "bewitchment:raven",
+            "required": false
+        },
+		{
+            "id": "bewitchment:toad",
+            "required": false
+        },
+		{
+            "id": "bewitchment:snake",
+            "required": false
+        }
     ]
 }

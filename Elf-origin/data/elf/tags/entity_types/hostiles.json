@@ -23,7 +23,7 @@
         "minecraft:zombified_piglin",
         "minecraft:drowned",
 		"minecraft:spider",
-		"minecraft:cave_spider"
+		"minecraft:cave_spider",
 		{
             "id": "betteranimalsplus:feral_wolf",
             "required": false
@@ -66,6 +66,10 @@
         },
 		{
             "id": "betteranimalsplus:piranha",
+            "required": false
+        },
+		{
+            "id": "bewitchment:hellhound",
             "required": false
         }
     ]

@@ -157,7 +157,7 @@
 				"resource": "elf:pacifism_pacifist",
 				"change": -35
 			}
-		}
+		},
 		"change_player": {
 			"type":"origins:self_action_on_kill",
 			"cooldown": 1,
@@ -169,6 +169,49 @@
 				"type":"origins:change_resource",
 				"resource": "elf:pacifism_pacifist",
 				"change": -100
+			}
+		},
+		"change_else": {
+			"type":"origins:self_action_on_kill",
+			"cooldown": 1,
+				"target_condition": {
+					"inverted":true,
+					"type":"origins:and",
+					"conditions": [
+					{
+						"type": "origins:in_tag",
+						"tag": "elf:passives"
+					},
+					{
+						"type": "origins:in_tag",
+						"tag": "elf:passive_smart"
+					},
+					{
+						"type": "origins:in_tag",
+						"tag": "elf:neutral"
+					},
+					{
+						"type": "origins:in_tag",
+						"tag": "elf:neutral_smart"
+					},
+					{
+						"type": "origins:in_tag",
+						"tag": "elf:hostiles"
+					},
+					{
+						"type": "origins:in_tag",
+						"tag": "elf:hostile_smart"
+					},
+					{
+						"type": "origins:in_tag",
+						"tag": "elf:consequences"
+					}
+				]
+				},
+			"entity_action":{
+				"type":"origins:change_resource",
+				"resource": "elf:pacifism_pacifist",
+				"change": -25
 			}
 		},
 		"nerfs_100": {
@@ -350,4 +393,4 @@
 				"compare_to": 5
 			}
 		}
-}
+	}

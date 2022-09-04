@@ -34,7 +34,7 @@ You have 15 hearts!
 No meat for you :)
 
 - Pacifist
-You're hesitant to hurt things- your power wanes if you kill. (details below, compatible with BetterAnimalsPlus)
+You're hesitant to hurt things- your power wanes if you kill. (details below, compatibility list below)
 
 - Ferrous Fiend
 Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, Gold, Diamond and Netherite are fair game, though. 
@@ -44,12 +44,13 @@ Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, G
 == nerfs if you kill stuff:
 	- hostiles (including spiders) -10%
 	- sentient hostiles -15%
-	- neutral mobs (goats, polar bears, wolves, zombie piglins) -25
-	- sentient neutrals (endermen, piglins, iron golems) -35
-	- passives -30
-	- sentient passives & zillagers -40
-	- bosses -70
-	- players -100
+	- neutral mobs (goats, polar bears, wolves, zombie piglins) -25%
+	- sentient neutrals (endermen, piglins, iron golems) -35%
+	- passives -30%
+	- sentient passives & zillagers -40%
+	- bosses -70%
+	- players -100%
+	- non-registered modded entities, regardless of alignment -25%
 	== nerfs are percentile-based
 	- >95% no nerfs, regeneration
 	- between 76% and 94% no nerfs/buffs
@@ -59,3 +60,9 @@ Iron deals more damage to you, and you cannot wear Iron or Chainmail. Leather, G
 	- <20% nausea, slowness III, mining fatigue
 	- <10% nausea, slowness IV, mining fatigue, blindness, bad luck
 	- <5% all of the above + wither
+
+Pacifism has built-in compatibility with:
+- BetterAnimalsPlus
+- Bewitchment
+
+Any mobs added by other mods will have a flat -25% penalty on kill. 
