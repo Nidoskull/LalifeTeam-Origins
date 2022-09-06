@@ -2,19 +2,23 @@ WIP Skeleton origin, coded by Nidoskull
 Note: This is currently PLANNED. There's nothing here but us chickens!
 
 Power Library Usage:
-None :)
+Sinking Ship by rice#9600
+Infinity by Apellonyx#6036
 
 + Infinity
-All your bows have Infinity. Where are you getting these arrows from
+All your bows have Infinity. Where are you getting these arrows from? Who knows!
 
 + Stray Shots
-When shooting a normal arrow, there is a 5% chance that the arrow will have the effects of an Arrow of Slowness
+When shooting a normal arrow, there is a 10% chance that the arrow will have the effects of an Arrow of Slowness.
 
 + Power in Numbers
-When near other players, you gain 4 armor points
+When near other players, you gain 4 armor points.
 
-+ (placeholder name)
-Immune to frost-related damage & slowness of any type
++ Cold Grave
+Immune to frost-related damage & slowness effects.
+
++ Part of the Squad
+Skeletons are neutral towards you, as you are one of them! (Of course, if you attack them, they fire back.)
 
 
 = Bag of Bones
@@ -24,7 +28,7 @@ Immune to frost-related damage & slowness of any type
 You cannot drown in water, potions of Harming and Health have their effects reversed, and you are affected by Smite.
 
 - Photoallergic
-Burn in daylight.
+You burn in daylight.
 
 - Monsters Around
 You cannot sleep, and prevent others from sleeping near you.

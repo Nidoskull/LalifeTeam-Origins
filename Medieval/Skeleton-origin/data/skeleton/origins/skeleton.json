@@ -2,6 +2,10 @@
     "name": "Skeleton",
     "description": "Oh, throw me a bone!",
     "powers": [
+		"skeleton:infinity",
+		"skeleton:slownessarrows",
+		"skeleton:sink",
+		"skeleton:nosnow",
 		"skeleton:undead"
     ],
     "icon": {

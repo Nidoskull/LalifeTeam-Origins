@@ -245,6 +245,6 @@
             }
         }
     },
-    "name": "Dense",
-    "description": "You sink in water."
+    "name": "Sinking Ship",
+    "description": "You cannot swim, and instead sink to the bottom of any pool."
 }

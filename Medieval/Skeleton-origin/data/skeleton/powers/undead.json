@@ -1,0 +1,6 @@
+{
+    "name": "Undead",
+    "description": "You are considered undead. Instant Health and Instant Damage effects are swapped, you are affected by Smite, and you cannot drown.",
+    "type": "origins:entity_group",
+    "group": "undead"
+}

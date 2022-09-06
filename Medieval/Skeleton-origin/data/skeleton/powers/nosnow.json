@@ -1,0 +1,16 @@
+{
+	"name": "Cold Grave",
+	"description": "You are immune to freezing and slowness effects.",
+	"type": "origins:multiple",
+	"frost": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type":"origins:name",
+			"name": "freeze"
+		}
+	},
+	"slow": {
+		"type": "origins:effect_immunity",
+		"effect": "minecraft:slowness"
+	}
+}

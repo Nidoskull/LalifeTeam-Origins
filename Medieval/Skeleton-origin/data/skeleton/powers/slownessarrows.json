@@ -1,0 +1,23 @@
+{
+	"name": "Stray Shots",
+	"description": "Any arrow shot by you has a 10% chance of causing slowness.",
+	"type":"origins:action_on_hit",
+	"damage_condition": {
+		"type": "origins:projectile",
+		"projectile": "minecraft:arrow"
+	},
+	"bientity_action": {
+		"type": "origins:target_action",
+		"action": {
+			"type": "origins:chance",
+			"action": {
+				"type":"origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:slowness",
+					"duration": 600
+				}
+			},
+			"chance": 0.1
+		}
+	}
+}

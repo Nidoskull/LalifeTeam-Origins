@@ -1,0 +1,28 @@
+{
+    "type": "origins:modify_projectile_damage",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions":[{
+            "type": "origins:projectile",
+            "projectile": "minecraft:arrow"
+        }, {
+            "type": "origins:projectile",
+            "projectile": "minecraft:spectral_arrow"
+        }]
+    },
+    "self_action": {
+        "type": "origins:give",
+        "stack": {
+            "item": "minecraft:arrow",
+            "amount": 1
+        }
+    },
+    "condition": {
+        "type": "origins:enchantment",
+        "enchantment": "minecraft:infinity",
+        "comparison": "==",
+        "compare_to": 0
+    },
+    "name": "Infinity",
+    "description": "When you hit a target with an arrow, it will be returned to your inventory."
+}
