@@ -12,6 +12,7 @@ Your physics are a bit slipperier, though. You fall faster, but you also jump sl
 
 + Climbing
 You can climb up a few blocks to help you leap the gap!
+On poles (fences, walls, iron bars, end rods) or 1x1 tunnels this meter does not go down.*
 
 + Pounce
 Stand still and sneak to charge up a BIG jump!
