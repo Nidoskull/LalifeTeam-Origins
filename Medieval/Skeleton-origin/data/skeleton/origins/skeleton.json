@@ -6,7 +6,9 @@
 		"skeleton:slownessarrows",
 		"skeleton:sink",
 		"skeleton:nosnow",
-		"skeleton:undead"
+		"skeleton:undead",
+		"skeleton:burn_in_daylight",
+		"skeleton:skeleteam"
     ],
     "icon": {
         "item": "minecraft:bone",
