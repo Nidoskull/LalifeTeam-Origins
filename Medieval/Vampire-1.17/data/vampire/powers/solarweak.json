@@ -2,6 +2,16 @@
     "name": "Solar Weakness",
     "description": "The bright light of the sun is too strong for you. It makes you sick.",
     "condition": {
+        "type":"origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            },
+            {
         "type": "origins:or",
         "conditions": [
             {
@@ -33,6 +43,8 @@
                 ]
             }
         ]
+    }
+    ]
     },
     "type": "origins:stacking_status_effect",
     "min_stacks": 1,
@@ -43,7 +55,7 @@
         {
             "effect": "minecraft:slowness",
             "duration": 25,
-            "amplifier": 0,
+            "amplifier": 1,
             "is_ambient": false,
             "show_particles": true,
             "show_icon": true
@@ -51,7 +63,7 @@
         {
             "effect": "minecraft:weakness",
             "duration": 25,
-            "amplifier": 0,
+            "amplifier": 1,
             "is_ambient": false,
             "show_particles": false,
             "show_icon": true

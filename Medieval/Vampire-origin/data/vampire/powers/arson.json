@@ -1,0 +1,98 @@
+{
+    "name": "Charcoal",
+    "description": "Also, you catch on fire after a bit in the sun.",
+    "type": "origins:multiple",
+        "firemeter": {
+            "type": "origins:resource",
+            "min": 0,
+			"max": 100,
+			"hud_render": {
+				"should_render": true,
+				"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+				"bar_index": 15
+				}
+        },
+        "sunburns": {
+			"type":"origins:action_over_time",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"vampire:arson_firemeter",
+				"change": 1
+				},
+			"interval": 1,
+			"condition": {
+				"type": "origins:and",
+                "conditions": [
+                    {
+                    "type": "origins:exposed_to_sun"
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "head",
+                        "item_condition": {
+                            "type": "origins:empty"
+                        }
+                    }
+                    
+                ],
+                "inverted": false
+			}
+		},
+        "aloevera_sun": {
+			"type":"origins:action_over_time",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"vampire:arson_firemeter",
+				"change": -1
+				},
+			"interval": 5,
+			"condition": {
+                    "type": "origins:exposed_to_sun",
+					"inverted": true
+				}
+		},
+        "aloevera_hat": {
+			"type":"origins:action_over_time",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"vampire:arson_firemeter",
+				"change": -1
+				},
+			"interval": 5,
+			"condition":  {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:empty",
+                    "inverted": true
+                }
+            }
+		},
+        "burn": {
+			"type":"origins:burn",
+			"interval": 20,
+			"burn_duration": 2,
+			"condition": {
+				"type":"origins:resource",
+				"resource": "vampire:arson_firemeter",
+				"comparison": ">",
+				"compare_to": 85
+			}
+        },
+        "damagegear":{
+            "type":"origins:action_over_time",
+            "entity_action": {
+				"type":"origins:equipped_item_action",
+            	"equipment_slot":"head",
+            	"action": {
+					"type": "origins:damage",
+					"amount": 1,
+					"ignore_unbreaking": true
+				}
+			},
+            	"interval": 5,
+            	"condition": {
+            	    "type":"origins:exposed_to_sun"
+            	}
+        }
+}
