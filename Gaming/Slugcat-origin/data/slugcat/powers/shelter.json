@@ -22,7 +22,7 @@
         "offset_x": 0,
         "offset_y": 9,
         "offset_z": 0
-      },
+      }
     ]
   },
   "type": "origins:prevent_sleep",
