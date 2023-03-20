@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+      "#minecraft:fences",
+      "#minecraft:walls",
+      "#minecraft:trapdoors",
+      "#minecraft:climbable",
+      "minecraft:iron_bars",
+      "minecraft:chain",
+      "minecraft:end_rod"
+    ]
+  }

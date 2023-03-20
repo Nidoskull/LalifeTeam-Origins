@@ -3,12 +3,12 @@
     "description": "What fate, a slugcat.",
     "powers": [
 		"slugcat:survivor_jargon",
-        "slugcat:shelter_food",
+        "slugcat:all_shelter_food",
 		"slugcat:spear_survivor",
 		"slugcat:spear_pins"
     ],
     "icon": {
-        "item": "stick",
+        "item": "white_dye",
         "amount": 1
     },
     "order": 99,

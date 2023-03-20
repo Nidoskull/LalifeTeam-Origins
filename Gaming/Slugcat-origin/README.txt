@@ -1,8 +1,9 @@
 almost entirely coded by Ninty
 
 Power Library usage:
-Climbing power by eggohito#9048
+Climbing power edited from eggohito#9048
 Pounce power edited from StormDragon_64#5369
+Gourmand's slam edited from Golder06#7041
 
 Features marked with * are not or only partially implemented.
 
@@ -12,7 +13,7 @@ Your physics are a bit slipperier, though. You fall faster, but you also jump sl
 
 + Climbing
 You can climb up a few blocks to help you leap the gap!
-On poles (fences, walls, iron bars, end rods) or 1x1 tunnels this meter does not go down.*
+On poles (fences, walls, iron bars, end rods, etc) this meter does not go down.
 
 + Pounce
 Stand still and sneak to charge up a BIG jump!
@@ -44,7 +45,34 @@ MONK (Easy Mode)
 + Takes less damage, no food requirement to sleep
 - Weaker spear, Vegetarian
 
-VOIDCAT*
-+ ? (possibly nothing)
-= void :)
-- ? (possibly nothing)
+DOWNPOUR CATS :D
+
+GOURMAND*
++ Craft anywhere!*
++ Spit up items at the cost of food*
++ You can ground pound entities, dealing no fall damage to you!
+= Your food determines your strength and speed.
+= You're slightly fatter, but can still fit through most gaps with ease.
+- You need even more food to sleep.
+- Using tools exhausts you, slowing you down.
+- You're more vulnerable to gravity than other slugcats. Being at less than 6 food points will eliminate this, though.
+
+ARTIFICER*
+kaboom. villagers hate you
+
+RIVULET*
+nyooooooom + permanent respiration II
+
+SPEARMASTER*
+trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown
+
+SAINT*
+grapple tongue, can't eat meat, no spear, reduced damage from weapons, EXTRA fragile, frost weakness, freezing in rain & cold biomes
+
+SAINT+*
+creative flight based on timer, raycast /kill (after like 1.5 seconds), glowing while flying, no need to breathe while flying. unlocked after beating 
+
+???*
++ dating sim is canon
+= why would you play this
+- panopticon.

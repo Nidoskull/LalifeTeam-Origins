@@ -92,5 +92,32 @@
         }
       ]
     }
+  },
+  "poles": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_climbed_blocks",
+      "change": -2
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "*:*_climbed_blocks",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:in_block",
+          "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "slugcat:poles"
+          }
+        }
+      ]
+    }
   }
 }
