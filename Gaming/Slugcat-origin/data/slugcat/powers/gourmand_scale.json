@@ -1,13 +1,13 @@
 {
-    "name": "Small",
-    "description": "You are 1.25 blocks tall.",
+    "name": "Rotund",
+    "description": "You are slightly... wider... than most slugcats.",
     "type": "origins:action_on_callback",
     "execute_chosen_when_orb": true,
     "entity_action_added": {
         "type": "origins:delay",
         "action": {
             "type": "origins:execute_command",
-            "command": "function slugcat:scale"
+            "command": "function slugcat:fatfuck"
         },
         "ticks": 1
     },
@@ -23,7 +23,7 @@
         "type": "origins:delay",
         "action": {
             "type": "origins:execute_command",
-            "command": "function slugcat:scale"
+            "command": "function slugcat:fatfuck"
         },
         "ticks": 1
     }

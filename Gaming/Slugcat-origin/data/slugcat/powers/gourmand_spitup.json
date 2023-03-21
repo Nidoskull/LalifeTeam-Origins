@@ -1,0 +1,222 @@
+{
+    "name": "Spit Up",
+    "description": "You have a variety of items stored in your stomach!",
+    "type": "origins:multiple",
+    "storevomit": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 22,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_storevomit",
+                "comparison": ">=",
+                "compare_to": "1"
+            }
+        },
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+        {
+            "type": "origins:choice",
+            "actions": [
+                {
+                    "weight": 25,
+                    "element": {
+                        "type": "origins:give",
+                        "stack": {
+                            "item": "minecraft:wheat",
+                            "amount": 3
+                       }
+                    }
+                },
+                {
+                    "weight": 21,
+                    "element": {
+                        "type": "origins:give",
+                       "stack": {
+                            "item": "minecraft:glow_berries",
+                            "amount": 8
+                        }
+                    }
+                },
+                {
+                    "weight": 17,
+                    "element": {
+                        "type": "origins:give",
+                        "stack": {
+                            "item": "minecraft:brown_mushroom",
+                            "amount": 2
+                        }
+                    }
+                },
+                {
+                    "weight": 13,
+                    "element": {
+                        "type": "origins:give",
+                        "stack": {
+                            "item": "minecraft:firework_star",
+                            "amount": 1
+                        }
+                    }
+                },
+                {
+                    "weight": 10,
+                    "element": {
+                        "type": "origins:give",
+                        "stack": {
+                            "item": "minecraft:sugar_cane",
+                            "amount": 3
+                        }
+                    }
+                },
+                {
+                    "weight": 10,
+                    "element": {
+                        "type": "origins:give",
+                        "stack": {
+                            "item": "minecraft:nautilus_shell",
+                            "amount": 1
+                        }
+                    }
+                },
+                {
+                    "weight": 10,
+                    "element": {
+                        "type": "origins:give",
+                        "stack": {
+                            "item": "minecraft:ink_sac",
+                            "amount": 4
+                        }
+                    }
+                },
+                {
+                    "weight": 9,
+                    "element": {
+                        "type": "origins:give",
+                        "stack": {
+                            "item": "minecraft:lantern",
+                            "amount": 4
+                        }
+                    }
+                },
+                {
+                    "weight": 8,
+                    "element": {
+                        "type": "origins:give",
+                        "stack": {
+                            "item": "minecraft:ender_pearl",
+                            "amount": 2
+                        }
+                    }
+                },
+                {
+                "weight": 6,
+                "element": {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:fire_charge",
+                        "amount": 2
+                    }
+                }
+                },
+                {
+                "weight": 3,
+                "element": {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:bee_nest{BlockEntityTag:{id:\"minecraft:beehive\",Bees: [{EntityData:{id:\"minecraft:bee\"}},{id:\"minecraft:bee\"}]}}",
+                        "amount": 1
+                    }
+                }
+                },
+                {
+                "weight": 3,
+                "element": {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:tnt",
+                        "amount": 5
+                    }
+                }
+                },
+                {
+                "weight": 1,
+                "element": {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:emerald",
+                        "amount": 4
+                    }
+                }
+                }
+        ]
+    },
+    {
+        "type": "origins:change_resource",
+        "resource":"*:*_storevomit",
+        "operation": "set",
+        "change": 0
+    },
+    {
+        "type": "origins:feed",
+        "food": -3,
+        "saturation": 0
+    }
+]
+        }
+    },
+    "throw_up": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_storevomit",
+                    "change": 3
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:poof ~ 1 ~ 0.5 0.5 0.5 0.0 4 normal @a"
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": true,
+            "inverted": true
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                "type": "origins:moving",
+                "inverted": true
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">=",
+                    "compare_to": 5
+                }
+        ]
+        },
+        "hidden": true
+    },
+    "throw_down": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_storevomit",
+            "change": -1
+        },
+        "interval": 1
+    }
+}

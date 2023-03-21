@@ -2,6 +2,7 @@
     "name": "Hunter",
     "description": "Dangerous and volatile, yet ailed by a strange disease.",
     "powers": [
+        "slugcat:all_scale",
         "slugcat:all_shelter_food",
 		"slugcat:spear_survivor",
 		"slugcat:spear_stronger",

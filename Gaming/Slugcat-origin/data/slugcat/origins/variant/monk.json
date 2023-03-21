@@ -2,17 +2,18 @@
     "name": "Monk",
     "description": "Younger and weaker, but more resistant, in a way.",
     "powers": [
-		"slugcat:monk_shelter_nofood",
-		"slugcat:spear_survivor",
-		"slugcat:spear_weaker",
-		"slugcat:spear_pins",
-		"slugcat:monk_resist",
-		"origins:vegetarian"
-    ],
+      "slugcat:all_scale",
+		  "slugcat:monk_shelter_nofood",
+		  "slugcat:spear_survivor",
+		  "slugcat:spear_weaker",
+		  "slugcat:spear_pins",
+		  "slugcat:monk_resist",
+		  "origins:vegetarian"
+      ],
     "icon": {
         "item": "yellow_dye",
         "amount": 1
     },
     "order": 99,
-    "impact": 0
+    "impact": 1
 }

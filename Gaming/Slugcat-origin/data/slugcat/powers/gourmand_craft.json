@@ -1,0 +1,14 @@
+{
+    "name": "Crafty",
+    "description": "Sneak and open your inventory to open up a crafting menu!",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:crafting_table"
+    },
+    "key": {
+        "key": "key.inventory"
+    },
+    "condition": {
+        "type": "origins:sneaking"
+    }
+}

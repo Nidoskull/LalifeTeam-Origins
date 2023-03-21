@@ -8,7 +8,8 @@
             "origins": [
                 "slugcat:variant/survivor",
                 "slugcat:variant/monk",
-                "slugcat:variant/hunter"
+                "slugcat:variant/hunter",
+                "slugcat:variant/gourmand"
             ]
         }
     ],

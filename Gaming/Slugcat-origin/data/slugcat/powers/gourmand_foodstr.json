@@ -1,0 +1,46 @@
+{
+    "name": "Full Strength Ahead",
+    "description": "How full you are determines how strong OR speedy you are!",
+    "type": "origins:multiple",
+    "strength": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "addition",
+                "value": -0.01
+            },
+            {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "addition",
+                "value": 1
+            }
+        ],
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": ">=",
+            "compare_to": 16
+        }
+    },
+    "speed": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "addition",
+                "value": 0.05
+            },
+            {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "addition",
+                "value": -1
+            }
+        ],
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 8
+        }
+    }
+
+}

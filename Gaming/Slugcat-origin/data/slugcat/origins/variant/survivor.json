@@ -2,6 +2,7 @@
     "name": "Survivor",
     "description": "What fate, a slugcat.",
     "powers": [
+        "slugcat:all_scale",
 		"slugcat:survivor_jargon",
         "slugcat:all_shelter_food",
 		"slugcat:spear_survivor",
@@ -12,5 +13,5 @@
         "amount": 1
     },
     "order": 99,
-    "impact": 0
+    "impact": 1
 }

@@ -4,6 +4,7 @@ Power Library usage:
 Climbing power edited from eggohito#9048
 Pounce power edited from StormDragon_64#5369
 Gourmand's slam edited from Golder06#7041
+Gourmand's Spitup edited from TheFluffycart55#0918
 
 Features marked with * are not or only partially implemented.
 
@@ -22,7 +23,7 @@ Stand still and sneak to charge up a BIG jump!
 Launch a spear that deals damage and pins down whatever it hits!
 
 - Small and Fragile
-You are only one block tall- and you only have six hearts!
+You are a bit over one block tall- and you only have six hearts!
 
 - Rain World
 Fear the rain. You take damage in rain (1 heart/2 points per second) and your vision is heavily obscured. Regular water does not affect you, though, just rain.
@@ -48,14 +49,13 @@ MONK (Easy Mode)
 DOWNPOUR CATS :D
 
 GOURMAND*
-+ Craft anywhere!*
++ Craft anywhere!
 + Spit up items at the cost of food*
 + You can ground pound entities, dealing no fall damage to you!
 = Your food determines your strength and speed.
-= You're slightly fatter, but can still fit through most gaps with ease.
+= You're slightly fatter, but can still fit through most gaps with relative ease.
 - You need even more food to sleep.
-- Using tools exhausts you, slowing you down.
-- You're more vulnerable to gravity than other slugcats. Being at less than 6 food points will eliminate this, though.
+- Using tools exhausts you, slowing you down.*
 
 ARTIFICER*
 kaboom. villagers hate you
