@@ -50,7 +50,7 @@ DOWNPOUR CATS :D
 
 GOURMAND*
 + Craft anywhere!
-+ Spit up items at the cost of food*
++ Spit up items at the cost of food
 + You can ground pound entities, dealing no fall damage to you!
 = Your food determines your strength and speed.
 = You're slightly fatter, but can still fit through most gaps with relative ease.
