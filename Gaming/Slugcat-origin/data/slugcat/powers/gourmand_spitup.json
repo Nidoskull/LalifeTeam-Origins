@@ -128,8 +128,12 @@
                 "element": {
                     "type": "origins:give",
                     "stack": {
-                        "item": "minecraft:bee_nest{BlockEntityTag:{id:\"minecraft:beehive\",Bees: [{EntityData:{id:\"minecraft:bee\"}},{id:\"minecraft:bee\"}]}}",
+                        "item": "minecraft:bee_nest",
                         "amount": 1
+                    },
+                    "item_action": {
+                        "type": "origins:merge_nbt",
+                        "nbt": "{BlockEntityTag:{Bees:[{EntityData:{id:\"minecraft:bee\"}},{EntityData:{id:\"minecraft:bee\"}}]}}"
                     }
                 }
                 },
