@@ -7,43 +7,43 @@
         	"minecraft:wooden_pickaxe",
                 {
                     "id": "campanion:wooden_spear",
-                    "required": false,
+                    "required": false
                 },
-                {,
+                {
                     "id": "medievalweapons:wooden_small_axe",
-                    "required": false,
+                    "required": false
                 },
                 {
                     "id": "medievalweapons:wooden_long_sword",
-                    "required": false,
+                    "required": false
                 },
                 {
                     "id": "medievalweapons:wooden_dagger",
-                    "required": false,
+                    "required": false
                 },
                 {
                     "id": "medievalweapons:wooden_francisca",
-                    "required": false,
+                    "required": false
                 },
                 {
                     "id": "medievalweapons:wooden_big_axe",
-                    "required": false,
+                    "required": false
                 },
                 {
                     "id": "medievalweapons:wooden_javelin",
-                    "required": false",
+                    "required": false
                 },
                 {
                     "id": "medievalweapons:wooden_healing_staff",
-                    "required": false",
+                    "required": false
                 },
                 {
                     "id": "medievalweapons:wooden_ninjato",
-                    "required": false",
+                    "required": false
                 },
-                {,
+                {
                     "id": "medievalweapons:wooden_mace",
-                    "required": false,
+                    "required": false
                 }
     ]
 }
