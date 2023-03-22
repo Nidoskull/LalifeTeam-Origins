@@ -48,14 +48,14 @@ MONK (Easy Mode)
 
 DOWNPOUR CATS :D
 
-GOURMAND*
+GOURMAND
 + Craft anywhere!
 + Spit up items at the cost of food
 + You can ground pound entities, dealing no fall damage to you!
 = Your food determines your strength and speed.
 = You're slightly fatter, but can still fit through most gaps with relative ease.
 - You need even more food to sleep.
-- Using tools exhausts you, slowing you down.*
+- Using tools exhausts you
 
 ARTIFICER*
 kaboom. villagers hate you

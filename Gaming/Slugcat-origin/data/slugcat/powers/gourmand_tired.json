@@ -1,0 +1,125 @@
+{
+    "name":"Exhaustion",
+    "description": "You get tired when taking actions. :(",
+    "type": "origins:multiple",
+    "meter": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 1
+        },
+        "min": 0,
+        "max": 100
+    },
+    "exhausted": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -3,
+        "max_stacks": 3,
+        "duration_per_stack": 100,
+        "effects":[
+            {
+                "effect": "minecraft:slowness",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "minecraft:mining_fatigue",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            }
+        ],
+        "condition":
+        {
+            "type": "origins:resource",
+            "resource": "slugcat:gourmand_tired_meter",
+            "comparison": ">=",
+            "compare_to": 95
+        }
+    },
+    "tiring_attack": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type":"origins:change_resource",
+            "resource":"slugcat:gourmand_tired_meter",
+            "change": 3
+        },
+        "key": {
+            "key": "key.attack",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient":{
+                        "tag":"slugcat:tools"
+                        }
+                    }
+                },
+                {
+                "type": "origins:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient":{
+                        "tag":"slugcat:tools"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "tiring_use": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource":"slugcat:gourmand_tired_meter",
+            "change": 1
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient":{
+                        "tag":"slugcat:tools"
+                        }
+                    }
+                },
+                {
+                "type": "origins:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient":{
+                        "tag":"slugcat:tools"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "breather":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource":"slugcat:gourmand_tired_meter",
+            "change": -1
+        },
+        "interval": 2
+    }
+}

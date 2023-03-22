@@ -43,5 +43,28 @@
 			}
 		},
 		"cooldown": 60
+	},
+	"tired":{
+			"type": "origins:active_self",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"slugcat:gourmand_tired_meter",
+				"change": 100
+			},
+			"key": {
+				"key": "key.origins.primary_active",
+				"continuous": false
+			},
+			"cooldown": 60,
+			"condition":{
+				"type":"origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type":"origins:ingredient",
+					"ingredient":{
+						"item":"minecraft:stick"
+					}
+				}
+			}
 	}
 }
