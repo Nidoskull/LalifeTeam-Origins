@@ -2,7 +2,7 @@
     "name": "Monk",
     "description": "Younger and weaker, but more resistant, in a way.",
     "powers": [
-      "slugcat:all_scale",
+      "slugcat:monk_scale",
 		  "slugcat:monk_shelter_nofood",
 		  "slugcat:spear_survivor",
 		  "slugcat:spear_weaker",
