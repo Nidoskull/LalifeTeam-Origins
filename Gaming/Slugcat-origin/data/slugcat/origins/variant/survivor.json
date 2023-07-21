@@ -3,6 +3,7 @@
     "description": "What fate, a slugcat.",
     "powers": [
         "slugcat:all_scale",
+        "slugcat:all_pounce",
 		"slugcat:survivor_jargon",
         "slugcat:all_shelter_food",
 		"slugcat:spear_survivor",

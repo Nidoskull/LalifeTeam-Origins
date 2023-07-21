@@ -3,6 +3,7 @@
     "description": "Crafty, but not always the fastest...",
     "powers": [
         "slugcat:gourmand_scale",
+        "slugcat:all_pounce",
         "slugcat:gourmand_shelter_food",
         "slugcat:gourmand_foodstr",
         "slugcat:gourmand_tired",

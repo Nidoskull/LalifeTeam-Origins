@@ -9,7 +9,8 @@
                 "slugcat:variant/survivor",
                 "slugcat:variant/monk",
                 "slugcat:variant/hunter",
-                "slugcat:variant/gourmand"
+                "slugcat:variant/gourmand",
+                "slugcat:variant/artificer"
             ]
         }
     ],

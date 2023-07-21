@@ -3,6 +3,7 @@
     "description": "Younger and weaker, but more resistant, in a way.",
     "powers": [
       "slugcat:monk_scale",
+      "slugcat:all_pounce",
 		  "slugcat:monk_shelter_nofood",
 		  "slugcat:spear_survivor",
 		  "slugcat:spear_weaker",

@@ -5,6 +5,7 @@ Climbing power edited from eggohito#9048
 Pounce power edited from StormDragon_64#5369
 Gourmand's slam edited from Golder06#7041
 Gourmand's Spitup edited from TheFluffycart55#0918
+Artificer's Explosively Charged edited from Sunny!#1024/[A Golden Bear]#5508
 
 Features marked with * are not or only partially implemented.
 
@@ -58,7 +59,17 @@ GOURMAND
 - Using tools exhausts you
 
 ARTIFICER*
-kaboom. villagers hate you
++ ESPLODE on command after a charge-up!*
++ Immune to explosions
++ Creepers don't care about you
++ Double jump with an explosion!*
++ Unarmed strikes deal more damage*
++ Spears stick to entities & explode after a short pause, but take some food*
++ Shot arrows can explode*
+= You launch yourself with an explosion on pounce! (this one's just visual, though.)
+- Explode on death (this deletes your items & destroys blocks)
+- Very little lung capacity, making you start drowning near instantly*
+- Villagers will run away & not trade with you, and Iron Constructs are hostile to you*
 
 RIVULET*
 nyooooooom + permanent respiration II
@@ -67,12 +78,30 @@ SPEARMASTER*
 trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown
 
 SAINT*
-grapple tongue, can't eat meat, no spear, reduced damage from weapons, EXTRA fragile, frost weakness, freezing in rain & cold biomes
++ Grapple blocks with your tongue!
+- Herbivore
+- No spear :(
+- Weapons deal less damage
+- 4 hearts instead of 6
+- The cold deals extra damage to you
+- You start freezing in cold biomes unless you have a source of heat with you
 
 SAINT+*
-creative flight based on timer, raycast /kill (after like 1.5 seconds), glowing while flying, no need to breathe while flying. unlocked after beating 
++ Attained Focus. Flight is unlocked.
++ ASCENSION: Focus your sights on a mob while flying, and ascend it! (They'll glow, start floating, and then die.)
++ No need to breathe while Focused.
+= All the other Saint traits still apply.
+- unlocked after ???
 
 ???*
 + dating sim is canon
 = why would you play this
 - panopticon.
+
+SLUGPUP*
++ Aww, look at the little baby.
++ Villagers think you're adorable and will give you discounts
+= You're cute :)
+= Smaller model (0.75 blocks tall, letting you sneak under half-block gaps!)
+- Weaker spear :(
+- Weaker everything, really

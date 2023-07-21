@@ -1,6 +1,6 @@
 {
     "name": "Pounce!",
-    "description": "Hold shift and jump to jump REALLY far!",
+    "description": "Hold shift and jump to jump REALLY far! (Your explosion does not explode things.)",
     "type": "origins:multiple",
     "storecharge": {
         "type": "origins:resource",
@@ -78,6 +78,14 @@
                     "type": "origins:change_resource",
                     "resource": "*:*_storecharge",
                     "change": -60
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:explosion ~ ~ ~ 0.5 0.5 0.5 0.0 4 normal @a"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 1.3"
                 }
 
             ]
