@@ -61,6 +61,7 @@ GOURMAND
 
 ARTIFICER*
 + ESPLODE on command after a charge-up!
++ Explosion launches you backwards- you can rocket-jump
 + Immune to explosions
 + Creepers don't care about you
 + Double jump with an explosion!
