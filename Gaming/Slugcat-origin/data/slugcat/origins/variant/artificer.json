@@ -7,7 +7,10 @@
         "slugcat:all_shelter_food",
         "slugcat:spear_survivor",
         "slugcat:spear_pins",
+        "slugcat:artificer_double_jump",
+        "slugcat:artificer_explosioncharge",
         "slugcat:artificer_pounce",
+        "slugcat:artificer_kaboom",
         "slugcat:artificer_explodeondeath",
         "slugcat:artificer_creeperignored",
         "slugcat:artificer_maul"

@@ -6,6 +6,7 @@ Pounce power edited from StormDragon_64#5369
 Gourmand's slam edited from Golder06#7041
 Gourmand's Spitup edited from TheFluffycart55#0918
 Artificer's Explosively Charged edited from Sunny!#1024/[A Golden Bear]#5508
+Artificer's Double Jump edited from @zorraz
 
 Features marked with * are not or only partially implemented.
 
@@ -59,12 +60,11 @@ GOURMAND
 - Using tools exhausts you
 
 ARTIFICER*
-+ ESPLODE on command after a charge-up!*
++ ESPLODE on command after a charge-up!
 + Immune to explosions
 + Creepers don't care about you
-+ Double jump with an explosion!*
-+ Unarmed strikes deal more damage*
-+ Spears stick to entities & explode after a short pause, but take some food*
++ Double jump with an explosion!
++ Unarmed strikes deal more damage
 + Shot arrows can explode*
 = You launch yourself with an explosion on pounce! (this one's just visual, though.)
 - Explode on death (this deletes your items & destroys blocks)

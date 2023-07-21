@@ -1,19 +1,23 @@
 {
-    "name": "Pounce!",
-    "description": "Using your charged explosion, jump to LAUNCH! (Does not damage anything.)",
+    "name": "Concussive Effect",
+    "description": "Using a charged explosion, attack to EXPLODE! (This one DOES damage things around you)",
     "type": "origins:multiple",
-    "jump": {
+    "explode": {
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:add_velocity",
-                    "y": 1,
-                    "z": 2,
-                    "space": "local_horizontal_normalized",
-                    "client": true,
-                    "server": true
+                    "type": "origins:explode",
+                    "power": 4,
+                    "destruction_type": "none",
+                    "create_fire": false
+                },
+                {
+                    "type": "origins:explode",
+                    "power": 2,
+                    "destruction_type": "break",
+                    "create_fire": false
                 },
                 {
                     "type": "origins:change_resource",
@@ -26,13 +30,13 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 1.3"
+                    "command": "playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 0.9"
                 }
 
             ]
         },
         "key": {
-            "key": "key.jump"
+            "key": "key.attack"
         },
         "condition": {
             "type": "origins:resource",
