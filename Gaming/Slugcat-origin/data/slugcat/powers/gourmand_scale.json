@@ -1,6 +1,6 @@
 {
     "name": "Rotund",
-    "description": "You are slightly... wider... than most slugcats.",
+    "description": "You have a particular... rotundness... about you.",
     "type": "origins:action_on_callback",
     "execute_chosen_when_orb": true,
     "entity_action_added": {
