@@ -4,7 +4,7 @@
     "powers": [
         "slugcat:survivor_jargon",
         "slugcat:common/scale",
-		"slugcat:common/spear/survivor",
+		"slugcat:common/spear/standard",
 		"slugcat:common/spear/pins"
     ],
     "icon": {

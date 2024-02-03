@@ -3,7 +3,7 @@
     "description": "Strong and quick, with a fierce metabolism requiring a steady diet of meat. But the stomach won't be your only concern, as the path of the hunter is one of extreme peril.",
     "powers": [
         "slugcat:common/scale",
-		"slugcat:common/spear/survivor",
+		"slugcat:common/spear/standard",
 		"slugcat:common/spear/stronger",
 		"slugcat:common/spear/pins",
 		"origins:carnivore"
