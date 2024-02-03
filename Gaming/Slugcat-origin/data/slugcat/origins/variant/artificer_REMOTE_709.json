@@ -1,0 +1,13 @@
+{
+    "name": "The Artificer",
+    "description": "A fierce combatant, master of pyrotechnics and explosives. Keen to move up in the foodchain, your journey will surely be one lined with constant bloodshed and warfare.",
+    "powers": [
+        "slugcat:common/scale"
+    ],
+    "icon": {
+        "item": "tnt",
+        "amount": 1
+    },
+    "order": 0,
+    "impact": 2
+}

@@ -1,5 +1,4 @@
 {
-<<<<<<< Updated upstream
     "name": "Artificer",
     "description": "Violence for violence is the rule of beasts.",
     "powers": [
@@ -15,21 +14,11 @@
         "slugcat:artificer_explodeondeath",
         "slugcat:artificer_creeperignored",
         "slugcat:artificer_maul"
-=======
-    "name": "The Artificer",
-    "description": "A fierce combatant, master of pyrotechnics and explosives. Keen to move up in the foodchain, your journey will surely be one lined with constant bloodshed and warfare.",
-    "powers": [
-        "slugcat:common/scale"
->>>>>>> Stashed changes
     ],
     "icon": {
         "item": "tnt",
         "amount": 1
     },
-<<<<<<< Updated upstream
     "order": 99,
-=======
-    "order": 0,
->>>>>>> Stashed changes
     "impact": 2
 }

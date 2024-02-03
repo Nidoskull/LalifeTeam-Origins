@@ -1,6 +1,6 @@
 {
     "name": "Slugcat",
-    "description": "What fate, a slugcat.",
+    "description": "What fate, a slugcat. Predator, or prey?",
     "powers": [
         "slugcat:all_fragile",
         "slugcat:all_physics",
@@ -14,6 +14,6 @@
         "item": "stick",
         "amount": 1
     },
-    "order": 99,
+    "order": 0,
     "impact": 2
 }
