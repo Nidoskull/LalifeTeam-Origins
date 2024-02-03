@@ -1,0 +1,88 @@
+{
+    "name": "Little Grippers",
+    "description": "While tiny, you can crawl up the side of blocks for a little while before losing your grip.",
+	"type": "origins:multiple",
+	"climbed_blocks": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 2147483647,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"climbing": {
+		"type": "origins:climbing",
+		"allow_holding": true,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:collided_horizontally"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_climbed_blocks",
+					"comparison": "<=",
+					"compare_to": 1
+				},
+				{
+					"type": "origins:power_active",
+					"power": "*:trksize_toggle"
+				}
+			]
+		}
+	},
+	"start": {
+		"type": "origins:action_over_time",
+		"interval": 8,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_climbed_blocks",
+			"change": 1
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_y": 0,
+							"offset_z": 0.1
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_y": 0,
+							"offset_z": -0.1
+						}
+					]
+				},
+				{
+					"type": "origins:fall_distance",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:on_block",
+					"inverted": true
+				}
+			]
+		}
+	},
+	"end": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_climbed_blocks",
+			"change": 0,
+			"operation": "set"
+		},
+		"interval": 10,
+		"condition": {
+			"type": "origins:on_block"
+		}
+	}
+}

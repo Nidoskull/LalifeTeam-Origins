@@ -1,0 +1,24 @@
+{
+    "name": "Button-Pusher",
+    "description": "You just LOVE pushing buttons!",
+    "type": "origins:action_on_block_use",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:buttons"
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "speed",
+                "amplifier": 1,
+                "duration": 100
+            },
+            {
+                "effect": "jump_boost",
+                "duration": 100,
+                "amplifier": 0
+            }
+        ]
+    }
+}

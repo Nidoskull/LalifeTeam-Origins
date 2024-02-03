@@ -1,0 +1,8 @@
+{
+    "origins": [
+        "vmo:bee",
+        "vmo:copperconstruct",
+        "vmo:trickster"
+    ],
+    "enabled": true
+}

@@ -1,0 +1,34 @@
+{
+    "type": "origins:multiple",
+    "name": "Machine Body",
+    "description": "You have no need to eat, sleep, or breathe. However, you cannot naturally regenerate your health, and must consume copper or redstone to heal.",
+    "nobreathe":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:gain_air",
+            "value": 40
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        },
+        "interval": 20
+    },
+    "noheal":{
+        "type": "origins:disable_regen"
+    },
+    "noeat":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:feed",
+            "food": 20,
+            "saturation": 0
+        },
+        "interval": 100
+    },
+    "nosleep": {
+        "type": "origins:prevent_sleep",
+        "message": "A true engineer does not rest.",
+        "set_spawn_point": true
+    }
+}

@@ -2,22 +2,12 @@
     "name": "The Monk",
     "description": "Weak of body but strong in spirit. In tune with the mysteries of the world and empathetic to its creatures, your journey will be a significantly more peaceful one.",
     "powers": [
-<<<<<<< Updated upstream
-      "slugcat:monk_scale",
-      "slugcat:all_pounce",
-		  "slugcat:monk_shelter_nofood",
-		  "slugcat:spear_survivor",
-		  "slugcat:spear_weaker",
-		  "slugcat:spear_pins",
-		  "slugcat:monk_resist",
-=======
       "slugcat:monk/scale",
 		  "slugcat:monk/shelter_nofood",
 		  "slugcat:common/spear/survivor",
 		  "slugcat:common/spear/weaker",
 		  "slugcat:common/spear/pins",
 		  "slugcat:monk/resist",
->>>>>>> Stashed changes
 		  "origins:vegetarian"
       ],
     "icon": {

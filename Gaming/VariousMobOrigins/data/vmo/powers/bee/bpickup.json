@@ -1,0 +1,11 @@
+{
+    "name": "Pickupable",
+    "description": "You're SO small, you're holdable!",
+    "type": "origins:action_on_being_used",
+    "bientity_action": {
+        "type": "origins:invert",
+        "action": {
+            "type": "origins:mount"
+        }
+    }
+}

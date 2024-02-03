@@ -1,0 +1,117 @@
+{
+    "type": "origins:multiple",
+    "toggle": {
+      "type": "origins:toggle",
+      "active_by_default": false,
+      "key": {
+        "key": "key.origins.secondary_active"
+      }
+    },
+    "visual": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 25,
+      "hud_render": {
+        "should_render": false
+      }
+    },
+    "visual_tick": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:change_resource",
+            "resource": "*:trksize_visual",
+            "change": -1
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "particle minecraft:witch ~ ~0.9 ~ 0.2 0.3 0.2 1 1 normal"
+          }
+        ]
+      },
+      "condition": {
+        "type": "origins:resource",
+        "resource": "*:trksize_visual",
+        "comparison": ">",
+        "compare_to": 0
+      },
+      "interval": 1
+    },
+  "energy_swirl": {
+    "type": "apugli:energy_swirl",
+    "texture_location": "minecraft:textures/block/amethyst_block.png",
+    "speed": 0.05,
+    "size": 1,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:trickster/compression_visual",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+    "secure": {
+      "type": "origins:action_on_callback",
+      "entity_action_removed": {
+        "type": "origins:execute_command",
+        "command": "scale reset @s"
+      }
+    },
+    "size": {
+      "type": "origins:action_over_time",
+      "interval": 1,
+      "rising_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:change_resource",
+            "resource": "*:trksize_visual",
+            "change": 25,
+            "operation": "set"
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "playsound minecraft:block.respawn_anchor.set_spawn player @s ~ ~ ~ 0.39 1.19"
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "playsound minecraft:block.beacon.activate player @s ~ ~ ~ 1 1.19"
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "function afterlife:trkscaledown"
+          }
+        ]
+      },
+      "falling_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "function afterlife:trkscaleup"
+          },
+          {
+            "type": "origins:change_resource",
+            "resource": "*:trksize_visual",
+            "change": 25,
+            "operation": "set"
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "playsound minecraft:block.respawn_anchor.set_spawn player @s ~ ~ ~ 0.39 1.19"
+          },
+          {
+            "type": "origins:execute_command",
+            "command": "playsound minecraft:block.beacon.deactive player @s ~ ~ ~ 1 1.19"
+          }
+        ]
+      },
+      "condition": {
+        "type": "origins:power_active",
+        "power": "*:trksize_toggle"
+      }
+    },
+    "name": "Compression",
+    "description": "Tiny time!"
+  }

@@ -1,0 +1,19 @@
+{
+    "name": "Nutritious Honey",
+    "description": "You gain slightly more nutrients from honey bottles.",
+    "type": "origins:modify_food",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:honey_bottle"
+        }
+    },
+    "food_modifier": {
+        "operation": "addition",
+        "value": 4
+    },
+    "saturation_modifier": {
+        "operation": "addition",
+        "value": 0.1
+    }
+}

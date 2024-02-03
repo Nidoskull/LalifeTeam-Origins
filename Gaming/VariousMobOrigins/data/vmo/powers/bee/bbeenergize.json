@@ -1,0 +1,29 @@
+{
+    "name": "Beenergized!",
+    "description": "Just like any bee, you can go much faster if you're BEENERGIZED!",
+    "type": "origins:multiple",
+    "groundspeed":{
+            "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.5
+        },
+        "tick_rate": 5,
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "the_bumblezone:beenergized"
+        }
+    },
+    "airspeed":{
+        "type": "origins:modify_air_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.3
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "the_bumblezone:beenergized"
+        }
+    }
+}

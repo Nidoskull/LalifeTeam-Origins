@@ -2,19 +2,10 @@
     "name": "The Survivor",
     "description": "A nimble omnivore, both predator and prey. Lost in a harsh and indifferent land you must make your own way, with wit and caution as your greatest assets.",
     "powers": [
-<<<<<<< Updated upstream
-        "slugcat:all_scale",
-        "slugcat:all_pounce",
-		"slugcat:survivor_jargon",
-        "slugcat:all_shelter_food",
-		"slugcat:spear_survivor",
-		"slugcat:spear_pins"
-=======
         "slugcat:survivor_jargon",
         "slugcat:common/scale",
 		"slugcat:common/spear/survivor",
 		"slugcat:common/spear/pins"
->>>>>>> Stashed changes
     ],
     "icon": {
         "item": "white_dye",

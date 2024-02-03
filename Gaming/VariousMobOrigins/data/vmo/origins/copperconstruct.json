@@ -1,0 +1,30 @@
+{
+    "name": "Copper Construct",
+    "description": "A machine built to create, though oxidization is your foe.",
+    "powers": [
+		"vmo:cc/ccmachine",
+    "vmo:cc/ccarmor",
+    "vmo:cc/ccpoisonimmunity",
+    "vmo:cc/bsize",
+    "vmo:cc/ccbuttons",
+    "vmo:cc/ccforge",
+    "vmo:cc/ccoxidize",
+    "vmo:cc/ccoxidizewax",
+    "vmo:cc/ccforgecoal",
+    "vmo:cc/ccforgecoppercooked",
+    "vmo:cc/ccforgecopperraw",
+    "vmo:cc/ccforgeironraw",
+    "vmo:cc/ccforgeironcooked",
+    "vmo:cc/ccforgeredstone",
+    "vmo:cc/ccforgeemerald",
+    "vmo:cc/ccforgegoldraw",
+    "vmo:cc/ccforgegoldcooked",
+    "vmo:cc/ccforgelapis"
+    ],
+    "icon": {
+        "item": "copper_ingot",
+        "amount": 1
+    },
+    "order": 1,
+    "impact": 3
+}
