@@ -4,6 +4,7 @@
     "powers": [
         "slugcat:gourmand/scale",
         "slugcat:gourmand/shelter_food",
+		"slugcat:common/pounce",
         "slugcat:gourmand/foodstr",
         "slugcat:gourmand/tired",
 		"slugcat:common/spear/gourmand",

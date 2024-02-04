@@ -6,7 +6,8 @@ Pounce power edited from StormDragon_64#5369
 Gourmand's slam edited from Golder06#7041
 Gourmand's Spitup edited from TheFluffycart55#0918
 Artificer's Explosively Charged edited from Sunny!#1024/[A Golden Bear]#5508
-Artificer's Double Jump edited from @zorraz
+Artificer's Double Jump edited from zorraz
+Artificer's Scavenger Hate partially from monospectre
 
 Features marked with * are not or only partially implemented.
 
@@ -21,7 +22,7 @@ On poles (fences, walls, iron bars, end rods, etc) this meter does not go down.
 + Pounce
 Stand still and sneak to charge up a BIG jump!
 
-+ Spear (ACTIVE)
++ Spear (ACTIVE, REQUIRES STICKS)
 Launch a spear that deals damage and pins down whatever it hits!
 
 - Small and Fragile
@@ -59,19 +60,21 @@ GOURMAND
 - You need even more food to sleep.
 - Using tools exhausts you
 
-ARTIFICER*
-+ ESPLODE on command after a charge-up!
-+ Explosion launches you backwards- you can rocket-jump
+ARTIFICER
++ Explode on command after a short charge-up, or use this explosion to launch yourself forward
 + Immune to explosions
 + Creepers don't care about you
 + Double jump with an explosion!
 + Unarmed strikes deal more damage
-+ Shot arrows can explode*
-= You launch yourself with an explosion on pounce! (this one's just visual, though.)
++ Spears explode after a short delay!
++ Craft TNT with ease!
 - Explode on death (this deletes your items & destroys blocks)
-- Very little lung capacity, making you start drowning near instantly*
-- Villagers will run away & not trade with you, and Iron Constructs are hostile to you*
+- Very little lung capacity, making you start drowning near instantly
+- Villagers will run away & not trade with you, and Iron Constructs are hostile to you
 
+
+
+not real yet:
 RIVULET*
 nyooooooom + permanent respiration II
 

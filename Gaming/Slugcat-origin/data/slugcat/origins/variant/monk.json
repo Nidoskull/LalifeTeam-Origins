@@ -4,6 +4,7 @@
     "powers": [
       "slugcat:monk/scale",
 		  "slugcat:monk/shelter_nofood",
+      "slugcat:common/pounce",
 		  "slugcat:common/spear/standard",
 		  "slugcat:common/spear/weaker",
 		  "slugcat:common/spear/pins",

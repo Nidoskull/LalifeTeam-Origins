@@ -5,7 +5,6 @@
         "slugcat:common/fragile",
         "slugcat:common/physics",
         "slugcat:common/nimble",
-		"slugcat:common/pounce",
         "slugcat:common/hungry",
         "slugcat:common/rain",
         "slugcat:common/shelter",

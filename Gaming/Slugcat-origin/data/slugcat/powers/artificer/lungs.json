@@ -1,0 +1,14 @@
+{
+    "name": "Brittle Lungs",
+    "description": "Your lungs can't hold as much air as most people... You'll start to drown far faster.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": -5
+    },
+    "interval": 5,
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    }
+}

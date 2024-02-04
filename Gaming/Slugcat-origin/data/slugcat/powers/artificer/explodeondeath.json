@@ -1,0 +1,26 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions":[
+            {
+                "type": "origins:explode",
+                "power": 4,
+                "destruction_type": "destroy",
+                "damage_self": true,
+                "create_fire": false
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.generic.explode"
+            }
+        ]
+    },
+    "interval": 18,
+    "condition": {
+        "type": "origins:health",
+        "comparison": "<=",
+        "compare_to": 0
+    }
+}
