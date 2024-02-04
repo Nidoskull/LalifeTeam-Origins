@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Various Mob Origins",
+        "id": "vmo",
+        "pack_format": 15,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "A datapack to add various mob-based origins.."
+    }
+}

@@ -1,22 +1,23 @@
 {
-    "name": "Gourmand",
-    "description": "Crafty, but not always the fastest...",
+    "name": "The Gourmand",
+    "description": "An indulger of the simpler pleasures in life. Carrying the world in your stomach gives many tactical advantages, but comes at an increased cost of sustainability.",
     "powers": [
-        "slugcat:gourmand_scale",
-        "slugcat:gourmand_shelter_food",
-        "slugcat:gourmand_foodstr",
-        "slugcat:gourmand_tired",
-		"slugcat:spear_gourmand",
-        "slugcat:spear_strongest",
-		"slugcat:spear_pins",
-        "slugcat:gourmand_craft",
-        "slugcat:gourmand_slam",
-        "slugcat:gourmand_spitup"
+        "slugcat:gourmand/scale",
+        "slugcat:gourmand/shelter_food",
+		"slugcat:common/pounce",
+        "slugcat:gourmand/foodstr",
+        "slugcat:gourmand/tired",
+		"slugcat:common/spear/gourmand",
+        "slugcat:common/spear/strongest",
+		"slugcat:common/spear/pins",
+        "slugcat:gourmand/craft",
+        "slugcat:gourmand/slam",
+        "slugcat:gourmand/spitup"
     ],
     "icon": {
         "item": "orange_dye",
         "amount": 1
     },
-    "order": 99,
+    "order": 0,
     "impact": 2
 }

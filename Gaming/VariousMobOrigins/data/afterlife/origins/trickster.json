@@ -1,0 +1,16 @@
+{
+    "name": "Trickster But Better",
+    "description": "Have you ever looked at an origin and thought, \"I could do better than that.\"? I have. I certainly have.",
+    "powers": [
+        "afterlife:trknyctophobia",
+        "afterlife:trksize",
+        "afterlife:trkclimb",
+        "afterlife:trktp"
+    ],
+    "icon": {
+        "item": "black_stained_glass",
+        "amount": 1
+    },
+    "order": 3,
+    "impact": 2
+}

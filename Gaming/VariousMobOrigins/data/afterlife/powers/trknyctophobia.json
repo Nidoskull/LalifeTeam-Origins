@@ -1,0 +1,76 @@
+{
+    "name": "Nyctophobia",
+    "description": "Your fear of the absolute dark manifests as taking damage. Now actually making sense! (You're mostly afraid of CAVE darkness rather than SKY darkness.)",
+    "type": "origins:multiple",
+    "fear": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 0,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+        }
+    },
+    "darkness": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "*:*_fear",
+            "modifier": {
+                "operation": "addition",
+                "value": 1
+            }
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+                "type": "origins:light_level",
+                "compare_to": 0,
+                "comparison": "=="
+            },
+            "compare_to": 1,
+            "comparison": ">="
+        }
+    },
+    "light": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+              "type": "origins:light_level",
+              "comparison": "==",
+              "compare_to": 0
+            },
+            "comparison": ">",
+            "compare_to": 1,
+            "inverted": true
+          },
+          "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "*:*_fear",
+            "modifier": {
+                "operation": "addition",
+                "value": -1
+            }
+        },
+        "interval": 20
+    },
+    "ow": {
+        "type": "origins:damage_over_time",
+        "interval": 20,
+        "damage": 2,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_fear",
+            "compare_to": 10,
+            "comparison": ">="
+        },
+        "damage_source": {
+            "name": "vmo:fear",
+            "bypasses_armor": true
+        }
+    }
+}

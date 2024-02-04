@@ -1,0 +1,52 @@
+{
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+        "type":"origins:and",
+        "actions": [
+          {
+            "type":"origins:execute_command",
+            "command":"playsound minecraft:entity.creeper.primed ambient @a ~ ~ ~ 1"
+          },
+          {
+            "type":"origins:execute_command",
+            "command":"particle smoke ~ ~ ~"
+          },
+          {
+            "type": "origins:delay",
+            "ticks": 25,
+            "action": {
+              "type":"origins:and",
+              "actions": [
+                {
+                  "type":"origins:execute_command",
+                  "command":"playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 1"
+                },
+                {
+                  "type":"origins:execute_command",
+                  "command":"particle explosion ~ ~ ~"
+                },
+                {
+                  "type": "origins:damage",
+                  "amount": 8,
+                  "source": {
+                    "name": "explosion",
+                    "bypasses_armor": false
+                  }
+                }
+              ]
+            }
+          }
+        ]
+    },
+    "cooldown": 20,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 5
+    },
+    "damage_condition": {
+		"type": "origins:projectile",
+		"projectile":"minecraft:trident"
+	},
+    "name":"Explosive Spears",
+    "description":"Spears launched by you EXPLODE! (Like just about anything you do, honestly speaking.)"
+}

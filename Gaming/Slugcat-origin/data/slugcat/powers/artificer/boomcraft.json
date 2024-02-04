@@ -1,0 +1,29 @@
+{
+    "name": "Sulfur-filled Crafting",
+    "description": "You have access to a more... *explosive* recipe.",
+    "type": "origins:multiple",
+    "grenade": {
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "slugcat:artificer/boomcraft/sulfur",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:cobblestone"
+                },
+                {
+                    "item": "minecraft:gunpowder"
+                },
+                {
+                    "item": "minecraft:gunpowder"
+                },
+                {
+                    "item": "minecraft:gunpowder"
+                }
+            ],
+            "result": {
+                "item": "minecraft:tnt"
+            }
+        }
+    }
+}

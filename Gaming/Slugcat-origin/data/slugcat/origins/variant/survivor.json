@@ -1,17 +1,17 @@
 {
-    "name": "Survivor",
-    "description": "What fate, a slugcat.",
+    "name": "The Survivor",
+    "description": "A nimble omnivore, both predator and prey. Lost in a harsh and indifferent land you must make your own way, with wit and caution as your greatest assets.",
     "powers": [
-        "slugcat:all_scale",
-		"slugcat:survivor_jargon",
-        "slugcat:all_shelter_food",
-		"slugcat:spear_survivor",
-		"slugcat:spear_pins"
+        "slugcat:survivor_jargon",
+		"slugcat:common/pounce",
+        "slugcat:common/scale",
+		"slugcat:common/spear/standard",
+		"slugcat:common/spear/pins"
     ],
     "icon": {
         "item": "white_dye",
         "amount": 1
     },
-    "order": 99,
+    "order": 0,
     "impact": 1
 }

@@ -1,0 +1,399 @@
+{
+    "name": "Oxidization",
+    "description": "Staying in the rain or water will make you oxidize, slowing you down and weakening you dramatically. You can scrape off a layer of oxidization with an axe, or eat honeycomb to prevent oxidization for 30 minutes.",
+    "type": "origins:multiple",
+    "timer": {
+        "type": "origins:resource",
+        "max": 300,
+        "min": 0,
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_resource",
+                    "resource":"*:*_timer",
+                    "modifier": {
+                        "operation": "set_total",
+                        "value": 0
+                    }
+                },
+                {
+                    "type": "origins:modify_resource",
+                    "resource":"*:*_resource",
+                    "modifier": {
+                        "operation": "addition",
+                        "value": 1
+                    }
+                }
+            ]
+        },
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 1
+        }
+    },
+    "resource": {
+        "type": "origins:resource",
+        "max": 4,
+        "min": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 1
+        }
+    },
+    "waxed": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 30,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "waxdecay": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "modifier": {
+                "operation": "addition",
+                "value": -1
+            },
+            "resource": "*:*_waxed"
+        },
+        "interval": 1200
+    },
+    "incrementtimer": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": 
+                {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                        "type": "origins:or",
+                        "conditions": [
+                                {
+                                    "type": "origins:submerged_in",
+                                    "fluid": "minecraft:water"
+                                },
+                                {
+                                    "type": "origins:in_rain"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "*:*_resource",
+                            "compare_to": 4,
+                            "comparison": "==",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "*:*_waxed",
+                            "compare_to": 0,
+                            "comparison": "==",
+                            "inverted": false
+                        }
+                ]
+        },
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "*:*_timer",
+            "modifier": {
+                "operation": "addition",
+                "value": 1
+            }
+        }
+    },
+    "scrape":{
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_resource",
+                    "resource": "*:*_resource",
+                    "modifier": {
+                        "operation": "addition",
+                        "value": -1
+                    }
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:damage",
+                        "amount": 30,
+                        "ignore_unbreaking": true
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "item.axe.scrape"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:scrape",
+                    "count": 16,
+                    "speed": 0.0,
+                    "force": true,
+                    "spread": {
+                        "x": 1.0,
+                        "y": 0.2,
+                        "z": 1.0
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "minecraft:axes"
+                }
+            }
+        },
+        "key": {
+            "key": "key.use"
+        }
+    },
+    "oxidize1": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "slowness",
+                    "duration": 100
+                },
+                {
+                    "effect": "weakness",
+                    "duration": 100
+                }
+            ]
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 1,
+            "resource": "*:*_resource",
+            "comparison": ">="
+        }
+    },
+    "oxidize2": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "slowness",
+                    "duration": 100,
+                    "amplifier": 1
+                },
+                {
+                    "effect": "weakness",
+                    "duration": 100,
+                    "amplifier": 1
+                },
+                {
+                    "effect": "mining_fatigue",
+                    "duration": 100,
+                    "amplifier": 1
+                }
+            ]
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 2,
+            "resource": "*:*_resource",
+            "comparison": ">="
+        }
+    },
+    "oxidize3": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "slowness",
+                    "duration": 100,
+                    "amplifier": 3
+                },
+                {
+                    "effect": "weakness",
+                    "duration": 100,
+                    "amplifier": 3
+                },
+                {
+                    "effect": "mining_fatigue",
+                    "duration": 100,
+                    "amplifier": 2
+                }
+            ]
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 3,
+            "resource": "*:*_resource",
+            "comparison": ">="
+        }
+    },
+    "oxidize4": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "slowness",
+                    "duration": 100,
+                    "amplifier": 5
+                },
+                {
+                    "effect": "weakness",
+                    "duration": 100,
+                    "amplifier": 4
+                },
+                {
+                    "effect": "mining_fatigue",
+                    "duration": 100,
+                    "amplifier": 3
+                }
+            ]
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 4,
+            "resource": "*:*_resource",
+            "comparison": ">="
+        }
+    },
+    "color0":{
+        "type": "origins:model_color",
+        "blue": 0.6,
+        "green": 0.8,
+        "red": 0.9,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 0,
+            "comparison": "==",
+            "resource": "*:*_resource"
+        }
+    },
+    "color1":{
+        "type": "origins:model_color",
+        "blue": 0.85,
+        "red":0.8,
+        "green":0.9,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 1,
+            "comparison": "==",
+            "resource": "*:*_resource"
+        }
+    },
+    "color2":{
+        "type": "origins:model_color",
+        "red": 0.7,
+        "green":0.8,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 2,
+            "comparison": "==",
+            "resource": "*:*_resource"
+        }
+    },
+    "color3":{
+        "type": "origins:model_color",
+        "red": 0.6,
+        "green": 0.7,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 3,
+            "comparison": "==",
+            "resource": "*:*_resource"
+        }
+    },
+    "color4":{
+        "type": "origins:model_color",
+        "red": 0.5,
+        "green": 0.6,
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 4,
+            "comparison": "==",
+            "resource": "*:*_resource"
+        }
+    },
+    "otherscrape":{
+        "type": "origins:action_on_being_used",
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient":{
+                        "tag": "minecraft:axes"
+                    }
+                }
+            }
+        },
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:damage",
+                            "damage": 30,
+                            "ignore_unbreaking": true
+                        }
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_resource",
+                                "resource": "*:*_resource",
+                                "modifier": {
+                                    "operation": "addition",
+                                    "value": -1
+                                }
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "item.axe.scrape"
+                            },
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle": "minecraft:scrape",
+                                "count": 16,
+                                "speed": 0.0,
+                                "force": true,
+                                "spread": {
+                                    "x": 1.0,
+                                    "y": 0.2,
+                                    "z": 1.0
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

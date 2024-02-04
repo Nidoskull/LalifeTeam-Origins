@@ -1,0 +1,27 @@
+{
+    "name": "Buzzy Bee",
+    "description": "bzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+    "powers": [
+		"vmo:bee/bbuzz",
+    "vmo:bee/bregen",
+    "vmo:bee/bhoney",
+    "vmo:bee/bpickup",
+    "origins:slow_falling",
+    "vmo:bee/bwings",
+    "vmo:bee/bflyspeed",
+    "vmo:bee/bleggies",
+    "vmo:bee/bsize",
+    "origins:fragile",
+    "vmo:bee/bfirebad",
+    "vmo:bee/bbeenergize",
+    "vmo:bee/bweaponry",
+    "vmo:bee/bpoison",
+    "vmo:bee/bcombcutter"
+    ],
+    "icon": {
+        "item": "honeycomb",
+        "amount": 1
+    },
+    "order": 1,
+    "impact": 2
+}

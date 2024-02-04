@@ -1,0 +1,23 @@
+{
+    "name": "Explosively Charged",
+    "description": "Creepers sympathize with your explosive effects, since you, too, explode when you die. (Or, something like that...)",
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "team add explosive"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join explosive @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join explosive @e[type=minecraft:creeper]"
+            }
+        ]
+    }
+}

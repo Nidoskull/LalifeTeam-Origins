@@ -1,18 +1,18 @@
 {
-    "name": "Hunter",
-    "description": "Dangerous and volatile, yet ailed by a strange disease.",
+    "name": "The Hunter",
+    "description": "Strong and quick, with a fierce metabolism requiring a steady diet of meat. But the stomach won't be your only concern, as the path of the hunter is one of extreme peril.",
     "powers": [
-        "slugcat:all_scale",
-        "slugcat:all_shelter_food",
-		"slugcat:spear_survivor",
-		"slugcat:spear_stronger",
-		"slugcat:spear_pins",
+        "slugcat:common/scale",
+		"slugcat:common/pounce",
+		"slugcat:common/spear/standard",
+		"slugcat:common/spear/stronger",
+		"slugcat:common/spear/pins",
 		"origins:carnivore"
     ],
     "icon": {
         "item": "red_dye",
         "amount": 1
     },
-    "order": 99,
+    "order": 0,
     "impact": 1
 }

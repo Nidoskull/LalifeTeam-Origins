@@ -1,4 +1,6 @@
 {
+    "name": "Charged Explosive",
+    "description": "Hold shift to charge up an explosion.",
     "type": "origins:multiple",
     "storecharge": {
         "type": "origins:resource",
@@ -57,37 +59,6 @@
         "condition": {
             "type": "origins:sneaking",
             "inverted": true
-        }
-    },
-    "jump": {
-        "type": "origins:active_self",
-        "entity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:add_velocity",
-                    "y": 1,
-                    "z": 2,
-                    "space": "local_horizontal_normalized",
-                    "client": true,
-                    "server": true
-                },
-                {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_storecharge",
-                    "change": -60
-                }
-
-            ]
-        },
-        "key": {
-            "key": "key.jump"
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_storecharge",
-            "comparison": ">",
-            "compare_to": 55
         }
     }
 }

@@ -14,7 +14,7 @@
                 "type": "origins:resource",
                 "resource": "*:*_storevomit",
                 "comparison": ">=",
-                "compare_to": "1"
+                "compare_to": 1
             }
         },
         "max_action": {

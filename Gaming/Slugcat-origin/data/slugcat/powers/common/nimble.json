@@ -9,7 +9,15 @@
     "hud_render": {
       "should_render": true,
       "inverted": true,
-      "bar_index": 1
+      "condition": {
+        "type": "origins:resource",
+        "compare_to": 0,
+        "comparison": "==",
+        "inverted": true,
+        "resource": "*:*_climbed_blocks"
+      },
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+      "bar_index": 8
     }
   },
   "climbing": {
