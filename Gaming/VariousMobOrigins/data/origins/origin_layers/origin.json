@@ -2,7 +2,8 @@
     "origins": [
         "vmo:bee",
         "vmo:copperconstruct",
-        "vmo:trickster"
+        "afterlife:trickster",
+        "afterlife:star"
     ],
     "enabled": true
 }

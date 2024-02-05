@@ -1,0 +1,28 @@
+{
+    "name": "Stinger",
+    "description": "You inflict poison upon any creature you sting.",
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:and",
+                "actions":[
+                    {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "poison",
+                            "amplifier": 1,
+                            "duration": 60
+                        }
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:play_sound",
+                        "sound": "entity.bee.sting"
+                    }
+                }
+            ]
+        }
+    }

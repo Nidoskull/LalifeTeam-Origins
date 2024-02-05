@@ -1,0 +1,11 @@
+{
+    "name": "Armored Plating",
+    "description": "Being made of copper, you have some built-in armor.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Max health increase",
+        "attribute": "minecraft:generic.armor",
+        "value": 3,
+        "operation": "addition"
+    }
+}

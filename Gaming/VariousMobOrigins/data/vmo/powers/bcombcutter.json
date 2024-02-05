@@ -1,0 +1,50 @@
+{
+    "name": "Comb Cutter",
+    "description": "You know how to break honeycomb blocks much faster! You can even unpack them back into regular honeycomb items.",
+    "type": "origins:multiple",
+    "breakspeed":{
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:honeycomb_block"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.5
+        }
+    },
+    "uncrafting":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "vmo:bcombcutter/honeycombuncrafting",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:honeycomb_block"
+                }
+            ],
+            "result": {
+                "item": "minecraft:honeycomb",
+                "count": 4
+            }
+        }
+    },
+    "honeycrafting":{
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "vmo:bcombcutter/honeycombbottle",
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+                {
+                    "item": "minecraft:honeycomb"
+                },
+                {
+                    "item":"minecraft:glass_bottle"
+                }
+            ],
+            "result": {
+                "item": "minecraft:honey_bottle"
+            }
+        }
+    }
+}
