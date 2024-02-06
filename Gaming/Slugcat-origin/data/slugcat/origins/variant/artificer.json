@@ -3,6 +3,7 @@
     "description": "A fierce combatant, master of pyrotechnics and explosives. Keen to move up in the foodchain, your journey will surely be one lined with constant bloodshed and warfare.",
     "powers": [
         "slugcat:common/scale",
+        "origins:carnivore",
         "slugcat:artificer/explosioncharge",
         "slugcat:artificer/concussiveeffect",
         "slugcat:artificer/pounce",
