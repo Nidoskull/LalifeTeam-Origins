@@ -61,22 +61,33 @@ GOURMAND
 - Using tools exhausts you
 
 ARTIFICER
-+ Explode on command after a short charge-up, or use this explosion to launch yourself forward
-+ Immune to explosions
-+ Creepers don't care about you
-+ Double jump with an explosion!
-+ Unarmed strikes deal more damage
++ Explode on command after a short charge-up, or use this explosion to launch yourself forward!
++ Immune to explosions!
++ Creepers don't care about you!
++ Double jump with an explosion! (But be careful, or you might just explode yourself...)
++ Unarmed strikes deal more damage!
 + Spears explode after a short delay!
 + Craft TNT with ease!
-- Explode on death (this deletes your items & destroys blocks)
-- Very little lung capacity, making you start drowning near instantly
-- Villagers will run away & not trade with you, and Iron Constructs are hostile to you
+- Explode on death in water (this deletes your items)
+- Very little lung capacity, making you start drowning near instantly.
+- Carnivorous
+- Villagers will not trade with you, and Iron Constructs are hostile to you.
 
 
 
 not real yet:
 RIVULET*
-nyooooooom + permanent respiration II
++ You are SO fast. So UNBELIEVABLY fast. I had to rewrite the physics for this. That's how fast you are.
++ You can hold your breath FOREVER* (*practically, not actually)
++ mmm tasty glowberi
++ secret evolution ;3
++ if you hold shift after jumping/falling for more than 2 blocks, you can slide which means you have ice physics. if you then jump again you pounce
+- You cannot outrun the rain forever.
+- You take increased damage from all sources- you're used to running, not fighting.
+- Your paws can't hold onto shields... or anything else in your off-hand, really. Anything held there has a chance to fumble out of your slippery paws.
+- You can't wear chestplates or leggings :( They inhibit your movement! 
+
+
 
 SPEARMASTER*
 trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown
@@ -95,7 +106,21 @@ SAINT+*
 + ASCENSION: Focus your sights on a mob while flying, and ascend it! (They'll glow, start floating, and then die.)
 + No need to breathe while Focused.
 = All the other Saint traits still apply.
-- unlocked after ???
+- unlocked after obtaining 11/14 of the following advancements:
+- - We Need To Go Deeper
+- - Eye Spy
+- - Those Were The Days
+- - Into Fire
+- - The End
+- - Remote Getaway
+- - Voluntary Exile
+- - Respecting the Remnants
+- - Sneak 100
+- - Sweet Dreams
+- - Postmortal
+- - Careful Restoration
+- - Glow And Behold!
+- - Serious Dedication
 
 ???*
 + dating sim is canon

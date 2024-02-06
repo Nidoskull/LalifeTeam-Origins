@@ -1,0 +1,61 @@
+{
+    "name": "It's a Rain World",
+    "description": "You cannot outrun the rain forever.",
+    "type": "origins:multiple",
+    "timer": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3,
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_resource",
+                    "resource": "*:*_timer",
+                    "modifier": {
+                        "operation": "set_total",
+                        "value": 0
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "weather rain 180"
+                }
+            ]
+        },
+        "hud_render": {
+            "should_render": true
+        },
+        "start_value": 0
+    },
+    "wakeup": {
+        "type": "origins:action_on_wake_up",
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 1,
+            "comparison": ">=",
+            "resource": "*:*_",
+            "inverted": true
+        },
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "*:*_timer",
+            "modifier": {
+                "operation": "addition",
+                "value": 1
+            }
+        }
+    },
+    "ticktock": {
+        "type": "origins:action_over_time",
+        "interval": 3600,
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "*:*_timer",
+            "modifier": {
+                "operation": "addition",
+                "value": 1
+            }
+        }
+    }
+}

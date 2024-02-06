@@ -1,0 +1,52 @@
+{
+    "type": "origins:multiple",
+    "falling": {
+        "type": "origins:resource",
+        "max": 1,
+        "min": 0,
+        "hud_render": {
+            "should_render": true
+        }
+    },
+    "checkfall":{
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:modify_resource",
+            "resource": "*:*_falling",
+            "modifier": {
+                "operation": "set_total",
+                "value": 1
+            }
+        },
+        "condition": {
+            "type": "origins:fall_distance",
+            "comparison": ">=",
+            "compare_to": 3
+        },
+        "interval": 20
+    },
+    "stopfalling": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "resource": "*:*_falling",
+            "modifier": {
+                "operation": "set_total",
+                "value": 1
+            }
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_block"
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ],
+            "inverted": true
+        }
+    }
+}

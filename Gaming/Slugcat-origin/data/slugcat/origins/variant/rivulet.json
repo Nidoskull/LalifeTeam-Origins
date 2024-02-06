@@ -1,0 +1,18 @@
+{
+    "name": "The Rivulet",
+    "description": "Breathes underwater, and moves through the world with ease. These adaptations are essential, as you'll be pitted against a world of increasingly frequent floods, where time is of the essence.",
+    "powers": [
+        "slugcat:common/scale",
+        "slugcat:rivulet/speed",
+        "slugcat:rivulet/slide",
+		"slugcat:common/spear/standard",
+		"slugcat:common/spear/pins",
+        "slugcat:rivulet/raintimer"
+    ],
+    "icon": {
+        "item": "minecraft:heart_of_the_sea",
+        "amount": 1
+    },
+    "order": 0,
+    "impact": 2
+}
