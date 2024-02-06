@@ -34,7 +34,7 @@
         "condition":
         {
             "type": "origins:resource",
-            "resource": "slugcat:gourmand_tired_meter",
+            "resource": "slugcat:gourmand/tired_meter",
             "comparison": ">=",
             "compare_to": 95
         }
@@ -43,7 +43,7 @@
         "type": "origins:active_self",
         "entity_action": {
             "type":"origins:change_resource",
-            "resource":"slugcat:gourmand_tired_meter",
+            "resource":"slugcat:gourmand/tired_meter",
             "change": 3
         },
         "key": {
@@ -80,7 +80,7 @@
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource":"slugcat:gourmand_tired_meter",
+            "resource":"slugcat:gourmand/tired_meter",
             "change": 1
         },
         "key": {
@@ -117,7 +117,7 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource":"slugcat:gourmand_tired_meter",
+            "resource":"slugcat:gourmand/tired_meter",
             "change": -1
         },
         "interval": 2
