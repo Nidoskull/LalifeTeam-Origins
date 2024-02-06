@@ -40,7 +40,8 @@
 				"ingredient": {
 					"item":"minecraft:stick"
 				}
-			}
+			},
+			"inventory_type": "inventory"
 		},
 		"cooldown": 60
 	},
@@ -48,7 +49,7 @@
 			"type": "origins:active_self",
 			"entity_action": {
 				"type":"origins:change_resource",
-				"resource":"slugcat:gourmand_tired_meter",
+				"resource":"slugcat:gourmand/tired_meter",
 				"change": 100
 			},
 			"key": {
