@@ -30,6 +30,7 @@ You are a bit over one block tall- and you only have six hearts!
 
 - Rain World
 Fear the rain. You take damage in rain (1 heart/2 points per second) and your vision is heavily obscured. Regular water does not affect you, though, just rain.
+Rain also comes more often.
 
 - Sheltered Sleep
 You can only sleep with a roof over your head, and only if you're over 60% full.
@@ -76,7 +77,10 @@ ARTIFICER
 
 not real yet:
 RIVULET*
-nyooooooom + permanent respiration II?
++ You're WAY faster!
++ You jump WAY higher (toggleable)!
++ You can breathe for much longer underwater!
+- Rain comes more often.
 
 SPEARMASTER*
 trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown?
