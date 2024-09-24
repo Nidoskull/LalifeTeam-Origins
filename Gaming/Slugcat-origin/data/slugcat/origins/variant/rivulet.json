@@ -1,8 +1,8 @@
 {
-    "name": "The Survivor",
-    "description": "A nimble omnivore, both predator and prey. Lost in a harsh and indifferent land you must make your own way, with wit and caution as your greatest assets.",
+    "name": "The Rivulet",
+    "description": "Breathes underwater, and moves through the world with ease. These adaptations are essential, as you'll be pitted against a world of increasingly frequent floods, where time is of the essence.",
     "powers": [
-        "slugcat:survivor_jargon",
+        "slugcat:rivulet/speed",
 		"slugcat:common/pounce",
         "slugcat:common/scale",
 		"slugcat:common/spear/standard",
