@@ -4,6 +4,8 @@
     "powers": [
         "slugcat:rivulet/speed",
         "slugcat:rivulet/jump",
+        "slugcat:rivulet/gills",
+        "slugcat:rivulet/weather",
 		"slugcat:common/pounce",
         "slugcat:common/scale",
 		"slugcat:common/spear/standard",
