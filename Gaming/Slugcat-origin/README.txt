@@ -17,7 +17,7 @@ Your physics are a bit slipperier, though. You fall faster, but you also jump sl
 
 + Climbing
 You can climb up a few blocks to help you leap the gap!
-On poles (fences, walls, iron bars, end rods, etc) this meter does not go down.
+On poles (fences, walls, iron bars, end rods, etc) this meter does not go down.* (*not implemented yet)
 
 + Pounce
 Stand still and sneak to charge up a BIG jump!
@@ -76,10 +76,10 @@ ARTIFICER
 
 not real yet:
 RIVULET*
-nyooooooom + permanent respiration II
+nyooooooom + permanent respiration II?
 
 SPEARMASTER*
-trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown
+trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown?
 
 SAINT*
 + Grapple blocks with your tongue!

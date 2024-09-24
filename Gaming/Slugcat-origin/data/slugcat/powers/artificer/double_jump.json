@@ -73,7 +73,8 @@
                 },
                 {
                     "type": "origins:submerged_in",
-                    "fluid": "minecraft:water"
+                    "fluid": "minecraft:water",
+                    "inverted": true
                 },
                 {
                     "type": "origins:gamemode",
@@ -109,7 +110,8 @@
         },
         "condition": {
             "type": "origins:and",
-            "conditions": [{
+            "conditions": [
+                {
                     "type": "origins:resource",
                     "resource": "*:*_jumps",
                     "comparison": "!=",
