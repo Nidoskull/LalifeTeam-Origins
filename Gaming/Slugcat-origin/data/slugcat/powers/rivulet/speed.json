@@ -3,7 +3,6 @@
     "description": "You slippery fish, you.",
     "type": "origins:attribute",
     "modifier": {
-        "name": "Extremely Speedy",
         "attribute": "minecraft:generic.movement_speed",
         "value": 0.15,
         "operation": "addition"
