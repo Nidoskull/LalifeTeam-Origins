@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "212",
+      "131",
+      "212"
+    ],
+    "key": {
+      "1": {
+        "item": "minecraft:dragon_breath"
+      },
+      "2": {
+        "item": "minecraft:prismarine_crystals"
+      },
+      "3": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "result": {
+      "item": "minecraft:snowball",
+      "count": 1
+    }
+  }
