@@ -80,7 +80,8 @@ RIVULET*
 + You're WAY faster!
 + You jump WAY higher (toggleable)!
 + You can breathe for much longer underwater!
-- Rain comes more often.
++ Use a specifically-crafted end crystal to rarefaction cell bullshit. maybe require nether star + prismarine crystals + dragon's breath
+- Rain comes far more often- you can change this, though, by obtaining the above item.
 
 SPEARMASTER*
 trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown?
