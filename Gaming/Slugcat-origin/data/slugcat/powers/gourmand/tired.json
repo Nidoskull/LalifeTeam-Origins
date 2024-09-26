@@ -12,23 +12,25 @@
         "min": 0,
         "max": 100
     },
-    "exhausted": {
+    "exhausted_worse": {
         "type": "origins:stacking_status_effect",
         "min_stacks": -3,
-        "max_stacks": 3,
+        "max_stacks": 1,
         "duration_per_stack": 100,
         "effects":[
             {
                 "effect": "minecraft:slowness",
+                "amplifier": 1,
                 "is_ambient": true,
                 "show_particles": false,
-                "show_icon": false
+                "show_icon": true
             },
             {
                 "effect": "minecraft:mining_fatigue",
+                "amplifier": 1,
                 "is_ambient": true,
                 "show_particles": false,
-                "show_icon": false
+                "show_icon": true
             }
         ],
         "condition":
@@ -37,6 +39,35 @@
             "resource": "slugcat:gourmand/tired_meter",
             "comparison": ">=",
             "compare_to": 95
+        }
+    },
+    "exhausted": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -3,
+        "max_stacks": 10,
+        "duration_per_stack": 100,
+        "effects":[
+            {
+                "effect": "minecraft:slowness",
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:mining_fatigue",
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ],
+        "condition":
+        {
+            "type": "origins:resource",
+            "resource": "slugcat:gourmand/tired_meter",
+            "comparison": ">=",
+            "compare_to": 75
         }
     },
     "tiring_attack": {
