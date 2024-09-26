@@ -1,6 +1,6 @@
 {
-	"name": "Rarefraction Cell Creation",
-	"description": "You're capable of creating something INCREDIBLY powerful.'",
+	"name": "Rarefaction Cell Creation",
+	"description": "You're capable of creating something INCREDIBLY powerful.",
     "type": "origins:modify_crafting",
     "recipe": "slugcat:rarefaction_cell",
     "result": {
