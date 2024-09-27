@@ -3,6 +3,7 @@
     "description": "Breathes underwater, and moves through the world with ease. These adaptations are essential, as you'll be pitted against a world of increasingly frequent floods, where time is of the essence.",
     "powers": [
         "slugcat:rivulet/speed",
+        "slugcat:rivulet/airspeed",
         "slugcat:rivulet/jump",
         "slugcat:rivulet/gills",
         "slugcat:rivulet/weather",
