@@ -13,7 +13,19 @@
                 "show_particles": false
             }
         },
-        "interval": 20
+        "interval": 20,
+        "condition": {
+            "type": "origins:exists"
+        },
+        "rising_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:jump_boost",
+                "duration": 25,
+                "amplifier": 4,
+                "show_particles": true
+            }
+        }
     },
     "fall": {
         "type": "origins:action_over_time",
@@ -25,7 +37,20 @@
                 "amplifier": 1
             }
         },
-        "interval": 20
+        "interval": 20,
+        
+        "condition": {
+            "type": "origins:exists"
+        },
+        "rising_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slow_falling",
+                "duration": 35,
+                "amplifier": 1,
+                "show_particles": true
+            }
+        }
     },
     "swim": {
         "type": "origins:action_over_time",
@@ -33,11 +58,22 @@
             "type": "origins:apply_effect",
             "effect": {
                 "effect": "minecraft:dolphins_grace",
-                "duration": 25,
+                "duration": 35,
                 "show_particles": false
             }
         },
-        "interval": 20
+        "interval": 20,
+        "condition": {
+            "type": "origins:exists"
+        },
+        "rising_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:dolphins_grace",
+                "duration": 35,
+                "show_particles": true
+            }
+        }
     },
     "swim2": {
         "type": "origins:action_over_time",

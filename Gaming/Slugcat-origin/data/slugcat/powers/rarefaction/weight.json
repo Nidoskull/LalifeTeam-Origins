@@ -1,0 +1,34 @@
+{
+    "name": "Heavy :(",
+    "type": "origins:multiple",
+    "slow": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "/clear @s netherite_pickaxe{CustomModelData:7925001} 0",
+                    "compare_to": 0,
+                    "comparison": ">"
+                },
+                {
+                    "type": "origins:resource",
+                    "compare_to": 0,
+                    "comparison": "<=",
+                    "resource": "slugcat:rarefaction/activate_resource"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "show_particles": false,
+                "amplifier": 1,
+                "duration": 25
+            }
+        },
+        "interval": 20
+    }
+}
