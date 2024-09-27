@@ -17,6 +17,88 @@
                     "compare_to": 0,
                     "comparison": "<=",
                     "resource": "slugcat:rarefaction/activate_resource"
+                },
+                {
+                    "type": "origins:origin",
+                    "layer": "slugcat:variant",
+                    "origin": "slugcat:variant/rivulet",
+                    "inverted": true
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "show_particles": false,
+                "amplifier": 0,
+                "duration": 25
+            }
+        },
+        "interval": 20
+    },
+    "rivulets": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "/clear @s netherite_pickaxe{CustomModelData:7925001} 0",
+                    "compare_to": 0,
+                    "comparison": ">"
+                },
+                {
+                    "type": "origins:resource",
+                    "compare_to": 0,
+                    "comparison": "<=",
+                    "resource": "slugcat:rarefaction/activate_resource"
+                },
+                {
+                    "type": "origins:origin",
+                    "layer": "slugcat:variant",
+                    "origin": "slugcat:variant/rivulet"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "show_particles": false,
+                "amplifier": 3,
+                "duration": 25
+            }
+        },
+        "interval": 20
+    },
+    "slugcats": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "/clear @s netherite_pickaxe{CustomModelData:7925001} 0",
+                    "compare_to": 0,
+                    "comparison": ">"
+                },
+                {
+                    "type": "origins:resource",
+                    "compare_to": 0,
+                    "comparison": "<=",
+                    "resource": "slugcat:rarefaction/activate_resource"
+                },
+                {
+                    "type": "origins:origin",
+                    "layer": "slugcat:variant",
+                    "origin": "slugcat:variant/rivulet",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:origin",
+                    "layer": "origins:origin",
+                    "origin": "slugcat:slugcat"
                 }
             ]
         },
