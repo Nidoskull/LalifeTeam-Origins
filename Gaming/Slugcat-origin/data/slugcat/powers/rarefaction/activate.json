@@ -18,14 +18,36 @@
             "bar_index": 1
         },
         "max_action": {
-            "type": "origins:grant_power",
-            "power": "slugcat:rarefaction/active",
-            "source": "slugcat:rarefaction"
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:grant_power",
+                    "power": "slugcat:rarefaction/active",
+                    "source": "slugcat:rarefaction"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.wither.ambient",
+                    "pitch": 1.5,
+                    "category": "players"
+                }   
+        ]
         },
         "min_action": {
-            "type": "origins:revoke_power",
-            "power": "slugcat:rarefaction/active",
-            "source": "slugcat:rarefaction"
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.wither.shoot",
+                    "pitch": 1.5,
+                    "category": "players"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "slugcat:rarefaction/active",
+                    "source": "slugcat:rarefaction"
+                }
+            ]
         }
     },
 
