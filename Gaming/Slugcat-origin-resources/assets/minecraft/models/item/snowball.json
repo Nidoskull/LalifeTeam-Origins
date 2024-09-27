@@ -5,6 +5,6 @@
   },
 	"overrides": 
 	[
-		{ "predicate": { "custom_model_data": 7925001}, "model": "slugcat/rarefraction_cell"}
+		{ "predicate": { "custom_model_data": 7925001}, "model": "slugcat/rarefaction_cell"}
   ]
 }

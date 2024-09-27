@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-      "layer0": "slugcat:item/rarefraction_cell"
+      "layer0": "minecraft:item/rarefaction_cell"
     }
 }
