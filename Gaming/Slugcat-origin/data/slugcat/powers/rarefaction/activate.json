@@ -73,7 +73,7 @@
         "type": "origins:action_over_time",
         "condition": {
             "type": "origins:command",
-            "command": "/clear @s netherite_pickaxe{CustomModelData:7925001} 0",
+            "command": "/clear @s heart_of_the_sea{CustomModelData:7925001} 0",
             "compare_to": 0,
             "comparison": "=="
         },

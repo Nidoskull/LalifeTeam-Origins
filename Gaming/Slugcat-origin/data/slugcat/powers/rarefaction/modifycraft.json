@@ -4,7 +4,7 @@
     "type": "origins:modify_crafting",
     "recipe": "slugcat:rarefaction_cell",
     "result": {
-        "item": "minecraft:snowball"
+        "item": "minecraft:heart_of_the_sea"
     },
     "item_action_after_crafting": {
         "type": "origins:merge_nbt",
