@@ -30,7 +30,19 @@
                     "sound": "minecraft:entity.wither.ambient",
                     "pitch": 1.5,
                     "category": "players"
-                }   
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:poof"
+                    },
+                    "spread": {
+                        "x": 2,
+                        "y": 0.3,
+                        "z": 2
+                    },
+                    "count": 24
+                }
         ]
         },
         "min_action": {
@@ -46,6 +58,18 @@
                     "type": "origins:revoke_power",
                     "power": "slugcat:rarefaction/active",
                     "source": "slugcat:rarefaction"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:smoke"
+                    },
+                    "spread": {
+                        "x": 2,
+                        "y": 0.3,
+                        "z": 2
+                    },
+                    "count": 32
                 }
             ]
         }
