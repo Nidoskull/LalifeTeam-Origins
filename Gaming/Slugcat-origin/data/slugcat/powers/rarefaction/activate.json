@@ -50,7 +50,6 @@
             ]
         }
     },
-
     "click": {
         "type": "origins:active_self",
         "condition": {
@@ -69,6 +68,22 @@
         },
         "cooldown": 500,
         "key": "key.use"
+    },
+    "remove": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:command",
+            "command": "/clear @s netherite_pickaxe{CustomModelData:7925001} 0",
+            "compare_to": 0,
+            "comparison": "=="
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": 0,
+            "operation": "set",
+            "resource": "slugcat:rarefaction/activate_resource"
+        },
+        "interval": 20
     },
     "decay": {
         "type": "origins:action_over_time",
