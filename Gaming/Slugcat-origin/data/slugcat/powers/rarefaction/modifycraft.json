@@ -1,0 +1,13 @@
+{
+	"name": "Rarefaction Cell Creation",
+	"description": "You're capable of creating something INCREDIBLY powerful.",
+    "type": "origins:modify_crafting",
+    "recipe": "slugcat:rarefaction_cell",
+    "result": {
+        "item": "minecraft:heart_of_the_sea"
+    },
+    "item_action_after_crafting": {
+        "type": "origins:merge_nbt",
+        "nbt": "{display:{Name:'[\"\",{\"text\":\"Rarefaction Cell\",\"italic\":false,\"bold\":true,\"color\":\"aqua\"}]',Lore:['[\"\",{\"text\":\"It pulses with power...\",\"italic\":false}]']},CustomModelData:7925001}"
+    }
+}

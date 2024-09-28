@@ -1,0 +1,25 @@
+{
+    "name": "Floral Regeneration",
+    "description": "When surrounded by flowers, you gain regeneration.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "regeneration",
+            "duration": 100,
+            "is_ambient": true
+        }
+    },
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:flowers"
+        },
+        "radius": 3,
+        "shape": "sphere",
+        "comparison": ">=",
+        "compare_to": 6
+    },
+    "interval": 20
+}

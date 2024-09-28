@@ -9,8 +9,8 @@
       "value": 1.1,
       "operation": "multiply_total",
       "condition": {
-        "type": "origins:power_active",
-        "power": "slugcat:raincheck"
+        "type": "origins:in_rain",
+        "inverted": true
       }
     }
   },
@@ -24,8 +24,8 @@
       "operation": "multiply_total",
       "value": 1.1,
       "condition": {
-        "type": "origins:power_active",
-        "power": "slugcat:raincheck"
+        "type": "origins:in_rain",
+        "inverted": true
       }
     }
   },

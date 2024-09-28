@@ -1,0 +1,244 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+	"res": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 30,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"max_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "slow_falling",
+                        "amplifier": 0,
+                        "duration": 200
+                    }
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.player.burp player @a ~ ~ ~"
+				},
+				{
+					"type": "origins:if_else_list",
+					"actions": [{
+							"condition": {
+								"type": "origins:equipped_item",
+								"equipment_slot": "mainhand",
+								"item_condition": {
+									"type": "origins:ingredient",
+									"ingredient": {
+										"item": "minecraft:lapis_lazuli"
+									}
+								}
+							},
+							"action": {
+								"type": "origins:equipped_item_action",
+								"equipment_slot": "mainhand",
+								"action": {
+									"type": "origins:consume",
+									"amount": 1
+								}
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:equipped_item",
+								"equipment_slot": "offhand",
+								"item_condition": {
+									"type": "origins:ingredient",
+									"ingredient": {
+										"item": "minecraft:lapis_lazuli"
+									}
+								}
+							},
+							"action": {
+								"type": "origins:equipped_item_action",
+								"equipment_slot": "offhand",
+								"action": {
+									"type": "origins:consume",
+									"amount": 1
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "*:*_res",
+					"change": 0,
+					"operation": "set"
+				}
+			]
+		}
+	},
+	"0": {
+		"condition": {
+			"type": "origins:or",
+			"conditions": [{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:and",
+						"conditions": [{
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:lapis_lazuli"
+							}
+						}]
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:and",
+						"conditions": [{
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:lapis_lazuli"
+							}
+						}]
+					}
+				}
+			]
+		},
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+				"type": "origins:change_resource",
+				"resource": "*:*_res",
+				"change": 0,
+				"operation": "set"
+			}]
+		},
+		"cooldown": 1,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.use"
+		}
+	},
+	"grow": {
+		"condition": {
+			"type": "origins:or",
+			"conditions": [{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:and",
+						"conditions": [{
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:lapis_lazuli"
+							}
+						}]
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:and",
+						"conditions": [{
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:lapis_lazuli"
+							}
+						}]
+					}
+				}
+			]
+		},
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+				"type": "origins:change_resource",
+				"resource": "*:*_res",
+				"change": 1
+			}]
+		},
+		"cooldown": 1,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.use",
+			"continuous": true
+		}
+	},
+	"particle": {
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:or",
+					"conditions": [{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:and",
+								"conditions": [{
+									"type": "origins:ingredient",
+									"ingredient": {
+										"item": "minecraft:lapis_lazuli"
+									}
+								}]
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:and",
+								"conditions": [{
+									"type": "origins:ingredient",
+									"ingredient": {
+										"item": "minecraft:lapis_lazuli"
+									}
+								}]
+							}
+						}
+					]
+				}
+			]
+		},
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:execute_command",
+					"command": "execute positioned ~ ~0.2 ~ rotated as @s run particle minecraft:item minecraft:lapis_lazuli ^ ^ ^0.1 0.1 0.1 0.1 0.055 4"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.generic.eat player @s ~ ~ ~"
+				},
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slowness",
+						"duration": 5,
+						"show_particles": false,
+						"amplifier": 1,
+						"show_icon": false
+					}
+				}
+			]
+		},
+		"cooldown": 4,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.use",
+			"continuous": true
+		}
+	}
+}

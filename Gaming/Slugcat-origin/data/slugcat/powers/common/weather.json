@@ -1,0 +1,25 @@
+{
+    "name": "Consistent Weather",
+    "description": "Rain will come more often for you.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:choice",
+        "actions": [
+            {
+                "element": {
+                    "type": "origins:execute_command",
+                    "command": "weather rain 4025"
+                },
+                "weight": 9
+            },
+            {
+                "element": {
+                    "type": "origins:execute_command",
+                    "command": "weather thunder 3025"
+                },
+                "weight": 1
+            }
+        ]
+    },
+    "interval": 10245
+}

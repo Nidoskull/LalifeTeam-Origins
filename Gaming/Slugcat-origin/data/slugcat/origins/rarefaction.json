@@ -1,0 +1,15 @@
+{
+    "name": "Recipe Modifier",
+    "description": "You're not supposed to be able to see this.",
+    "powers": [
+        "slugcat:rarefaction/modifycraft",
+        "slugcat:rarefaction/activate",
+        "slugcat:rarefaction/weight"
+    ],
+    "icon": {
+        "item": "stick",
+        "amount": 1
+    },
+    "order": 0,
+    "impact": 0
+}

@@ -1,0 +1,123 @@
+{
+    "name": "Rarefaction Cell Manipulation",
+    "description": "Heheh, floaty time.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 15,
+        "hud_render": {
+            "should_render": true,
+            "condition": {
+                "type": "origins:resource",
+                "comparison": ">",
+                "compare_to": 0,
+                "resource": "slugcat:rarefaction/activate_resource"
+            },
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 1
+        },
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:grant_power",
+                    "power": "slugcat:rarefaction/active",
+                    "source": "slugcat:rarefaction"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.wither.ambient",
+                    "pitch": 1.5,
+                    "category": "players"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:poof"
+                    },
+                    "spread": {
+                        "x": 2,
+                        "y": 0.3,
+                        "z": 2
+                    },
+                    "count": 24
+                }
+        ]
+        },
+        "min_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.wither.shoot",
+                    "pitch": 1.5,
+                    "category": "players"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "slugcat:rarefaction/active",
+                    "source": "slugcat:rarefaction"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:smoke"
+                    },
+                    "spread": {
+                        "x": 2,
+                        "y": 0.3,
+                        "z": 2
+                    },
+                    "count": 32
+                }
+            ]
+        }
+    },
+    "click": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{CustomModelData:7925001}"
+            }
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": 15,
+            "operation": "set",
+            "resource": "slugcat:rarefaction/activate_resource"
+        },
+        "cooldown": 500,
+        "key": "key.use"
+    },
+    "remove": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:command",
+            "command": "/clear @s heart_of_the_sea{CustomModelData:7925001} 0",
+            "compare_to": 0,
+            "comparison": "=="
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": 0,
+            "operation": "set",
+            "resource": "slugcat:rarefaction/activate_resource"
+        },
+        "interval": 20
+    },
+    "decay": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "slugcat:rarefaction/activate_resource",
+            "change": -1,
+            "operation": "add"
+        }
+    }
+
+}

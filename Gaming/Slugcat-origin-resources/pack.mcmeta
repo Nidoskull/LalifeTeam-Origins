@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Slugcat Resource Pack",
+        "id": "slugcat-resource",
+        "pack_format": 12,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "Adds in special looks for special items. ;)"
+    }
+}

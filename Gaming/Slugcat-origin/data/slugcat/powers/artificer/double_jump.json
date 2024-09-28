@@ -5,7 +5,7 @@
         "hud_render": {
             "should_render": false
         },
-        "cooldown": 10,
+        "cooldown": 5,
         "key": {
             "key": "key.jump"
         },
@@ -27,13 +27,13 @@
                     },
                     "if_action": {
                         "type": "origins:add_velocity",
-                        "y": 0.45,
+                        "y": 0.55,
                         "z": 0.35,
                         "space": "local_horizontal"
                     },
                     "else_action": {
                         "type": "origins:add_velocity",
-                        "y": 0.5,
+                        "y": 0.7,
                         "space": "local_horizontal"
                     }
                 },
@@ -52,8 +52,8 @@
             "conditions": [{
                     "type": "origins:resource",
                     "resource": "*:*_jumps",
-                    "comparison": ">=",
-                    "compare_to": 1
+                    "comparison": "!=",
+                    "compare_to": 0
                 },
                 {
                     "type": "origins:on_block",
@@ -69,6 +69,11 @@
                 },
                 {
                     "type": "origins:swimming",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water",
                     "inverted": true
                 },
                 {
@@ -88,8 +93,8 @@
     "jumps": {
         "type": "origins:resource",
         "min": 0,
-        "max": 1,
-        "start_value": 1,
+        "max": 5,
+        "start_value": 5,
         "hud_render": {
             "should_render": false
         }
@@ -100,15 +105,17 @@
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "*:*_jumps",
-            "change": 1
+            "change": 5,
+            "operation": "set"
         },
         "condition": {
             "type": "origins:and",
-            "conditions": [{
+            "conditions": [
+                {
                     "type": "origins:resource",
                     "resource": "*:*_jumps",
-                    "comparison": "<=",
-                    "compare_to": 1
+                    "comparison": "!=",
+                    "compare_to": 5
                 },
                 {
                     "type": "origins:on_block"
@@ -116,6 +123,21 @@
             ]
         }
     },
+    "overcharge": {
+        "type": "origins:damage_over_time",
+        "damage": 4,
+        "damage_source": {
+            "name": "inFire"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 2,
+            "comparison": "<=",
+            "resource": "*:*_jumps"
+        },
+        "interval": 20
+    },
     "name": "Double Jump",
-    "description": "Jump mid-air for an explosive launch!"
+    "description": "Jump mid-air for an explosive launch! But don't jump TOO much, or you might blow yourself up by accident..."
+
 }

@@ -17,7 +17,7 @@ Your physics are a bit slipperier, though. You fall faster, but you also jump sl
 
 + Climbing
 You can climb up a few blocks to help you leap the gap!
-On poles (fences, walls, iron bars, end rods, etc) this meter does not go down.
+On poles (fences, walls, iron bars, end rods, etc) this meter does not go down.* (*not implemented yet)
 
 + Pounce
 Stand still and sneak to charge up a BIG jump!
@@ -30,6 +30,7 @@ You are a bit over one block tall- and you only have six hearts!
 
 - Rain World
 Fear the rain. You take damage in rain (1 heart/2 points per second) and your vision is heavily obscured. Regular water does not affect you, though, just rain.
+Rain also comes more often.
 
 - Sheltered Sleep
 You can only sleep with a roof over your head, and only if you're over 60% full.
@@ -61,36 +62,33 @@ GOURMAND
 - Using tools exhausts you
 
 ARTIFICER
-+ Explode on command after a short charge-up, or use this explosion to launch yourself forward!
-+ Immune to explosions!
-+ Creepers don't care about you!
-+ Double jump with an explosion! (But be careful, or you might just explode yourself...)
-+ Unarmed strikes deal more damage!
++ Explode on command after a short charge-up, or use this explosion to launch yourself forward
++ Immune to explosions
++ Creepers don't care about you
++ Double jump with an explosion!
++ Unarmed strikes deal more damage
 + Spears explode after a short delay!
 + Craft TNT with ease!
-- Explode on death in water (this deletes your items)
-- Very little lung capacity, making you start drowning near instantly.
-- Carnivorous
-- Villagers will not trade with you, and Iron Constructs are hostile to you.
+- Explode on death (this deletes your items & destroys blocks)
+- Very little lung capacity, making you start drowning near instantly
+- Villagers will run away & not trade with you, and Iron Constructs are hostile to you
+
 
 
 
 not real yet:
-RIVULET*
-+ You are SO fast. So UNBELIEVABLY fast. I had to rewrite the physics for this. That's how fast you are.
-+ You can hold your breath FOREVER* (*practically, not actually)
-+ mmm tasty glowberi
-+ secret evolution ;3
-+ if you hold shift after jumping/falling for more than 2 blocks, you can slide which means you have ice physics. if you then jump again you pounce
-- You cannot outrun the rain forever.
-- You take increased damage from all sources- you're used to running, not fighting.
-- Your paws can't hold onto shields... or anything else in your off-hand, really. Anything held there has a chance to fumble out of your slippery paws.
-- You can't wear chestplates or leggings :( They inhibit your movement! 
+RIVULET
 
++ You're WAY faster!
++ You jump WAY higher (toggleable)!
++ You can breathe for much longer underwater!
++ mmm tasty glowberi*
++ Use a specifically-crafted end crystal to rarefaction cell bullshit. maybe require nether star + prismarine crystals + dragon's breath
+- You cannot outrun the rain forever.
 
 
 SPEARMASTER*
-trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown
+trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown?
 
 SAINT*
 + Grapple blocks with your tongue!
@@ -106,7 +104,8 @@ SAINT+*
 + ASCENSION: Focus your sights on a mob while flying, and ascend it! (They'll glow, start floating, and then die.)
 + No need to breathe while Focused.
 = All the other Saint traits still apply.
-- unlocked after obtaining 11/14 of the following advancements:
+
+- unlocked after obtaining 11/14 of the following advancements?:
 - - We Need To Go Deeper
 - - Eye Spy
 - - Those Were The Days
