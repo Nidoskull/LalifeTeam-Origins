@@ -9,7 +9,7 @@
                 "power": 4,
                 "destruction_type": "destroy",
                 "damage_self": true,
-                "create_fire": false
+                "create_fire": true
             },
             {
                 "type": "origins:play_sound",
@@ -19,8 +19,17 @@
     },
     "interval": 18,
     "condition": {
-        "type": "origins:health",
-        "comparison": "<=",
-        "compare_to": 0
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:health",
+                "comparison": "<=",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            }
+        ]
     }
 }

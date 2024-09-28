@@ -1,0 +1,11 @@
+{
+    "name": "Poison-proof",
+    "description": "Being a machine means you don't suffer from poison.",
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:poison",
+        "minecraft:hunger",
+        "minecraft:wither",
+        "minecraft:nausea"
+    ]
+}

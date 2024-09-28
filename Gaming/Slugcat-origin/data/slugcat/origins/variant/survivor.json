@@ -6,7 +6,8 @@
 		"slugcat:common/pounce",
         "slugcat:common/scale",
 		"slugcat:common/spear/standard",
-		"slugcat:common/spear/pins"
+		"slugcat:common/spear/pins",
+        "slugcat:common/shelter_food"
     ],
     "icon": {
         "item": "white_dye",

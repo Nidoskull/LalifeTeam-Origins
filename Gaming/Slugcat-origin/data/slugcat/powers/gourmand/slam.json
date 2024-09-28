@@ -14,12 +14,12 @@
                 },
                 {
                     "type": "origins:change_resource",
-                    "resource": "slugcat:gourmand_slam_on_ground",
+                    "resource": "slugcat:gourmand/slam_on_ground",
                     "change": -1
                 },
                 {
                   "type": "origins:change_resource" ,
-                  "resource": "slugcat:gourmand_slam_falling",
+                  "resource": "slugcat:gourmand/slam_falling",
                   "change": 1
                 }
             ]   
@@ -141,6 +141,9 @@
             "type":"origins:revoke_power",
             "power": "origins:fall_immunity",
             "source": "origins:feline"
+        },
+        "hud_render": {
+            "should_render": false
         }
     }
 }

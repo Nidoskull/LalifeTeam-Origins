@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/stick"
+    },
+      "overrides": 
+      [
+          { "predicate": { "custom_model_data": 7925002}, "model": "slugcat/needle"},
+          { "predicate": { "custom_model_data": 7925003}, "model": "slugcat/needle_old"}
+    ]
+  }

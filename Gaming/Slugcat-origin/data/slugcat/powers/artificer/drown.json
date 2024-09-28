@@ -1,0 +1,16 @@
+{
+    "hidden": true,
+    "description": "You are not immune to water you bastard",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 1,
+        "damage_type": "minecraft:drown"
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:air",
+        "compare_to": -20,
+        "comparison": "<="
+    }
+}

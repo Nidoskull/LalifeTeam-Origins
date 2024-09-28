@@ -2,9 +2,9 @@
     "pack": {
         "name": "slugcat",
         "id": "slugcat",
-        "pack_format": 9,
+        "pack_format": 12,
         "authors": [
-            "Nidoskull, ninty"
+            "Nidoskull"
         ],
         "description": ""
     }

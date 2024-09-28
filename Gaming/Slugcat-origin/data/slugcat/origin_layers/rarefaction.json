@@ -1,0 +1,11 @@
+{
+    "order": 1,
+    "origins": [
+        "slugcat:rarefaction"
+    ],
+    "name": "Recipe Modifier",
+    "auto_choose": true,
+    "hidden": true,
+    "missing_name": "None",
+    "missing_description": "You somehow didn't pick up the recipe-granting secret origin..."
+}

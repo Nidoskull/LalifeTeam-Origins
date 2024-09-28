@@ -10,13 +10,9 @@
                 "slugcat:variant/monk",
                 "slugcat:variant/hunter",
                 "slugcat:variant/gourmand",
-<<<<<<< Updated upstream
-                "slugcat:variant/artificer"
-=======
                 "slugcat:variant/artificer",
-                "slugcat:variant/rivulet",
-                "slugcat:variant/spearmaster"
->>>>>>> Stashed changes
+                "slugcat:variant/rivulet"
+
             ]
         }
     ],

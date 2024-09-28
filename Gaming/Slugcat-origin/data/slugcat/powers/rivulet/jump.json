@@ -1,0 +1,26 @@
+{
+    "name": "High Jump",
+    "description": "You can jump higher than most slugcats.",
+    "type": "origins:multiple",
+    "boost": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:jump_boost",
+                "duration": 25,
+                "amplifier": 1
+            }
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "slugcat:rivulet/jump_toggle"
+        }
+    },
+    "toggle":{
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": "key.origins.secondary_active"
+    }
+}

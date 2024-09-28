@@ -2,11 +2,12 @@
     "name": "The Hunter",
     "description": "Strong and quick, with a fierce metabolism requiring a steady diet of meat. But the stomach won't be your only concern, as the path of the hunter is one of extreme peril.",
     "powers": [
-        "slugcat:common/scale",
+    "slugcat:common/scale",
 		"slugcat:common/pounce",
 		"slugcat:common/spear/standard",
 		"slugcat:common/spear/stronger",
 		"slugcat:common/spear/pins",
+    "slugcat:common/shelter_food",
 		"origins:carnivore"
     ],
     "icon": {
