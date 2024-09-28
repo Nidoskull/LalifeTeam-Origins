@@ -83,7 +83,7 @@ RIVULET
 + You jump WAY higher (toggleable)!
 + You can breathe for much longer underwater!
 + mmm tasty glowberi*
-+ Use a specifically-crafted end crystal to rarefaction cell bullshit. maybe require nether star + prismarine crystals + dragon's breath
++ Craft a special item to enhance your movement even further!
 - You cannot outrun the rain forever.
 
 
