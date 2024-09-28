@@ -11,7 +11,8 @@
                 "slugcat:variant/hunter",
                 "slugcat:variant/gourmand",
                 "slugcat:variant/artificer",
-                "slugcat:variant/rivulet"
+                "slugcat:variant/rivulet",
+                "slugcat:variant/spearmaster"
             ]
         }
     ],
