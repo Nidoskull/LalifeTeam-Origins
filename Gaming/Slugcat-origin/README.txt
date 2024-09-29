@@ -76,7 +76,6 @@ ARTIFICER
 
 
 
-not real yet:
 RIVULET
 
 + You're WAY faster!
@@ -87,9 +86,14 @@ RIVULET
 - You cannot outrun the rain forever.
 
 
-SPEARMASTER*
-trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown?
+SPEARMASTER
++ Eat by stabbing entities!
++ You're thinner than the other scugs (and slightly stealthier!)
++ Generate spears at will!
+- You have no mouth and you must eat
+- Dropping a needle or otherwise losing it will remove its ability to feed you
 
+not real yet:
 SAINT*
 + Grapple blocks with your tongue!
 - Herbivore
