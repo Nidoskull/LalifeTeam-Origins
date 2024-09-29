@@ -1,8 +1,36 @@
 {
     "name": "Mouthless",
     "description": "You have no mouth, but you must eat... You cannot eat food normally or drink potions.",
-    "type": "origins:prevent_item_use",
-    "item_condition": {
-        "type": "origins:food"
+    "type": "origins:multiple",
+    "food": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:food"
+        }
+    },
+    "potion": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:potion"
+            }
+        }
+    },
+    "milk": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:milk_bucket"
+            }
+        }
+    },
+    "cake": {
+        "type": "origins:prevent_block_use",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "slugcat:cakes"
+    }
     }
 }
