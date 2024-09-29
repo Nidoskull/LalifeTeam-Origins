@@ -15,7 +15,7 @@
 			"key":"key.origins.primary_active",
 			"continuous": false
 		},
-		"tag": "{pickup:0b,needle:1b}",
+		"tag": "{pickup:2b}",
 		"condition":{
 			"type":"origins:equipped_item",
 			"equipment_slot": "mainhand",
@@ -52,7 +52,7 @@
     		"projectile": "minecraft:trident",
 			"projectile_condition": {
 				"type": "origins:nbt",
-				"nbt": "{needle:1b}"
+				"nbt": "{pickup:2b}"
 			}
 		},
 		"cooldown": 5
