@@ -5,8 +5,8 @@
         "slugcat:spearmaster/needlegen",
         "slugcat:common/spear/spearmaster",
         "slugcat:common/spear/spearsmasters",
-        "slugcat:common/pounce",
 		"slugcat:common/spear/pins",
+        "slugcat:common/pounce",
         "slugcat:common/shelter_food",
         "slugcat:spearmaster/scale"
       ],
