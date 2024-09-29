@@ -50,8 +50,6 @@ MONK (Easy Mode)
 + Takes less damage, no food requirement to sleep
 - Weaker spear, Vegetarian
 
-DOWNPOUR CATS :D
-
 GOURMAND
 + Craft anywhere!
 + Spit up items at the cost of food
@@ -81,7 +79,6 @@ RIVULET
 + You're WAY faster!
 + You jump WAY higher (toggleable)!
 + You can breathe for much longer underwater!
-+ mmm tasty glowberi*
 + Craft a special item to enhance your movement even further!
 - You cannot outrun the rain forever.
 
