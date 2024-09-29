@@ -8,14 +8,14 @@
             {
                 "element": {
                     "type": "origins:execute_command",
-                    "command": "weather rain 4025"
+                    "command": "weather rain 1560"
                 },
                 "weight": 9
             },
             {
                 "element": {
                     "type": "origins:execute_command",
-                    "command": "weather thunder 3025"
+                    "command": "weather thunder 1240"
                 },
                 "weight": 1
             }
