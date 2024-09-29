@@ -45,7 +45,7 @@
 		"entity_action": {
 			"type": "origins:feed",
 			"food": 5,
-			"saturation": 2
+			"saturation": 0.2
 		},
 		"damage_condition": {
     		"type": "origins:projectile",
