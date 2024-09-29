@@ -91,7 +91,7 @@ SPEARMASTER
 + You're thinner than the other scugs (and slightly stealthier!)
 + Generate spears at will!
 - You have no mouth and you must eat
-- Dropping a needle or otherwise losing it will remove its ability to feed you
+- Dropping a needle or otherwise losing it will remove its ability to feed you*
 
 not real yet:
 SAINT*
