@@ -7,7 +7,13 @@
         "hud_render": {
             "should_render": true,
             "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-            "bar_index": 1
+            "bar_index": 1,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_meter",
+                "comparison": ">",
+                "compare_to": 0
+            }
         },
         "min": 0,
         "max": 60,
@@ -38,8 +44,19 @@
                     "change": 1
                 },
                 {
-                    "type": "origins:execute_command",
-                    "command": "particle minecraft:crit ~ 1 ~ 0.5 0.5 0.5 0.0 4 normal @a"
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:mycelium",
+                    "count": 4,
+                    "spread": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_keypressed",
+                    "change": 2
                 }
             ]
         },
@@ -49,20 +66,23 @@
         },
         "key": {
             "key": "key.origins.secondary_active",
-            "continuous": true,
-            "inverted": true
+            "continuous": true
         },
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                "type": "origins:moving",
-                "inverted": true
-                }
-            ]
+            "type": "origins:moving",
+            "inverted": true
         }
     },
-    "down":{
+    "keypressed":{
+        "type": "origins:resource",
+        "max": 2,
+        "min": 0,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "meterdown":{
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
@@ -71,9 +91,20 @@
         },
         "interval": 2,
         "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_gen",
-            "inverted": true
+            "type": "origins:resource",
+            "resource": "*:*_keypressed",
+            "compare_to": 0,
+            "comparison": "=="
         }
+    },
+
+    "keypresseddown":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource":"*:*_keypressed",
+            "change": -1
+        },
+        "interval": 2
     }
 }
