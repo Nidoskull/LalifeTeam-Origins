@@ -1,0 +1,8 @@
+{
+    "name": "Mouthless",
+    "description": "You have no mouth, but you must eat... You cannot eat food normally or drink potions.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:food"
+    }
+}
