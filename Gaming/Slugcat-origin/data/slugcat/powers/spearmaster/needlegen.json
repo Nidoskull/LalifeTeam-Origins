@@ -46,17 +46,12 @@
                 {
                     "type": "origins:spawn_particles",
                     "particle": "minecraft:mycelium",
-                    "count": 4,
+                    "count": 1,
                     "spread": {
                         "x": 1,
                         "y": 1,
                         "z": 1
                     }
-                },
-                {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_keypressed",
-                    "change": 2
                 }
             ]
         },
@@ -69,9 +64,25 @@
             "continuous": true
         },
         "condition": {
-            "type": "origins:moving",
+            "type": "origins:resource",
+            "compare_to": 1,
+            "comparison": "==",
+            "resource": "moving:state_horizontally",
             "inverted": true
         }
+    },
+    "presskey": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": true
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_keypressed",
+            "change": 2
+        },
+        "cooldown": 1
     },
     "keypressed":{
         "type": "origins:resource",
@@ -97,7 +108,6 @@
             "comparison": "=="
         }
     },
-
     "keypresseddown":{
         "type": "origins:action_over_time",
         "entity_action": {
