@@ -7,7 +7,6 @@
         "slugcat:common/nimble",
         "slugcat:common/hungry",
         "slugcat:common/rain",
-        "slugcat:common/weather",
         "slugcat:common/shelter",
 		"slugcat:choose_var"
     ],

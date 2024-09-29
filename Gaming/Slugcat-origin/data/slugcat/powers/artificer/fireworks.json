@@ -1,0 +1,27 @@
+{
+    "name": "kaboom",
+    "description": "You can summon a magical explosion on your cursor.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 16,
+        "block": true,
+        "entity": true,
+        "shape_type": "visual",
+        "fluid_handling": "any",
+        "before_action": {
+            "type": "origins:swing_hand",
+            "hand": "MAIN_HAND"
+        },
+        "command_at_hit": "summon firework_rocket ~ ~ ~ {Silent:1b,LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:4,Colors:[I;65280,0],FadeColors:[I;0]}]}}}}"
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 5
+    }
+}

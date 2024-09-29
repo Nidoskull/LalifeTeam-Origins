@@ -4,7 +4,8 @@
     "powers": [
         "slugcat:rarefaction/modifycraft",
         "slugcat:rarefaction/activate",
-        "slugcat:rarefaction/weight"
+        "slugcat:rarefaction/weight",
+        "moving:state"
     ],
     "icon": {
         "item": "stick",

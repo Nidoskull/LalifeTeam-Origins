@@ -6,7 +6,7 @@
         "slugcat:rivulet/airspeed",
         "slugcat:rivulet/jump",
         "slugcat:rivulet/gills",
-        "slugcat:rivulet/weather",
+        "slugcat:common/weather",
 		"slugcat:common/pounce",
         "slugcat:common/scale",
 		"slugcat:common/spear/standard",

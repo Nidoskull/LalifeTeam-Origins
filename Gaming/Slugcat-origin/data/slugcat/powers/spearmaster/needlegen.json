@@ -1,0 +1,120 @@
+{
+    "name": "Needle Generation",
+    "description": "You can generate the needles you feed with on your own.",
+    "type": "origins:multiple",
+    "meter": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 1,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_meter",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        },
+        "min": 0,
+        "max": 60,
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_meter",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "give @s stick{CustomModelData:7925002}"
+                }
+            ]
+        }
+    },
+    "gen": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_meter",
+                    "change": 1
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:mycelium",
+                    "count": 1,
+                    "spread": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 1,
+            "comparison": "==",
+            "resource": "moving:state_horizontally",
+            "inverted": true
+        }
+    },
+    "presskey": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": true
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_keypressed",
+            "change": 2
+        },
+        "cooldown": 1
+    },
+    "keypressed":{
+        "type": "origins:resource",
+        "max": 2,
+        "min": 0,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "meterdown":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource":"*:*_meter",
+            "change": -1
+        },
+        "interval": 2,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_keypressed",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    },
+    "keypresseddown":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource":"*:*_keypressed",
+            "change": -1
+        },
+        "interval": 2
+    }
+}

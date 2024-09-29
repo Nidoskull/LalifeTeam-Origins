@@ -1,0 +1,21 @@
+{
+    "name": "The Spearmaster",
+    "description": "An abnormality who feeds using needles pulled from its body. A traveller from a far away land; A feeling in your depths sets you out once again, messenger...",
+    "powers": [
+        "slugcat:spearmaster/noeat",
+        "slugcat:spearmaster/needlegen",
+        "slugcat:common/spear/spearmaster",
+        "slugcat:spearmaster/needleold",
+        "slugcat:common/spear/spearsmasters",
+		"slugcat:common/spear/pins",
+        "slugcat:common/pounce",
+        "slugcat:common/shelter_food",
+        "slugcat:spearmaster/scale"
+      ],
+    "icon": {
+        "item": "purple_dye",
+        "amount": 1
+    },
+    "order": 0,
+    "impact": 1
+}

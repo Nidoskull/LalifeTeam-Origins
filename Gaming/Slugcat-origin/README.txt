@@ -50,8 +50,6 @@ MONK (Easy Mode)
 + Takes less damage, no food requirement to sleep
 - Weaker spear, Vegetarian
 
-DOWNPOUR CATS :D
-
 GOURMAND
 + Craft anywhere!
 + Spit up items at the cost of food
@@ -75,17 +73,24 @@ ARTIFICER
 
 
 
-not real yet:
-RIVULET*
+
+RIVULET
+
 + You're WAY faster!
 + You jump WAY higher (toggleable)!
 + You can breathe for much longer underwater!
-+ Use a specifically-crafted end crystal to rarefaction cell bullshit. maybe require nether star + prismarine crystals + dragon's breath
-- Rain comes far more often- you can change this, though, by obtaining the above item.
++ Craft a special item to enhance your movement even further!
+- You cannot outrun the rain forever.
 
-SPEARMASTER*
-trident feeds you when it hits stuff, can't eat normally, model is thinner, low spear cooldown?
 
+SPEARMASTER
++ Eat by stabbing entities!
++ You're thinner than the other scugs (and slightly stealthier!)
++ Generate spears at will!
+- You have no mouth and you must eat
+- Needles will decay over time, meaning you cannot use them to feed
+
+not real yet:
 SAINT*
 + Grapple blocks with your tongue!
 - Herbivore
@@ -100,7 +105,22 @@ SAINT+*
 + ASCENSION: Focus your sights on a mob while flying, and ascend it! (They'll glow, start floating, and then die.)
 + No need to breathe while Focused.
 = All the other Saint traits still apply.
-- unlocked after ???
+
+- unlocked after obtaining 11/14 of the following advancements?:
+- - We Need To Go Deeper
+- - Eye Spy
+- - Those Were The Days
+- - Into Fire
+- - The End
+- - Remote Getaway
+- - Voluntary Exile
+- - Respecting the Remnants
+- - Sneak 100
+- - Sweet Dreams
+- - Postmortal
+- - Careful Restoration
+- - Glow And Behold!
+- - Serious Dedication
 
 ???*
 + dating sim is canon

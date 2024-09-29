@@ -8,14 +8,35 @@
             {
                 "element": {
                     "type": "origins:execute_command",
-                    "command": "weather rain 4025"
+                    "command": "weather rain 2820"
                 },
-                "weight": 9
+                "weight": 1
             },
             {
                 "element": {
                     "type": "origins:execute_command",
-                    "command": "weather thunder 3025"
+                    "command": "weather rain 600"
+                },
+                "weight": 1
+            },
+            {
+                "element": {
+                    "type": "origins:execute_command",
+                    "command": "weather rain 1820"
+                },
+                "weight": 1
+            },
+            {
+                "element": {
+                    "type": "origins:execute_command",
+                    "command": "weather rain 2020"
+                },
+                "weight": 1
+            },
+            {
+                "element": {
+                    "type": "origins:execute_command",
+                    "command": "weather thunder 1240"
                 },
                 "weight": 1
             }
