@@ -1,6 +1,7 @@
 {
     "origins": [
-        "slugcat:slugcat"
+        "slugcat:slugcat",
+        "slugcat:rot"
     ],
     "enabled": true
 }

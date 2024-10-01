@@ -1,6 +1,6 @@
 {
     "name": "Rotting",
-    "description": "Something within you has awoken. Keep it fed with raw meat, and you should be fine... ish. Check on its progress with your secondary ability key. If it overtakes you fully, though, there is no way back...",
+    "description": "Something within you has awoken. Keep it fed by killing entities, and you should be fine... ish. Check on its progress with your secondary ability key. If it overtakes you fully, though, there is no way back...",
     "type": "origins:multiple",
     "resource": {
         "type": "origins:resource",

@@ -12,7 +12,7 @@
     },
     "falling": {
       "type": "origins:modify_falling",
-      "velocity": -1,
+      "velocity": 0,
       "take_fall_damage": false
     },
     "slow_water": {

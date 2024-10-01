@@ -8,6 +8,7 @@ Gourmand's Spitup edited from TheFluffycart55#0918
 Artificer's Explosively Charged edited from Sunny!#1024/[A Golden Bear]#5508
 Artificer's Double Jump edited from zorraz
 Artificer's Scavenger Hate partially from monospectre
+Spearmaster's moving condition thanks to eggohito
 
 Features marked with * are not or only partially implemented.
 
@@ -42,13 +43,18 @@ You're hungrier than most players.
 
 
 Variants:
-HUNTER
-+ Stronger spear
-- Carnivore (but meat is more filling)
 
 MONK (Easy Mode)
-+ Takes less damage, no food requirement to sleep
-- Weaker spear, Vegetarian
++ Takes less damage
++ Stealthier
++ No food requirement to sleep
+- Weaker spear
+- Vegetarian
+
+HUNTER
++ Stronger spear
+- Carnivore
+- Something grows within you.
 
 GOURMAND
 + Craft anywhere!
@@ -72,8 +78,6 @@ ARTIFICER
 - Villagers will run away & not trade with you, and Iron Constructs are hostile to you
 
 
-
-
 RIVULET
 
 + You're WAY faster!
@@ -91,6 +95,16 @@ SPEARMASTER
 - Needles will decay over time, meaning you cannot use them to feed
 
 not real yet:
+THE ROT:
+Good luck. :)
+- Blind
+- Hungry
+- Cannot wear armor or elytra
+- Cannot use weapons
+- Very short meelee attack reach
++ A LOT of health & inbuilt defense
++ Incredibly strong meelee attack
+
 SAINT*
 + Grapple blocks with your tongue!
 - Herbivore
