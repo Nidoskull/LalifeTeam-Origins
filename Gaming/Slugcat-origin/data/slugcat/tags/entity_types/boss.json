@@ -1,0 +1,23 @@
+{
+"values":[
+        "minecraft:elder_guardian",
+        "minecraft:ender_dragon",
+        "minecraft:wither",
+		{
+            "id": "bewitchment:baphomet",
+            "required": false
+        },
+		{
+            "id": "bewitchment:lilith",
+            "required": false
+        },
+		{
+            "id": "bewitchment:herne",
+            "required": false
+        },
+		{
+            "id": "bewitchment:leonard",
+            "required": false
+        }
+	]
+}
