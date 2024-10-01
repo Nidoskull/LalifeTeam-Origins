@@ -1,0 +1,30 @@
+{
+    "type": "origins:multiple",
+    "name": "Fire Immunity",
+    "description": "Not only are you immune to fire, you can move through lava with ease.",
+        "speed": {
+            "type": "origins:modify_swim_speed",
+            "hidden": true,
+            "modifier": {
+              "name": "Additional swim speed",
+              "value": 0.5,
+              "operation": "multiply_base"
+            }
+          },
+        "vision": {
+            "type": "origins:lava_vision",
+            "hidden": true,
+            "s": 0,
+            "v": 15
+        },
+        "immune": {
+            "type": "origins:invulnerability",
+            "damage_condition": {
+              "type": "origins:fire"
+            }
+          },
+          "invul":{
+            "type": "origins:fire_immunity",
+            "hidden": true
+          }
+}

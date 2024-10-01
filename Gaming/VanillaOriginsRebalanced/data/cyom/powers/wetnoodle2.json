@@ -1,0 +1,81 @@
+{
+    "type": "origins:multiple",
+    "name": "Extra Regen",
+    "description": "You can get back a BUNCH of health in a pinch! But be careful, this has a cooldown!",
+    "var": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 4
+        },
+        "start_value": 2
+    },
+    "heal": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:regeneration",
+                    "amplifier": 2,
+                    "duration": 200,
+                    "is_ambient": false,
+                    "show_icon": true,
+                    "show_particles": true
+                },
+                {
+                    "effect": "minecraft:absorption",
+                    "duration": 2400,
+                    "is_ambient": false,
+                    "show_icon": true,
+                    "show_particles": true
+                }
+        ]
+        },
+        "condition": {
+            "type":  "origins:resource",
+            "compare_to": 0,
+            "comparison": ">",
+            "resource": "*:*_var"
+        },
+        "cooldown": 40
+    },
+    "increment":{
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:delay",
+            "action": {
+                "type": "origins:modify_resource",
+                "resource": "*:*_var",
+                "modifier": {
+                    "operation": "addition",
+                    "value": -1
+                }
+            },
+            "ticks": 4
+        },
+        "cooldown": 40
+    },
+    "recharge":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:modify_resource",
+            "modifier": {
+                "operation": "set_total",
+                "value": 1
+            },
+            "resource": "*:*_var"
+        },
+        "interval": 6000
+    },
+    "sound":{
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.axolotl.attack"
+        }
+    }
+}

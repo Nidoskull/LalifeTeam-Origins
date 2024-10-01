@@ -1,0 +1,32 @@
+{
+	"type": "origins:multiple",
+	"mad": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "execute as @p[tag=skeleton] at @s run data modify entity @e[type=minecraft:wolf,limit=1,sort=random,distance=..64] AngryAt set from entity @s UUID"
+		},
+		"interval": 100
+	},
+	"tag": {
+		"type": "origins:action_on_callback",
+		"entity_action_chosen": {
+			"type": "origins:execute_command",
+			"command": "tag @s add skeleton",
+			"permission_level": 4
+		},
+		"entity_action_removed": {
+			"type": "origins:execute_command",
+			"command": "tag @s remove skeleton",
+			"permission_level": 4
+		},
+		"entity_action_respawned": {
+			"type": "origins:execute_command",
+			"command": "tag @s add skeleton",
+			"permission_level": 4
+		}
+	},
+	"name": "Thrown to the Wolves",
+	"description": "Dogs do NOT like you."
+    
+}

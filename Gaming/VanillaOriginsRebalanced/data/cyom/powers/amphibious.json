@@ -1,0 +1,70 @@
+{
+	"name": "Extended Breathing",
+	"description": "You can hold your breath four times as long as anybody else.",
+	"type": "origins:multiple",
+	
+	"base": {
+		"condition": {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:respiration",
+			"calculation": "sum",
+			"comparison": "<",
+			"compare_to": 1
+		},
+
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 2
+		},
+		"interval": 3
+	},
+	
+	"resone": {
+		"condition": {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:respiration",
+			"calculation": "sum",
+			"comparison": "==",
+			"compare_to": 1
+		},
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 2
+		},
+		"interval": 5
+	},
+	
+	"restwo": {
+		"condition": {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:respiration",
+			"calculation": "sum",
+			"comparison": "==",
+			"compare_to": 2
+		},
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 2
+		},
+		"interval": 7
+	},
+	
+	"resthree": {
+		"condition": {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:respiration",
+			"calculation": "sum",
+			"comparison": "==",
+			"compare_to": 3
+		},
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 2
+		},
+		"interval": 9
+	}
+}

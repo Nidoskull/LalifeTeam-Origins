@@ -1,0 +1,19 @@
+{
+    "loading_priority": 3,
+	"powers": [
+		"origins:elytra",
+		"cyom:launch_into_air",
+		"origins:aerial_combatant",
+		"cyom:titsout",
+		"cyom:claustrophobia",
+		"origins:more_kinetic_damage",
+        "origins:fresh_air",
+		"cyom:elytriannoise",
+		"cyom:elytraup"
+	],
+	"icon": {
+		"item": "minecraft:elytra"
+	},
+	"order": 3,
+	"impact": 2
+}

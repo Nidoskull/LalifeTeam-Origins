@@ -1,0 +1,27 @@
+{
+    "name": "Phantom",
+    "description": "You've consumed a dragon's soul, making it a part of yourself.",
+	"loading_priority": 3,
+    "unchoosable": true,
+	"powers": [
+        "cyom:evo",
+        "cyom:phantomfriends",
+		"origins:phantomize",
+        "origins:translucent",
+        "cyom:phasing2",
+        "origins:invisibility",
+        "origins:burn_in_daylight",
+        "origins:hunger_over_time",
+        "origins:fragile",
+        "origins:phantomize_overlay",
+        "cyom:phantomscreech",
+        "cyom:soulparticle"
+    ],
+	"icon": {
+		"item": "minecraft:phantom_membrane",
+        "tag": "{Enchantments:[{}]}"
+        
+	},
+	"order": 4,
+	"impact": 3
+}

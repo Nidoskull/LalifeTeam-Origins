@@ -1,0 +1,18 @@
+{
+	"loading_priority": 3,
+	"powers": [
+		"origins:climbing",
+		"origins:master_of_webs",
+        "cyom:arachnophilia",
+		"origins:carnivore",
+		"cyom:nocakes",
+		"origins:fragile",
+		"origins:arthropod",
+		"cyom:spidernoise"
+	],
+	"icon": {
+		"item": "minecraft:cobweb"
+	},
+	"order": 1,
+	"impact": 1
+}

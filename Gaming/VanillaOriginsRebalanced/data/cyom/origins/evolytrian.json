@@ -1,0 +1,24 @@
+{
+    "name": "Elytrian",
+    "description": "You've absorbed the power of an elytra, boosting your powers further.",
+    "loading_priority": 3,
+	"powers": [
+		"cyom:evo",
+		"origins:elytra",
+		"cyom:nolytra",
+		"origins:launch_into_air",
+		"cyom:fastfly",
+		"origins:aerial_combatant",
+		"cyom:claustrophobia",
+		"origins:more_kinetic_damage",
+        "origins:fresh_air",
+		"cyom:elytriannoise"
+	],
+	"icon": {
+		"item": "minecraft:elytra",
+        "tag": "{Enchantments:[{}]}"
+	},
+	"order": 3,
+	"impact": 2,
+    "unchoosable": true
+}
