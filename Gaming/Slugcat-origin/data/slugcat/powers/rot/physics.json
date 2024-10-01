@@ -1,25 +1,18 @@
 {
     "type": "origins:multiple",
-    "name": "Movement",
+    "name": "No Movement",
     "description": "Your physics are drastically different.",
-    "quick": {
+    "stuck": {
       "type": "origins:attribute",
       "modifier": {
         "attribute": "minecraft:generic.movement_speed",
-        "value": -1,
+        "value": 0,
         "operation": "multiply_total"
       }
     },
-    "falling": {
+    "float": {
       "type": "origins:modify_falling",
-      "velocity": 0,
+      "velocity": 0.1,
       "take_fall_damage": false
-    },
-    "slow_water": {
-      "type": "origins:modify_swim_speed",
-      "modifier": {
-        "operation": "multiply_total",
-        "value": -0.25
-      }
     }
   }

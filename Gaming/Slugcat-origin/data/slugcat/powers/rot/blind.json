@@ -1,0 +1,171 @@
+{
+    "type": "origins:multiple",
+    "name": "Exquisite Hearing",
+    "description": "Though blind, you can still hear where entities walk.",
+    "blind":{
+        "type": "origins:stacking_status_effect",
+        "effect": {
+            "effect": "minecraft:blindness",
+            "show_icon": false,
+            "show_particles": false,
+            "duration": 200
+        },
+        "min_stacks": 1,
+        "max_stacks": 2,
+        "duration_per_stack": 200
+    },
+    "ANDglow":{
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:can_see"
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "moving:state_horizontally",
+                        "compare_to": 1,
+                        "comparison": "=="
+                    }
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:sneaking",
+                        "inverted": true
+                    }
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+    },
+    "ORglow":{
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:sprinting"
+                    }
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:swimming"
+                    }
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {"type": "apoli:fall_flying"}
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+    },
+    "cansee": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": true,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_cansee",
+                "compare_to": 0,
+                "comparison": ">"
+            }
+        },
+        "min": 0,
+        "max": 60,
+        "max_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.warden.tendril_clicks"
+        }
+    },
+    "vision":{
+        "type": "origins:active_self",
+        "key": "key.origins.secondary_active",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cansee",
+            "change": 60,
+            "operation": "set"
+        },
+        "cooldown": 100
+    },
+    "decay":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cansee",
+            "change": -1,
+            "operation": "add"
+        },
+        "interval": 1
+    },
+    "sniff":{
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:can_see"
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "slugcat:rot/blind_cansee",
+                        "compare_to": 0,
+                        "comparison": ">"
+                    }
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+    },
+    "sniff_sneak":{
+        "type": "origins:entity_glow",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:can_see"
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {"type": "origins:sneaking"}
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "slugcat:rot/blind_cansee",
+                        "compare_to": 0,
+                        "comparison": ">"
+                    }
+                }
+            ]
+        },
+        "use_teams": false,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+    },
+    "shader":{
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/desaturate.json"
+    }
+}

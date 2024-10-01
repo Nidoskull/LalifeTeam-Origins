@@ -3,7 +3,7 @@
     "description": "Oh, that's not good.",
     "powers": [
         "slugcat:common/rain",
-        "slugcat:rot/blindness",
+        "slugcat:rot/blind",
         "slugcat:rot/physics"
     ],
     "icon": {
@@ -11,5 +11,6 @@
         "amount": 1
     },
     "order": 0,
-    "impact": 3
+    "impact": 3,
+    "unchoosable": true
 }
