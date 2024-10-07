@@ -1,0 +1,27 @@
+{
+    "name": "Axolotl",
+    "description": "The cutest predator!",
+    "powers": [
+        "origins:carnivore",
+        "cyom:nocakes",
+        "cyom:firebad",
+        "cyom:wetnoodle2",
+        "cyom:dryslow",
+        "cyom:dryslow2",
+        "cyom:amphibious",
+        "origins:water_vision",
+        "origins:aqua_affinity",
+        "origins:swim_speed",
+        "origins:like_water",
+        "origins:aquatic",
+        "origins:conduit_power_on_land",
+        "cyom:squeak"
+
+    ],
+    "icon": {
+        "item": "minecraft:axolotl_bucket",
+        "amount": 1
+    },
+    "order": 3,
+    "impact": 2
+}

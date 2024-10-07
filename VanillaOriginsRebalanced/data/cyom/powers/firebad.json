@@ -1,0 +1,26 @@
+{
+    "type": "origins:multiple",
+    "name": "Fire Bad",
+    "description": "You take more damage from fire and while you're in the hot, hot Nether.",
+    "arson": {
+        "type":"origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:fire"
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": 4
+        }
+    },
+    "nethermoment": {
+        "type": "origins:modify_damage_taken",
+        "condition": {
+            "type":"origins:dimension",
+            "dimension": "minecraft:the_nether"
+        },
+        "modifier":{
+            "operation": "addition",
+            "value": 4
+        }
+    }
+}

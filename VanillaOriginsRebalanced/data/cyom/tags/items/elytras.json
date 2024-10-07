@@ -1,0 +1,16 @@
+{
+    "values": [
+        {
+            "id": "minecraft:elytra",
+            "required": false
+        },
+        {
+            "id": "betterend:elytra_armored",
+            "required": false
+        },
+        {
+            "id": "betterend:elytra_crystalite",
+            "required": false
+        }
+    ]
+}

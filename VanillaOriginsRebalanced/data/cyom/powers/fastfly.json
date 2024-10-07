@@ -1,0 +1,15 @@
+{
+    "type": "origins:modify_velocity",
+    "axes": [
+        "x",
+        "y",
+        "z"
+    ],
+    "modifier": {
+        "value": 0.5,
+        "operation": "multiply_base"
+    },
+    "condition": {
+        "type": "origins:fall_flying"
+    }
+}

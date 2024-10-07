@@ -1,0 +1,25 @@
+{
+    "name": "Need for Mobility",
+    "description": "You cannot wear armor that would protect better than iron- it's just too unwieldy to use.",
+        "type": "origins:restrict_armor",
+        "head": {
+          "type": "origins:armor_value",
+          "comparison": ">",
+          "compare_to": 2
+        },
+        "chest": {
+            "type": "origins:armor_value",
+            "comparison": ">",
+            "compare_to": 6
+        },
+        "legs": {
+          "type": "origins:armor_value",
+          "comparison": ">",
+          "compare_to": 5
+        },
+        "feet": {
+          "type": "origins:armor_value",
+          "comparison": ">",
+          "compare_to": 2
+        }
+}

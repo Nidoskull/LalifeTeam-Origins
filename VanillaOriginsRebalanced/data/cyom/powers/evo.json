@@ -1,0 +1,11 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "rising_action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:ui.toast.challenge_complete",
+        "volume": 4
+    },
+    "interval": 20
+
+}

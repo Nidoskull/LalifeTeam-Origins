@@ -1,0 +1,12 @@
+{
+	"loading_priority": 3,
+    "unchoosable": true,
+	"powers": [
+		"origins:fragile"
+    ],
+	"icon": {
+		"item": "minecraft:shulker_shell"
+	},
+	"order": 4,
+	"impact": 0
+}

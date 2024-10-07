@@ -1,0 +1,11 @@
+{
+    "name": "Read above power, dummy",
+    "description": "You have no need to equip an elytra that doesn't give bonuses, so why try to? (This is MOSTLY just to prevent elytras getting lost...)",
+    "type": "origins:restrict_armor",
+    "chest": {
+        "type": "origins:ingredient",
+        "ingredient":{
+            "item":"minecraft:elytra"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+	"loading_priority": 3,
+	"powers": [
+		"origins:slow_falling",
+		"origins:like_air",
+		"origins:tailwind",
+		"origins:lay_eggs",
+		"cyom:side_step",
+		"cyom:double_jump",
+		"origins:fragile",
+		"cyom:birdnoise"
+	],
+	"icon": "minecraft:feather",
+	"order": 0,
+	"impact": 2
+}

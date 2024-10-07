@@ -1,0 +1,24 @@
+{
+    "hidden": false,
+    "name": "Friends, not foes",
+    "description": "Phantoms will not attack you!",
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "team add phantom"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join phantom @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join phantom @e[type=minecraft:phantom]"
+            }
+        ]
+    }
+}

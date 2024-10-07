@@ -1,0 +1,36 @@
+{
+    "name": "Phasing",
+    "description": "You can phase through most blocks, though not especially compact ones... yet.",
+    "type": "origins:phasing",
+    "blacklist": true,
+    "render_type": "blindness",
+    "view_distance": 20,
+    "block_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:in_tag",
+          "tag": "cyom:unphasable1"
+        },
+        {
+          "type": "origins:in_tag",
+          "tag": "cyom:unphasable2"
+        }
+      ]
+    },
+    "phase_down_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:sneaking"
+        },
+        {
+          "type": "origins:on_block"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins:phantomize"
+    }
+  }
