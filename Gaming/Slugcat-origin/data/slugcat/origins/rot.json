@@ -4,7 +4,8 @@
     "powers": [
         "slugcat:common/rain",
         "slugcat:rot/blind",
-        "slugcat:rot/physics"
+        "slugcat:rot/physics",
+        "slugcat:rot/grapple"
     ],
     "icon": {
         "item": "minecraft:recovery_compass",

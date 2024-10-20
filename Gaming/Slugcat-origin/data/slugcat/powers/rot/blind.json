@@ -2,18 +2,6 @@
     "type": "origins:multiple",
     "name": "Exquisite Hearing",
     "description": "Though blind, you can still hear where entities walk.",
-    "blind":{
-        "type": "origins:stacking_status_effect",
-        "effect": {
-            "effect": "minecraft:blindness",
-            "show_icon": false,
-            "show_particles": false,
-            "duration": 200
-        },
-        "min_stacks": 1,
-        "max_stacks": 2,
-        "duration_per_stack": 200
-    },
     "ANDglow":{
         "type": "origins:entity_glow",
         "bientity_condition": {
