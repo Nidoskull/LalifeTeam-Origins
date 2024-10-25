@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+      "#minecraft:strider_warm_blocks",
+      "minecraft:fire",
+      "minecraft:torch",
+      "minecraft:wall_torch",
+      "minecraft:soul_torch",
+      "minecraft:soul_wall_torch",
+      "minecraft:magma_block",
+      "minecraft:glowstone"
+    ]
+  }
