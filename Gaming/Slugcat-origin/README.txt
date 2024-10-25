@@ -123,13 +123,13 @@ SAINT+*
 
 
 - unlocked after obtaining 7/8 of the following advancements:
-- - Nineteen Spades, Endless Reflections - highest point in CC - climb high in mountain biome
+- - Nineteen Spades, Endless Reflections - highest point in CC - climb high in mountain biome, then sleep
 - - Droplets upon Five Large Droplets - high up in SI - 
 - - A Bell, Eighteen Amber Beads - farm arrays high above wormgrass - climb high in tundra biome
 - - Six Grains of Gravel, Mountains Abound - the wall - enter end portal structure library?
-- - Two Sprouts, Twelve Brackets - cave in subterranean - Enter the Deep Dark
-- - Distant Towers upon Cracked Earth - moon's wall - climb high in ocean biome
-- - Rhinestones beneath Shattered Glass - undergrowth - Postmortal
+- - Two Sprouts, Twelve Brackets - cave in subterranean - Enter the Deep Dark, then sleep
+- - Distant Towers upon Cracked Earth - moon's wall - climb high in ocean biome, then sleep
+- - Rhinestones beneath Shattered Glass - undergrowth - Postmortal, then sleep
 - - Eight Spots on a Blind Eye - transmission array - subspace bubble
 
 
