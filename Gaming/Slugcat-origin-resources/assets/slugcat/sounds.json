@@ -1,0 +1,43 @@
+{
+    "entity.echo.talk": {
+        "subtitle": "Echo speaks",
+        "sounds": [
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.5
+            },
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.55
+            },
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.6
+            },
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.65
+            },
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.7
+            },
+            {
+                "name": "minecraft:ambient/cave/cave13",
+                "pitch": 0.9
+            },
+            {
+                "name": "minecraft:ambient/cave/cave13",
+                "pitch": 1.2
+            }
+        ]
+    },
+    "music.echo.else1": {
+        "sounds": [
+            {
+                "name": "slugcat:sounds/music/else1",
+                "stream": true
+            }
+        ]
+    }
+}
