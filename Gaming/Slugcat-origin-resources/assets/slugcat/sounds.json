@@ -35,7 +35,7 @@
     "music.echo.else1": {
         "sounds": [
             {
-                "name": "slugcat:sounds/music/else1",
+                "name": "slugcat:music/else1",
                 "stream": true
             }
         ]
