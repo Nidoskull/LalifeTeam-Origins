@@ -1,0 +1,9 @@
+{
+    "name": "Weak Arms",
+    "description": "You deal a full heart less damage.",
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "addition",
+        "value": -2
+    }
+}
