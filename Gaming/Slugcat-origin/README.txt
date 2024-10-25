@@ -96,8 +96,7 @@ SAINT*
 - Herbivore
 - No spear :(
 - Weapons deal less damage
-- 4 hearts instead of 6
-- The cold deals extra damage to you
+- 5 hearts instead of 6
 - You start freezing in cold biomes unless you have a source of heat with you
 
 SAINT+*
@@ -106,7 +105,7 @@ SAINT+*
 + No need to breathe while Focused.
 = All the other Saint traits still apply.
 
-- unlocked after obtaining 11/14 of the following advancements?:
+- unlocked after obtaining 11/14 of the following advancements:
 - - We Need To Go Deeper
 - - Eye Spy
 - - Those Were The Days
@@ -121,6 +120,18 @@ SAINT+*
 - - Careful Restoration
 - - Glow And Behold!
 - - Serious Dedication
+
+
+- unlocked after obtaining 7/8 of the following advancements:
+- - Nineteen Spades, Endless Reflections - highest point in CC - climb high in mountain biome
+- - Droplets upon Five Large Droplets - high up in SI - 
+- - A Bell, Eighteen Amber Beads - farm arrays high above wormgrass - climb high in tundra biome
+- - Six Grains of Gravel, Mountains Abound - the wall - enter end portal structure library?
+- - Two Sprouts, Twelve Brackets - cave in subterranean - Enter the Deep Dark
+- - Distant Towers upon Cracked Earth - moon's wall - climb high in ocean biome
+- - Rhinestones beneath Shattered Glass - undergrowth - Postmortal
+- - Eight Spots on a Blind Eye - transmission array - subspace bubble
+
 
 ???*
 + dating sim is canon
