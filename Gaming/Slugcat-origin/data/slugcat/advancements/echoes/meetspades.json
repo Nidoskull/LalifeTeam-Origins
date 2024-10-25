@@ -1,20 +1,4 @@
 {
-    "display": {
-        "icon": {
-            "item": "minecraft:ender_eye"
-        },
-        "title": {
-            "text": "Nineteen Spades, Endless Reflections"
-        },
-        "description": {
-            "text": "Find the Echo atop the mountains. <location check>"
-        },
-        "background": "minecraft:textures/block/obsidian.png",
-        "frame": "task",
-        "show_toast": false,
-        "announce_to_chat": true,
-        "hidden": false
-    },
     "parent": "slugcat:echoes/root",
     "criteria": {
 		"stonypeaks": {
@@ -89,6 +73,6 @@
         ]
     ],
     "rewards": {
-        "function": "slugcat:echo/meetspades"
+        "function": "slugcat:echo/meetecho"
     }
 }
