@@ -12,10 +12,10 @@
         "background": "minecraft:textures/block/obsidian.png",
         "frame": "task",
         "show_toast": false,
-        "announce_to_chat": false,
+        "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "slugcat:echoes/meetbrackets",
+    "parent": "slugcat:echoes/root",
     "criteria": {
 		"meet_and_end_cycle": {
 			"trigger": "minecraft:slept_in_bed",
