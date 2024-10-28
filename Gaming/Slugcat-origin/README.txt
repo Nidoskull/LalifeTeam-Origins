@@ -130,7 +130,7 @@ SAINT+*
 - V Two Sprouts, Twelve Brackets - cave in subterranean - Enter the Deep Dark, then sleep
 - - Distant Towers upon Cracked Earth - moon's wall - climb high in ocean biome, then sleep
 - V Rhinestones beneath Shattered Glass - undergrowth - Postmortal, then sleep
-- - Eight Spots on a Blind Eye - transmission array - subspace bubble
+- V Eight Spots on a Blind Eye - transmission array - subspace bubble
 
 
 ???*
