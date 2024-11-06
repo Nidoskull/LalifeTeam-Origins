@@ -1,13 +1,7 @@
 {
     "name": "Cryophobia",
-    "description": "You'll want to stay toasty, or carry something warm with you if you're exploring cold areas.",
+    "description": "You'll want to stay toasty, or carry something warm with you if you're exploring cold areas. They won't keep you warm forever in a snowstorm, though...",
     "type": "origins:multiple",
-    "heatsource": {
-        "type": "origins:resource",
-        "max": 1,
-        "min": 0,
-        "start_value": 0
-    },
     "heatheld": {
         "type": "origins:action_over_time",
         "entity_action": {
@@ -26,46 +20,136 @@
                 {
                     "type": "origins:change_resource",
                     "resource": "*:*_freezing",
-                    "change": -30,
+                    "change": -25,
                     "operation": "add"
                 }
             ]
         },
-        "rising_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_heatsource",
-            "change": 1,
-            "operation": "add"
-        },
-        "falling_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_heatsource",
-            "operation": "add",
-            "change": -1
+        "interval": 30,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {            
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "slugcat:heat_item"
+                                }
+                            }
+                        },
+                        {            
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "slugcat:heat_item"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:temperature",
+                                "compare_to": 0.1,
+                                "comparison": "<="
+                            }
+                        },
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "slugcat:is_rain"
+                        },
+                        {
+                            "type": "origins:exposed_to_sky"
+                        }
+                    ],
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "heatheld_snowstorm": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:spawn_particles",
+                    "count": 3,
+                    "spread": {
+                        "x": 0,
+                        "y": 0.5,
+                        "z": 0
+                    },
+                    "particle": "minecraft:small_flame"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_freezing",
+                    "change": -15,
+                    "operation": "add"
+                }
+            ]
         },
         "interval": 30,
         "condition": {
-            "type": "origins:or",
+            "type": "origins:and",
             "conditions": [
-                {            
-                    "type": "origins:equipped_item",
-                    "equipment_slot": "mainhand",
-                    "item_condition": {
-                        "type": "origins:ingredient",
-                        "ingredient": {
-                            "tag": "slugcat:heat_item"
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {            
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "slugcat:heat_item"
+                                }
+                            }
+                        },
+                        {            
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "slugcat:heat_item"
+                                }
+                            }
                         }
-                    }
+                    ]
                 },
-                {            
-                    "type": "origins:equipped_item",
-                    "equipment_slot": "offhand",
-                    "item_condition": {
-                        "type": "origins:ingredient",
-                        "ingredient": {
-                            "tag": "slugcat:heat_item"
+                {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:temperature",
+                                "compare_to": 0.1,
+                                "comparison": "<="
+                            }
+                        },
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "slugcat:is_rain"
+                        },
+                        {
+                            "type": "origins:exposed_to_sky"
                         }
-                    }
+                    ],
+                    "inverted": false
                 }
             ]
         }
@@ -93,18 +177,6 @@
                 }
             ]
         },
-        "rising_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_heatsource",
-            "change": 1,
-            "operation": "add"
-        },
-        "falling_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_heatsource",
-            "operation": "add",
-            "change": -1
-        },
         "interval": 30,
         "condition": {
             "type": "origins:block_in_radius",
@@ -116,7 +188,7 @@
             "shape": "sphere",
             "comparison": ">=",
             "compare_to": 1
-}
+        }
     },
     "freezing": {
         "type": "origins:resource",
@@ -136,19 +208,36 @@
     "itscold": {
         "type": "origins:action_over_time",
         "condition": {
-            "type": "origins:biome",
-            "condition": {
-                "type": "origins:temperature",
-                "compare_to": 0.1,
-                "comparison": "<="
-            }
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:biome",
+                    "condition": {
+                        "type": "origins:temperature",
+                        "compare_to": 0.1,
+                        "comparison": "<="
+                    }
+                },
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "slugcat:heat_block"
+                    },
+                    "radius": 4,
+                    "shape": "sphere",
+                    "comparison": ">=",
+                    "compare_to": 1,
+                    "inverted": true
+                }
+            ]
         },
         "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
                     "type": "origins:change_resource",
-                    "change": 4,
+                    "change": 2,
                     "operation": "add",
                     "resource": "*:*_freezing"
                 },
@@ -162,7 +251,52 @@
                 }
             ]
         },
-        "interval": 20
+        "interval": 10
+    },
+    "snowstorm": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:biome",
+                    "condition": {
+                        "type": "origins:temperature",
+                        "compare_to": 0.1,
+                        "comparison": "<="
+                    }
+                },
+                {
+					"type": "origins:predicate",
+					"predicate": "slugcat:is_rain"
+				},
+                {
+                    "type": "origins:exposed_to_sky"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "change": 20,
+                    "operation": "add",
+                    "resource": "*:*_freezing"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "count": 3,
+                    "particle": "minecraft:snowflake",
+                    "spread": {
+                        "x": 0,
+                        "y": 0.5,
+                        "z": 0
+                    }
+                }
+            ]
+        },
+        "interval": 5
     },
     "coldshake": {
         "type": "origins:shaking",
@@ -246,6 +380,26 @@
                         "show_icon": true,
                         "show_particles": false
                     }
+                }
+            ]
+        }
+    },
+    "overlay": {
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/misc/powder_snow_outline.png",
+        "draw_mode": "texture",
+        "draw_phase": "above_hud",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 0,
+                    "comparison": ">"
                 }
             ]
         }

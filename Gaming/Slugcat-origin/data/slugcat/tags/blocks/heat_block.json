@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
       "#minecraft:strider_warm_blocks",
+      "#minecraft:campfires",
       "minecraft:fire",
       "minecraft:torch",
       "minecraft:wall_torch",
