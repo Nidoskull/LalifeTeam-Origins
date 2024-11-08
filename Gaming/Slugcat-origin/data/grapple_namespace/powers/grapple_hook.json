@@ -26,7 +26,7 @@
                         "entity": true,
                         "shape_type": "visual",
                         "fluid_handling": "any",
-                        "command_along_ray": "particle electric_spark",
+                        "command_along_ray": "particle dust 0.98 0.67 0.8 1 ~ ~1 ~ 0 0 0 0 1",
                         "command_step": 0.5
                     }
                 ]
