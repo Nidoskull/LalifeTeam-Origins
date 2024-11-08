@@ -5,9 +5,12 @@
         "slugcat:common/fragile",
         "slugcat:common/physics",
         "slugcat:common/nimble",
+        "slugcat:common/pouncejargon",
         "slugcat:common/hungry",
         "slugcat:common/rain",
         "slugcat:common/shelter",
+        "slugcat:common/shelterjargon",
+        "slugcat:common/spearjargon",
 		"slugcat:choose_var"
     ],
     "icon": {
@@ -15,5 +18,5 @@
         "amount": 1
     },
     "order": 0,
-    "impact": 2
+    "impact": 3
 }
