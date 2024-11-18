@@ -84,8 +84,73 @@
         "condition": {
             "type": "origins:block_in_radius",
             "block_condition": {
-                "type": "origins:in_tag",
-                "tag": "slugcat:heat_block"
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "slugcat:heat_block"
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:furnace"
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "value": true,
+                                "comparison": "=="
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:blast_furnace"
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "value": true,
+                                "comparison": "=="
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:smoker"
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "value": true,
+                                "comparison": "=="
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:redstone_lamp"
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "value": true,
+                                "comparison": "=="
+                            }
+                        ]
+                    }
+                ]
             },
             "radius": 4,
             "shape": "sphere",

@@ -78,17 +78,17 @@ RIVULET
 
 + You're WAY faster!
 + You jump WAY higher (toggleable)!
-+ You can breathe for much longer underwater!
++ You can breathe for much longer underwater! TODO: Increase speed underwater further.
 + Craft a special item to enhance your movement even further!
-- You cannot outrun the rain forever.
+- You cannot outrun the rain forever. TODO: Add cues that cycle is almost over. (Maybe /execute at @e[tag=slugcat]? item.goat_horn.6)
 
 
 SPEARMASTER
 + Eat by stabbing entities!
 + You're thinner than the other scugs (and slightly stealthier!)
 + Generate spears at will!
-- You have no mouth and you must eat
-- Needles will decay over time, meaning you cannot use them to feed
+- You have no mouth and you must eat; cannot use anything that must be consumed for its effects, i.e. potions, cake, golden apples...
+- Needles will decay over time, meaning you cannot use them to feed after sleeping
 
 not real yet:
 SAINT*
