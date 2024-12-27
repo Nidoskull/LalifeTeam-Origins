@@ -29,6 +29,10 @@
                 {
                     "type": "origins:execute_command",
                     "command": "give @s stick{CustomModelData:7925002}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound slugcat:entity.spearmaster.grab player @a"
                 }
             ]
         }
@@ -69,6 +73,14 @@
             "comparison": "==",
             "resource": "moving:state_horizontally",
             "inverted": true
+        }
+    },
+    "sound1":{
+        "type": "origins:active_self",
+        "key": "key.origins.secondary_active",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:entity.spearmaster.pull player @a"
         }
     },
     "presskey": {

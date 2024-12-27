@@ -25,6 +25,14 @@
 			}
 		}
 	},
+	"sound":{
+		"type": "origins:active_self",
+		"key": "key.origins.primary_active",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "playsound slugcat:entity.slugcat.throw player @a"
+		}
+	},
 	"take_needle":{
 		"type":"origins:active_self",
 		"entity_action":{

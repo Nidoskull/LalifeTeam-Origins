@@ -1,0 +1,115 @@
+{
+    "name": "Weather Warning",
+    "description": "You will receive a warning that it is about to start raining.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 22,
+        "min_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cooldown",
+            "change": 4,
+            "operation": "set"
+        }
+    },
+    "warn": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "/function slugcat:rainwarning"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_rain"
+                },
+                {
+                    "type": "origins:exposed_to_sky"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "interval": 20
+    },
+    "rsrc_down": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource"
+            ,"comparison": ">",
+            "compare_to": 0,
+            "resource": "*:*_resource"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1,
+            "operation": "add"
+        },
+        "interval": 20
+    },
+    "cooldown": {
+        "type": "origins:resource",
+        "max": 4,
+        "min": 0,
+        "start_value": 0
+    },
+    "tick": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "compare_to": 1,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "slugcat:weather.rain.tick",
+            "category": "weather"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_cooldown",
+                    "change": 2,
+                    "operation": "set"
+                }
+            ]
+        },
+        "interval": 20
+    },
+    "tock": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "compare_to": 2,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "slugcat:weather.rain.tock",
+            "category": "weather"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_cooldown",
+                    "change": 1,
+                    "operation": "set"
+                }
+            ]
+        },
+        "interval": 20
+    }
+}

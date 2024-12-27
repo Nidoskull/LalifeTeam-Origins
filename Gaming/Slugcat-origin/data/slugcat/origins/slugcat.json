@@ -8,6 +8,7 @@
         "slugcat:common/pouncejargon",
         "slugcat:common/hungry",
         "slugcat:common/rain",
+        "slugcat:common/weather_warning",
         "slugcat:common/shelter",
         "slugcat:common/shelterjargon",
         "slugcat:common/spearjargon",

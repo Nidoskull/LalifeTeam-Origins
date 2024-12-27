@@ -1,0 +1,14 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 15,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "playsound entity.slugcat.die player @a ~ ~ ~"
+    },
+    "condition": {
+        "type": "origins:health",
+        "compare_to": 0,
+        "comparison": "<="
+    }
+}
