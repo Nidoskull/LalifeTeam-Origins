@@ -135,7 +135,7 @@
         ]
     },
     "weather.rain.light":{
-        "subtitle": "Rain starts",
+        "subtitle": "Rain falls lightly",
         "sounds": [
             {
                 "name": "slugcat:sfx/rain-light",
