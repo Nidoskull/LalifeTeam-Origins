@@ -11,7 +11,8 @@
         "slugcat:common/scale",
 		"slugcat:common/spear/standard",
 		"slugcat:common/spear/pins",
-        "slugcat:common/shelter_food"
+        "slugcat:common/shelter_food",
+        "slugcat:common/frozen"
     ],
     "icon": {
         "item": "minecraft:light_blue_dye",

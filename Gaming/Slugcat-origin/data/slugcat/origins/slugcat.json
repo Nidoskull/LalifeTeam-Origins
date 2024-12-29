@@ -11,6 +11,7 @@
         "slugcat:common/weather_warning",
         "slugcat:common/shelter",
         "slugcat:common/shelterjargon",
+        "slugcat:common/frozenjargon",
         "slugcat:common/spearjargon",
 		"slugcat:choose_var"
     ],

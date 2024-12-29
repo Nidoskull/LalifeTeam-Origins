@@ -10,6 +10,7 @@
 		"slugcat:common/spear/pins",
         "slugcat:common/pounce",
         "slugcat:common/shelter_food",
+        "slugcat:common/frozen",
         "slugcat:spearmaster/scale"
       ],
     "icon": {

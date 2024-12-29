@@ -1,6 +1,6 @@
 {
     "name": "Cryophobia",
-    "description": "You're twice as resistant to cold as other slugcats thanks to your warm fur coat. That, uh, doesn't mean you're IMMUNE to cold, though.",
+    "description": "You'll want to stay toasty, or carry something warm with you if you're exploring cold areas. They won't keep you warm forever, though...",
     "type": "origins:multiple",
     "heatheld": {
         "type": "origins:action_over_time",
@@ -20,7 +20,7 @@
                 {
                     "type": "origins:change_resource",
                     "resource": "*:*_freezing",
-                    "change": -8,
+                    "change": -4,
                     "operation": "add"
                 }
             ]
@@ -75,7 +75,7 @@
                 {
                     "type": "origins:change_resource",
                     "resource": "*:*_freezing",
-                    "change": -9,
+                    "change": -5,
                     "operation": "add"
                 }
             ]
@@ -205,7 +205,7 @@
             "actions": [
                 {
                     "type": "origins:change_resource",
-                    "change": 2,
+                    "change": 4,
                     "operation": "add",
                     "resource": "*:*_freezing"
                 },
