@@ -5,7 +5,7 @@
         "slugcat:common/scale",
         "origins:carnivore",
         "slugcat:common/shelter_food",
-        "slugcat:common/frozen",
+        "slugcat:artificer/frosty",
         "slugcat:artificer/explosioncharge",
         "slugcat:artificer/concussiveeffect",
         "slugcat:artificer/pounce",
