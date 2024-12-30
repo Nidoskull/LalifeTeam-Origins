@@ -105,30 +105,14 @@ SAINT+*
 + No need to breathe while Focused.
 = All the other Saint traits still apply.
 
-- unlocked after obtaining 11/14 of the following advancements:
-- - We Need To Go Deeper
-- - Eye Spy
-- - Those Were The Days
-- - Into Fire
-- - The End
-- - Remote Getaway
-- - Voluntary Exile
-- - Respecting the Remnants
-- - Sneak 100
-- - Sweet Dreams
-- - Postmortal
-- - Careful Restoration
-- - Glow And Behold!
-- - Serious Dedication
 
-
-- unlocked after obtaining 7/8 of the following advancements:
+- unlocked after obtaining all of the following advancements:
 - V Nineteen Spades, Endless Reflections - highest point in CC - climb high in mountain biome, then sleep
-- - Droplets upon Five Large Droplets - high up in SI - 
+- - Droplets upon Five Large Droplets - high up in SI - find end city?
 - V A Bell, Eighteen Amber Beads - farm arrays high above wormgrass - climb high in tundra biome
-- - Six Grains of Gravel, Mountains Abound - the wall - 
+- - Six Grains of Gravel, Mountains Abound - the wall - Eye Spy
 - V Two Sprouts, Twelve Brackets - cave in subterranean - Enter the Deep Dark, then sleep
-- - Distant Towers upon Cracked Earth - moon's wall - climb high in ocean biome, then sleep
+- V Distant Towers upon Cracked Earth - moon's wall - climb high in ocean biome, then sleep
 - V Rhinestones beneath Shattered Glass - undergrowth - Postmortal, then sleep
 - V Eight Spots on a Blind Eye - transmission array - subspace bubble
 
