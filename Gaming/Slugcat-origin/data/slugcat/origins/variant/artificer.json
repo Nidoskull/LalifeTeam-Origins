@@ -23,7 +23,7 @@
         "slugcat:artificer/explodeondeath"
     ],
     "icon": {
-        "item": "tnt",
+        "item": "minecraft:tnt",
         "amount": 1
     },
     "order": 0,

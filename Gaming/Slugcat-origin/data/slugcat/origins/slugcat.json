@@ -16,7 +16,7 @@
 		"slugcat:choose_var"
     ],
     "icon": {
-        "item": "stick",
+        "item": "minecraft:stick",
         "amount": 1
     },
     "order": 0,

@@ -14,7 +14,7 @@
         "slugcat:common/shelter_food"
     ],
     "icon": {
-        "item": "lime_dye",
+        "item": "minecraft:lime_dye",
         "amount": 1
     },
     "order": 0,
