@@ -109,7 +109,7 @@
             }
         ]
     },
-    "entity.saint.activate": {
+    "entity.saint.ascend": {
         "subtitle": "Saint ascends",
         "sounds": [
             {
@@ -122,6 +122,23 @@
             },
             {
                 "name": "slugcat:sfx/ping-a",
+                "pitch": 0.9
+            }
+        ]
+    },
+    "entity.saint.kill": {
+        "subtitle": "Mob gets ascended",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/bang",
+                "pitch": 1
+            },
+            {
+                "name": "slugcat:sfx/bang",
+                "pitch": 1.2
+            },
+            {
+                "name": "slugcat:sfx/bang",
                 "pitch": 0.9
             }
         ]

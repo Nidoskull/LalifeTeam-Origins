@@ -1,6 +1,6 @@
 {
     "name": "???",
-    "description": "Something calls you... Equip an elytra to consume it. (Don't worry, it's worth it.)",
+    "description": "Something calls you... Find all the Echoes, and be rewarded.",
     "type": "origins:multiple",
     "bool":
     {
@@ -17,7 +17,7 @@
         "interval": 100,
         "entity_action": {
             "type": "origins:execute_command",
-            "command": "origin set @s origins:origin cyom:evolytrian"
+            "command": "origin set @s slugcat:variant slugcat:variant/saint2"
         },
         "condition": 
         {

@@ -1,13 +1,14 @@
 {
-    "name": "The Saint",
-    "description": "Frail and armed with a long tongue. Your journey will be one of perfect enlightenment, but walking this path requires patience, caution, and complete attunement with the world.",
+    "name": "The Attuned",
+    "description": "Still frail and long-tongued, but your patience and determination has brought attunement. While you are not invincible, your abilities have drastically grown in power.",
     "powers": [
-        "slugcat:saint/evolve",
+        "slugcat:saint/evo",
         "slugcat:saint/fragile",
         "grapple_namespace:grapple",
         "slugcat:saint/stayfrosty",
         "slugcat:saint/lessdmg",
         "slugcat:saint/nospear",
+        "slugcat:saint/smite",
         "origins:vegetarian",
         "slugcat:common/scale",
 		"slugcat:common/pounce",
@@ -19,5 +20,6 @@
         "amount": 1
     },
     "order": 0,
-    "impact": 3
+    "impact": 3,
+    "unchoosable": true
 }

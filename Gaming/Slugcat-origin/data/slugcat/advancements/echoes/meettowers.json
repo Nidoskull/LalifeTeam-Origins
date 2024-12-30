@@ -1,21 +1,5 @@
 {
     "parent": "slugcat:echoes/root",
-	"display": {
-        "icon": {
-            "item": "minecraft:ender_eye"
-        },
-        "title": {
-            "text": "tower"
-        },
-        "description": {
-            "text": "debug"
-        },
-        "background": "minecraft:textures/block/obsidian.png",
-        "frame": "task",
-        "show_toast": false,
-        "announce_to_chat": true,
-        "hidden": false
-    },
     "criteria": {
 		"ocean": {
 			"trigger": "minecraft:location",
@@ -26,40 +10,14 @@
 						"entity": "this",
 						"predicate": {
 							"location": {
-								"biome": "minecraft:ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
+								"biome": "minecraft:ocean"
 							}
 						}
 					}
 				]
 			}
 		},
-		"deepocean": {
-			"trigger": "minecraft:location",
-			"conditions": {
-				"player": [
-					{
-						"condition": "minecraft:entity_properties",
-						"entity": "this",
-						"predicate": {
-							"location": {
-								"biome": "minecraft:deep_ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
-							}
-						}
-					}
-				]
-			}
-		},
-        "warm": {
+        "warm_ocean": {
             "trigger": "minecraft:location",
 			"conditions": {
 				"player": [
@@ -68,19 +26,30 @@
 						"entity": "this",
 						"predicate": {
 							"location": {
-								"biome": "minecraft:warm_ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
+								"biome": "minecraft:warm_ocean"
 							}
 						}
 					}
 				]
 			}
         },
-		"lukewarm": {
+        "cold_ocean": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:cold_ocean"
+							}
+						}
+					}
+				]
+			}
+        },
+		"deep_ocean": {
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player": [
@@ -89,19 +58,14 @@
 						"entity": "this",
 						"predicate": {
 							"location": {
-								"biome": "minecraft:lukewarm_ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
+								"biome": "minecraft:deep_ocean"
 							}
 						}
 					}
 				]
 			}
 		},
-		"deeplukewarm": {
+		"deep_warm_ocean": {
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player": [
@@ -110,19 +74,14 @@
 						"entity": "this",
 						"predicate": {
 							"location": {
-								"biome": "minecraft:deep_lukewarm_ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
+								"biome": "minecraft:deep_warm_ocean"
 							}
 						}
 					}
 				]
 			}
 		},
-		"cold": {
+		"deep_cold_ocean": {
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player": [
@@ -131,19 +90,14 @@
 						"entity": "this",
 						"predicate": {
 							"location": {
-								"biome": "minecraft:cold_ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
+								"biome": "minecraft:deep_cold_ocean"
 							}
 						}
 					}
 				]
 			}
 		},
-		"deepcold": {
+		"frozen_ocean": {
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player": [
@@ -152,19 +106,14 @@
 						"entity": "this",
 						"predicate": {
 							"location": {
-								"biome": "minecraft:deep_cold_ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
+								"biome": "minecraft:frozen_ocean"
 							}
 						}
 					}
 				]
 			}
 		},
-		"frozen": {
+		"deep_frozen_ocean": {
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player": [
@@ -173,33 +122,7 @@
 						"entity": "this",
 						"predicate": {
 							"location": {
-								"biome": "minecraft:frozen_ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
-							}
-						}
-					}
-				]
-			}
-		},
-		"deepfrozen": {
-			"trigger": "minecraft:location",
-			"conditions": {
-				"player": [
-					{
-						"condition": "minecraft:entity_properties",
-						"entity": "this",
-						"predicate": {
-							"location": {
-								"biome": "minecraft:deep_frozen_ocean",
-                                "position": {
-                                    "y": {
-                                        "min": 200
-                                    }
-                                }
+								"biome": "minecraft:deep_frozen_ocean"
 							}
 						}
 					}
@@ -210,15 +133,13 @@
     "requirements": [
         [
             "ocean",
-            "deepocean",
-            "warm",
-            "deepwarm",
-            "lukewarm",
-            "deeplukewarm",
-            "cold",
-            "deepcold",
-            "frozen",
-            "deepfrozen"
+            "warm_ocean",
+            "cold_ocean",
+			"deep_ocean",
+			"deep_warm_ocean",
+			"deep_cold_ocean",
+			"frozen_ocean",
+			"deep_frozen_ocean"
         ]
     ],
     "rewards": {
