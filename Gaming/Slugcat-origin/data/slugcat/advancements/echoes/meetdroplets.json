@@ -1,0 +1,27 @@
+{
+	"parent": "slugcat:echoes/root",
+	"criteria": {
+		"in_city": {
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"structure": "minecraft:end_city"
+							}
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:location"
+		}
+	},
+	"requirements": [
+		["in_city"]
+	],
+    "rewards": {
+        "function": "slugcat:echo/meetecho"
+    }
+}
