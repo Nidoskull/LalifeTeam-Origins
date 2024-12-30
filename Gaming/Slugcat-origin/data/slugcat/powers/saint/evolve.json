@@ -1,0 +1,88 @@
+{
+    "name": "???",
+    "description": "Something calls you... Equip an elytra to consume it. (Don't worry, it's worth it.)",
+    "type": "origins:multiple",
+    "bool":
+    {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "evolve":
+    {
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "origin set @s origins:origin cyom:evolytrian"
+        },
+        "condition": 
+        {
+            "type": "origins:resource",
+            "resource": "*:*_bool",
+            "compare_to": 1,
+            "comparison": ">="
+        }
+    },
+    "shake":{
+        "type": "origins:shaking",
+        "condition":
+        {
+            "type": "origins:resource",
+            "resource": "*:*_bool",
+            "compare_to": 1,
+            "comparison": ">="
+        }
+    },
+    "increase":
+    {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "rising_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_bool",
+            "change": 1,
+            "operation": "set"            
+        },
+        "condition":
+        {
+            "type": "origins:advancement",
+            "advancement": "slugcat:echoes/ascend"
+        }
+    },
+    "fireworks":{
+        "type": "origins:particle",
+        "frequency": 1,
+        "count": 10,
+        "speed": 1,
+        "spread": {"x": 0.5, "y": 0.5, "z": 0.5},
+        "visible_in_first_person": true,
+        "visible_while_invisible": true,
+        "particle": "minecraft:firework",
+        "condition": 
+        {
+            "type": "origins:resource",
+            "resource": "*:*_bool",
+            "compare_to": 1,
+            "comparison": ">="
+        }
+    },
+    "congrats":{
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.firework_rocket.twinkle"
+        },
+        "interval": 15,
+        "condition": 
+        {
+            "type": "origins:resource",
+            "resource": "*:*_bool",
+            "compare_to": 1,
+            "comparison": ">="
+        }
+    }
+}
