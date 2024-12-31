@@ -23,9 +23,9 @@
 		"vampire:nofalldmg"
     ],
     "icon": {
-        "item": "bat_spawn_egg",
+        "item": "minecraft:bat_spawn_egg",
         "amount": 1
     },
-    "order": 99,
+    "order": 3,
     "impact": 2
 }
