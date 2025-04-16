@@ -1,0 +1,652 @@
+{
+    "type": "origins:multiple",
+    "name": "Grappling Tentacles",
+    "description": "Your mutated tentacles are used for locomotion... and grabbing prey.",
+    "tentacount": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": true
+        },
+        "max": 6,
+        "min": 1,
+        "max_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_maxcountreached",
+            "change": 1,
+            "operation": "set"
+        }
+    },
+    "maxcountreached": {
+        "type": "origins:resource",
+        "hud_render": {
+            "should_render": true
+        },
+        "max": 1,
+        "min": 0,
+        "max_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_tentacount",
+            "change": 0,
+            "operation": "set"
+        }
+    },
+    "grab": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 1,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 0,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "shape_type": "collider",
+                        "entity": false,
+                        "block": true,
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]'}",
+                        "hit_action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_tentacount",
+                            "operation": "add",
+                            "change": 1
+                        },
+                        "command_step": 0.5,
+                        "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                        "distance": 10
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 1,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 1,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[name=AnchorPoint1,distance=..30]"
+                            },
+                            {
+                                "type": "origins:delay",
+                                "ticks": 1,
+                                "action": {
+                                    "type": "origins:raycast",
+                                    "shape_type": "collider",
+                                    "entity": false,
+                                    "block": true,
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]'}",
+                                    "hit_action": {
+                                        "type": "origins:change_resource",
+                                        "resource": "*:*_tentacount",
+                                        "operation": "add",
+                                        "change": 1
+                                    },
+                                    "command_step": 0.5,
+                                    "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                                    "distance": 10
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 2,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 0,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "shape_type": "collider",
+                        "entity": false,
+                        "block": true,
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]'}",
+                        "hit_action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_tentacount",
+                            "operation": "add",
+                            "change": 1
+                        },
+                        "command_step": 0.5,
+                        "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                        "distance": 10
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 2,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 1,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[name=AnchorPoint2,distance=..30]"
+                            },
+                            {
+                                "type": "origins:delay",
+                                "ticks": 1,
+                                "action": {
+                                    "type": "origins:raycast",
+                                    "shape_type": "collider",
+                                    "entity": false,
+                                    "block": true,
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]'}",
+                                    "hit_action": {
+                                        "type": "origins:change_resource",
+                                        "resource": "*:*_tentacount",
+                                        "operation": "add",
+                                        "change": 1
+                                    },
+                                    "command_step": 0.5,
+                                    "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                                    "distance": 10
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 3,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 0,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "shape_type": "collider",
+                        "entity": false,
+                        "block": true,
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]'}",
+                        "hit_action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_tentacount",
+                            "operation": "add",
+                            "change": 1
+                        },
+                        "command_step": 0.5,
+                        "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                        "distance": 10
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 3,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 1,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[name=AnchorPoint3,distance=..30]"
+                            },
+                            {
+                                "type": "origins:delay",
+                                "ticks": 1,
+                                "action": {
+                                    "type": "origins:raycast",
+                                    "shape_type": "collider",
+                                    "entity": false,
+                                    "block": true,
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]'}",
+                                    "hit_action": {
+                                        "type": "origins:change_resource",
+                                        "resource": "*:*_tentacount",
+                                        "operation": "add",
+                                        "change": 1
+                                    },
+                                    "command_step": 0.5,
+                                    "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                                    "distance": 10
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 4,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 0,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "shape_type": "collider",
+                        "entity": false,
+                        "block": true,
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]'}",
+                        "hit_action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_tentacount",
+                            "operation": "add",
+                            "change": 1
+                        },
+                        "command_step": 0.5,
+                        "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                        "distance": 10
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 4,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 1,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[name=AnchorPoint4,distance=..30]"
+                            },
+                            {
+                                "type": "origins:delay",
+                                "ticks": 1,
+                                "action": {
+                                    "type": "origins:raycast",
+                                    "shape_type": "collider",
+                                    "entity": false,
+                                    "block": true,
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]'}",
+                                    "hit_action": {
+                                        "type": "origins:change_resource",
+                                        "resource": "*:*_tentacount",
+                                        "operation": "add",
+                                        "change": 1
+                                    },
+                                    "command_step": 0.5,
+                                    "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                                    "distance": 10
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 5,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 0,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "shape_type": "collider",
+                        "entity": false,
+                        "block": true,
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]'}",
+                        "hit_action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_tentacount",
+                            "operation": "add",
+                            "change": 1
+                        },
+                        "command_step": 0.5,
+                        "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                        "distance": 10
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 5,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 1,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[name=AnchorPoint5,distance=..30]"
+                            },
+                            {
+                                "type": "origins:delay",
+                                "ticks": 1,
+                                "action": {
+                                    "type": "origins:raycast",
+                                    "shape_type": "collider",
+                                    "entity": false,
+                                    "block": true,
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]'}",
+                                    "hit_action": {
+                                        "type": "origins:change_resource",
+                                        "resource": "*:*_tentacount",
+                                        "operation": "add",
+                                        "change": 1
+                                    },
+                                    "command_step": 0.5,
+                                    "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                                    "distance": 10
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 6,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 0,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "shape_type": "collider",
+                        "entity": false,
+                        "block": true,
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,AnchorPoint:6}",
+                        "hit_action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_tentacount",
+                            "operation": "set",
+                            "change": 1
+                        },
+                        "command_step": 0.5,
+                        "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                        "distance": 10
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 6,
+                                "comparison": "==",
+                                "resource": "*:*_tentacount"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "compare_to": 1,
+                                "resource": "*:*_maxcountreached",
+                                "comparison": "=="
+                            },
+                            {
+                                "type": "origins:living"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[name=AnchorPoint6,distance=..30]"
+                            },
+                            {
+                                "type": "origins:delay",
+                                "ticks": 1,
+                                "action": {
+                                    "type": "origins:raycast",
+                                    "shape_type": "collider",
+                                    "entity": false,
+                                    "block": true,
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint6\"}]'}",
+                                    "hit_action": {
+                                        "type": "origins:change_resource",
+                                        "resource": "*:*_tentacount",
+                                        "operation": "set",
+                                        "change": 1
+                                    },
+                                    "command_step": 0.5,
+                                    "command_along_ray": "particle dust_color_transition 0 0 0 1 0 0 1 ~ ~ ~ 0 0 0 0 1",
+                                    "distance": 10
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "reset": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "change": 1,
+                    "resource": "*:*_tentacount",
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "change": 0,
+                    "resource": "*:*_maxcountreached",
+                    "operation": "set"
+                }
+            ]
+        }
+    },
+    "limitfar": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[type=armor_stand,name=AnchorPoint1,distance=25..40]"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[type=armor_stand,name=AnchorPoint2,distance=25..40]"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[type=armor_stand,name=AnchorPoint3,distance=25..40]"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[type=armor_stand,name=AnchorPoint4,distance=25..40]"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[type=armor_stand,name=AnchorPoint5,distance=25..40]"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[type=armor_stand,name=AnchorPoint6,distance=25..40]"
+                }
+            ]
+        },
+        "interval": 10
+    },
+    "standparticle":{
+        "type":"origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Tags:[\"to_be_seen\"]}"
+        },
+        "interval": 10
+    },
+    "lookparticle":{
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @e[type=armor_stand,tag=to_be_seen,limit=1] as @e[distance=0.1..20] at @s positioned ~ ~1 ~ facing entity @e[type=armor_stand,tag=to_be_seen,limit=1] eyes run function slugcat:rottentacle"
+        }
+    },
+    "killparticle":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "kill @e[type=armor_stand,tag=to_be_seen]"
+        },
+        "interval": 15
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "bool": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:motion 0.85"
+        },
+        "min_action": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:motion 1.25"
+        }
+    },
+    "modify": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "rising_action": {
+            "type": "origins:modify_resource",
+            "modifier": {
+                "operation": "set_total",
+                "value": 1
+            },
+            "resource": "*:*_bool"
+        },
+        "falling_action": {
+            "type": "origins:modify_resource",
+            "modifier": {
+                "operation": "set_total",
+                "value": 0
+            },
+            "resource": "*:*_bool"
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions":[
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+                {
+                    "type": "origins:in_rain"
+                }
+            ],
+            "inverted": true
+        }
+    }
+}

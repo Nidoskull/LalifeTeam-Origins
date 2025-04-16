@@ -1,0 +1,106 @@
+{
+    "hidden": false,
+    "name": "???",
+    "description": "Something grows within you...",
+    "type":"origins:multiple",
+    "timer": {
+        "type": "origins:resource",
+        "max": 20,
+        "min": 0,
+        "max_action": { 
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "origin set @s slugcat:variant slugcat:variant/hunter_rotting"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.warden.ambient"
+                }
+            ]
+        }
+    },
+    "upovertime":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": 1,
+            "operation": "add",
+            "resource": "slugcat:hunter/unrotted_timer"
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+         "conditions": [
+                {
+                    "type": "origins:time_of_day",
+                    "comparison": ">=",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:time_of_day",
+                    "comparison": "<=",
+                    "compare_to": 1
+                }
+            ]
+        }
+    },
+    "upondeath": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": 1,
+            "operation": "add",
+            "resource": "slugcat:hunter/unrotted_timer"
+        },
+        "interval": 18,
+        "condition": {
+            "type": "origins:health",
+            "comparison": "<=",
+            "compare_to": 0
+        }
+    },
+    "sound1": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.warden.nearby_close"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 5,
+            "resource": "slugcat:hunter/unrotted_timer",
+            "comparison": ">="
+        },
+        "interval": 20
+    },
+    "sound2": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.warden.nearby_closer"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 10,
+            "resource": "slugcat:hunter/unrotted_timer",
+            "comparison": ">="
+        },
+        "interval": 20
+    },
+    "sound3": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.warden.nearby_closest"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 15,
+            "resource": "slugcat:hunter/unrotted_timer",
+            "comparison": ">="
+        },
+        "interval": 20
+    }
+}

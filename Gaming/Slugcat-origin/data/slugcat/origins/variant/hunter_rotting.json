@@ -3,20 +3,19 @@
     "description": "Strong and quick, with a fierce metabolism requiring a steady diet of meat. But the stomach won't be your only concern, as the path of the hunter is one of extreme peril.",
     "powers": [
         "slugcat:common/scale",
-        "slugcat:common/physics",
 		"slugcat:common/pounce",
 		"slugcat:common/spear/standard",
 		"slugcat:common/spear/stronger",
 		"slugcat:common/spear/pins",
         "slugcat:common/shelter_food",
-        "slugcat:common/frozen",
 		"origins:carnivore",
-        "slugcat:hunter/unrotted"
+        "slugcat:hunter/rotting"
     ],
     "icon": {
-        "item": "minecraft:red_dye",
+        "item": "red_dye",
         "amount": 1
     },
+    "unchoosable": true,
     "order": 0,
     "impact": 2
 }

@@ -8,6 +8,7 @@ Gourmand's Spitup edited from TheFluffycart55#0918
 Artificer's Explosively Charged edited from Sunny!#1024/[A Golden Bear]#5508
 Artificer's Double Jump edited from zorraz
 Artificer's Scavenger Hate partially from monospectre
+Spearmaster's moving condition thanks to eggohito
 
 Features marked with * are not or only partially implemented.
 
@@ -42,13 +43,18 @@ You're hungrier than most players.
 
 
 Variants:
-HUNTER
-+ Stronger spear
-- Carnivore (but meat is more filling)
 
 MONK (Easy Mode)
-+ Takes less damage, no food requirement to sleep
-- Weaker spear, Vegetarian
++ Takes less damage
++ Stealthier
++ No food requirement to sleep
+- Weaker spear
+- Vegetarian
+
+HUNTER
++ Stronger spear
+- Carnivore
+- Something grows within you.
 
 GOURMAND
 + Craft anywhere!
@@ -72,23 +78,20 @@ ARTIFICER
 - Villagers will run away & not trade with you, and Iron Constructs are hostile to you
 
 
-
-
 RIVULET
-
 + You're WAY faster!
 + You jump WAY higher (toggleable)!
 + You can breathe for much longer underwater!
 + Craft a special item to enhance your movement even further!
 - You cannot outrun the rain forever.
 
-
 SPEARMASTER
 + Eat by stabbing entities!
 + You're thinner than the other scugs (and slightly stealthier!)
 + Generate spears at will!
-- You have no mouth and you must eat; cannot use anything that must be consumed for its effects, i.e. potions, cake, golden apples...
-- Needles will decay over time, meaning you cannot use them to feed after sleeping
+- You have no mouth and you must eat
+- Needles will decay over time, meaning you cannot use them to feed
+
 
 SAINT
 + Grapple blocks with your tongue!
@@ -103,10 +106,19 @@ SAINT+
 + ASCENSION: Focus your sights on a mob while flying, and ascend it! (They'll glow, start floating, and then die.)
 + No need to breathe while Focused.
 = All the other Saint traits still apply.
-Obtained after unlocking hidden achievements.
-
 
 Not real yet:
+THE ROT:
+Good luck. :)
+- Blind
+- Hungry
+- Cannot wear armor or elytra
+- Cannot use weapons
+- Very short meelee attack reach
++ A LOT of health & inbuilt defense
++ Incredibly strong meelee attack
++ Yoink.
+
 WATCHER*
 + Camouflage yourself!
 + Set up warp points to quickly warp between regions!

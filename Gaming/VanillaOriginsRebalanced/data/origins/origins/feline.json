@@ -1,0 +1,20 @@
+{
+    "loading_priority": 3,
+	"powers": [
+        "cyom:meow",
+		"origins:fall_immunity",
+		"origins:sprint_jump",
+		"origins:velvet_paws",
+		"origins:nine_lives",
+        "cyom:wolfhostile",
+        "origins:carnivore",
+		"cyom:nocakes",
+		"origins:scare_creepers",
+		"cyom:nightvis"
+	],
+	"icon": {
+		"item": "minecraft:orange_wool"
+	},
+	"order": 0,
+	"impact": 1
+}

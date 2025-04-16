@@ -1,0 +1,56 @@
+
+{
+    "name": "Dedicated Screech Button",
+    "description": "Absolutely the most important change.",
+    "type": "origins:multiple",
+    "vwoop": {
+        "type":"origins:active_self",
+        "entity_action": {
+            "type": "origins:choice",
+            "actions": [
+                {
+                    "element":{
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.phantom.ambient",
+                        "volume": 1.5,
+                        "pitch": 1.0
+                    },
+                    "weight": 5
+                },
+                {
+                    "element":{
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.phantom.swoop",
+                        "volume": 1.5,
+                        "pitch": 1.0
+                    },
+                    "weight": 1
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "ow": {
+        "type":"origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.phantom.hurt"
+        },
+        "cooldown": 0
+    },
+    "death": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.phantom.death"
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:health",
+            "comparison": "<=",
+            "compare_to": 0
+        }
+    }
+}
