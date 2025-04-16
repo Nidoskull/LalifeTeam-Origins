@@ -78,9 +78,9 @@ RIVULET
 
 + You're WAY faster!
 + You jump WAY higher (toggleable)!
-+ You can breathe for much longer underwater! TODO: Increase speed underwater further.
++ You can breathe for much longer underwater!
 + Craft a special item to enhance your movement even further!
-- You cannot outrun the rain forever. TODO: Add cues that cycle is almost over. (Maybe /execute at @e[tag=slugcat]? item.goat_horn.6)
+- You cannot outrun the rain forever.
 
 
 SPEARMASTER
@@ -90,8 +90,7 @@ SPEARMASTER
 - You have no mouth and you must eat; cannot use anything that must be consumed for its effects, i.e. potions, cake, golden apples...
 - Needles will decay over time, meaning you cannot use them to feed after sleeping
 
-not real yet:
-SAINT*
+SAINT
 + Grapple blocks with your tongue!
 - Herbivore
 - No spear :(
@@ -99,23 +98,19 @@ SAINT*
 - 5 hearts instead of 6
 - You start freezing in cold biomes unless you have a source of heat with you
 
-SAINT+*
-+ Attained Focus. Flight is unlocked.
+SAINT+
++ Attained Focus.
 + ASCENSION: Focus your sights on a mob while flying, and ascend it! (They'll glow, start floating, and then die.)
 + No need to breathe while Focused.
 = All the other Saint traits still apply.
+Obtained after unlocking hidden achievements.
 
 
-- unlocked after obtaining all of the following advancements:
-- V Nineteen Spades, Endless Reflections - highest point in CC - climb high in mountain biome, then sleep
-- - Droplets upon Five Large Droplets - high up in SI - find end city?
-- V A Bell, Eighteen Amber Beads - farm arrays high above wormgrass - climb high in tundra biome
-- V Six Grains of Gravel, Mountains Abound - the wall - Eye Spy
-- V Two Sprouts, Twelve Brackets - cave in subterranean - Enter the Deep Dark, then sleep
-- V Distant Towers upon Cracked Earth - moon's wall - climb high in ocean biome, then sleep
-- V Rhinestones beneath Shattered Glass - undergrowth - Postmortal, then sleep
-- V Eight Spots on a Blind Eye - transmission array - subspace bubble
-
+Not real yet:
+WATCHER*
++ Camouflage yourself!
++ Set up warp points to quickly warp between regions!
+Note: I haven't completed the Watcher yet. I don't think it has any downsides beyond the environmental rot...?
 
 ???*
 + dating sim is canon
