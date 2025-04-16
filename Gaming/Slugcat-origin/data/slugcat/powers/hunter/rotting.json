@@ -2,6 +2,13 @@
     "name": "Rotting",
     "description": "Something within you has awoken. Keep it fed by killing entities, and you should be fine... ish. Check on its progress with your secondary ability key. If it overtakes you fully, though, there is no way back...",
     "type": "origins:multiple",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "It is recommended to use subtitles. This is an audio-only warning and exists in five stages. Warden groans angrily > Warden whines > Warden groans angrily > Warden rages > Warden roars"
+        }
+    ],
     "resource": {
         "type": "origins:resource",
         "min": 0,
