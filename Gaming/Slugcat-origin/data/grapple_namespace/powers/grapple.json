@@ -1,7 +1,19 @@
 {
-    "name": "Grappling Hook",
-    "description": "Made by finn_nerd, originally for Origins 1.20.1.",
+    "name": "Grappling Tongue",
+    "description": "Latch onto walls and ceilings with your tongue! You can also push yourself upwards with a bit of effort.",
     "type": "origins:multiple",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "May not work as expected if you are further than about 7 blocks from your anchor point. Unknown how to fix, but it's on my radar."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/star.png",
+            "text": "Made by finn_nerd, originally for Origins 1.20.1. Modified from the Power Library."
+        }
+    ],
     
     "callback": {
         "type": "origins:action_on_callback",
