@@ -79,13 +79,11 @@ ARTIFICER
 
 
 RIVULET
-
 + You're WAY faster!
 + You jump WAY higher (toggleable)!
 + You can breathe for much longer underwater!
 + Craft a special item to enhance your movement even further!
 - You cannot outrun the rain forever.
-
 
 SPEARMASTER
 + Eat by stabbing entities!
@@ -94,7 +92,22 @@ SPEARMASTER
 - You have no mouth and you must eat
 - Needles will decay over time, meaning you cannot use them to feed
 
-not real yet:
+
+SAINT
++ Grapple blocks with your tongue!
+- Herbivore
+- No spear :(
+- Weapons deal less damage
+- 5 hearts instead of 6
+- You start freezing in cold biomes unless you have a source of heat with you
+
+SAINT+
++ Attained Focus.
++ ASCENSION: Focus your sights on a mob while flying, and ascend it! (They'll glow, start floating, and then die.)
++ No need to breathe while Focused.
+= All the other Saint traits still apply.
+
+Not real yet:
 THE ROT:
 Good luck. :)
 - Blind
@@ -104,37 +117,12 @@ Good luck. :)
 - Very short meelee attack reach
 + A LOT of health & inbuilt defense
 + Incredibly strong meelee attack
++ Yoink.
 
-SAINT*
-+ Grapple blocks with your tongue!
-- Herbivore
-- No spear :(
-- Weapons deal less damage
-- 4 hearts instead of 6
-- The cold deals extra damage to you
-- You start freezing in cold biomes unless you have a source of heat with you
-
-SAINT+*
-+ Attained Focus. Flight is unlocked.
-+ ASCENSION: Focus your sights on a mob while flying, and ascend it! (They'll glow, start floating, and then die.)
-+ No need to breathe while Focused.
-= All the other Saint traits still apply.
-
-- unlocked after obtaining 11/14 of the following advancements?:
-- - We Need To Go Deeper
-- - Eye Spy
-- - Those Were The Days
-- - Into Fire
-- - The End
-- - Remote Getaway
-- - Voluntary Exile
-- - Respecting the Remnants
-- - Sneak 100
-- - Sweet Dreams
-- - Postmortal
-- - Careful Restoration
-- - Glow And Behold!
-- - Serious Dedication
+WATCHER*
++ Camouflage yourself!
++ Set up warp points to quickly warp between regions!
+Note: I haven't completed the Watcher yet. I don't think it has any downsides beyond the environmental rot...?
 
 ???*
 + dating sim is canon

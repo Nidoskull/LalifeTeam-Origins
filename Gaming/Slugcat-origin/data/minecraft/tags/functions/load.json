@@ -1,6 +1,7 @@
 {
     "values": [
         "moving:load",
+        "slugcat:load",
         "slugcat:applymoving"
     ]
 }

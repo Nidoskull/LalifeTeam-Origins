@@ -1,0 +1,1004 @@
+{
+    "values": [
+        {
+            "id": "minecraft:deepslate",
+            "required": false
+        },
+        {
+            "id": "minecraft:cobbled_deepslate",
+            "required": false
+        },
+        {
+            "id": "minecraft:polished_deepslate",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_coal_ore",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_iron_ore",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_copper_ore",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_gold_ore",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_redstone_ore",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_emerald_ore",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_lapis_ore",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_diamond_ore",
+            "required": false
+        },
+        {
+            "id": "minecraft:infested_deepslate",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_bricks",
+            "required": false
+        },
+        {
+            "id": "minecraft:cracked_deepslate_bricks",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_tiles",
+            "required": false
+        },
+        {
+            "id": "minecraft:cracked_deepslate_tiles",
+            "required": false
+        },
+        {
+            "id": "minecraft:chiseled_deepslate",
+            "required": false
+        },
+        {
+            "id": "minecraft:reinforced_deepslate",
+            "required": false
+        },
+        {
+            "id": "minecraft:cobbled_deepslate_wall",
+            "required": false
+        },
+        {
+            "id": "minecraft:polished_deepslate_wall",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_brick_wall",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_tile_wall",
+            "required": false
+        },
+        {
+            "id": "minecraft:cobbled_deepslate_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:polished_deepslate_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_brick_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:cobbled_deepslate_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:polished_deepslate_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_brick_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:deepslate_tile_slab",
+            "required": false
+        },
+        {
+            "id": "chisel:array/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:braid/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:chaotic_bricks/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:chaotic_medium/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:chaotic_small/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:circular/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:cracked/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:cracked_bricks/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:cut/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:dent/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:encased_bricks/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:french/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:jellybean/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:large_tile/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:largeornate/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:layer/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:mosaic/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:ornate/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:panel/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:pillar/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:poison/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:prism/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:raw/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:road/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:slant/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:small_bricks/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:soft_bricks/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:solid_bricks/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:sunken/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:tiles_medium/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:tiles_small/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:triple_bricks/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:twist/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:weaver/deepslate",
+            "required": false
+        },
+        {
+            "id": "chisel:zag/deepslate",
+            "required": false
+        },
+        {
+            "id": "create:deepslate_zinc_ore",
+            "required": false
+        },
+        {
+            "id": "create:cut_deepslate",
+            "required": false
+        },
+        {
+            "id": "create:cut_deepslate_stairs",
+            "required": false
+        },
+        {
+            "id": "create:cut_deepslate_slab",
+            "required": false
+        },
+        {
+            "id": "create:cut_deepslate_wall",
+            "required": false
+        },
+        {
+            "id": "create:polished_cut_deepslate",
+            "required": false
+        },
+        {
+            "id": "create:polished_cut_deepslate_stairs",
+            "required": false
+        },
+        {
+            "id": "create:polished_cut_deepslate_slab",
+            "required": false
+        },
+        {
+            "id": "create:polished_cut_deepslate_wall",
+            "required": false
+        },
+        {
+            "id": "create:cut_deepslate_bricks",
+            "required": false
+        },
+        {
+            "id": "create:cut_deepslate_brick_stairs",
+            "required": false
+        },
+        {
+            "id": "create:cut_deepslate_brick_slab",
+            "required": false
+        },
+        {
+            "id": "create:cut_deepslate_brick_wall",
+            "required": false
+        },
+        {
+            "id": "create:small_deepslate_bricks",
+            "required": false
+        },
+        {
+            "id": "create:small_deepslate_brick_stairs",
+            "required": false
+        },
+        {
+            "id": "create:small_deepslate_brick_slab",
+            "required": false
+        },
+        {
+            "id": "create:small_deepslate_brick_wall",
+            "required": false
+        },
+        {
+            "id": "create:layered_deepslate",
+            "required": false
+        },
+        {
+            "id": "create:deepslate_pillar",
+            "required": false
+        },
+        {
+            "id": "supplementaries:deepslate_lamp",
+            "required": false
+        },
+        {
+            "id": "minecraft:coal_block",
+            "required": false
+        },
+        {
+            "id": "betterend:charcoal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:array/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:braid/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:chaotic_bricks/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:chaotic_medium/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:chaotic_small/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:circular/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:cracked/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:cracked_bricks/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:cut/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:dent/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:encased_bricks/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:french/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:jellybean/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:large_tile/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:largeornate/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:layer/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:mosaic/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:ornate/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:panel/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:pillar/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:poison/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:prism/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:raw/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:road/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:slant/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:small_bricks/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:soft_bricks/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:solid_bricks/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:sunken/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:tiles_medium/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:tiles_small/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:triple_bricks/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:twist/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:weaver/coal_block",
+            "required": false
+        },
+        {
+            "id": "chisel:zag/coal_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:raw_iron_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:raw_copper_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:raw_gold_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:brick/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:coin_heads/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:coin_tails/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:crate_dark/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:crate_light/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:gears/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:largeingot/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:moon/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:plates/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:rivets/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:simple/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:smallingot/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:space/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:spaceblack/iron_block",
+            "required": false
+        },
+        {
+            "id": "chisel:vents/iron_block",
+            "required": false
+        },
+        {
+            "id": "create:industrial_iron_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:copper_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:exposed_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:weathered_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:oxidized_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:cut_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:exposed_cut_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:weathered_cut_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:oxidized_cut_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:cut_copper_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:exposed_cut_copper_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:weathered_cut_copper_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:oxidized_cut_copper_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:cut_copper_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:exposed_cut_copper_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:weathered_cut_copper_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:oxidized_cut_copper_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_copper_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_exposed_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_weathered_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_oxidized_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_cut_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_exposed_cut_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_weathered_cut_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_oxidized_cut_copper",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_cut_copper_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_exposed_cut_copper_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_weathered_cut_copper_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_oxidized_cut_copper_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_cut_copper_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_exposed_cut_copper_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_weathered_cut_copper_slab",
+            "required": false
+        },
+        {
+            "id": "minecraft:waxed_oxidized_cut_copper_slab",
+            "required": false
+        },
+        {
+            "id": "create:copper_shingles",
+            "required": false
+        },
+        {
+            "id": "create:exposed_copper_shingles",
+            "required": false
+        },
+        {
+            "id": "create:weathered_copper_shingles",
+            "required": false
+        },
+        {
+            "id": "create:oxidized_copper_shingles",
+            "required": false
+        },
+        {
+            "id": "create:copper_shingle_slab",
+            "required": false
+        },
+        {
+            "id": "create:exposed_copper_shingle_slab",
+            "required": false
+        },
+        {
+            "id": "create:weathered_copper_shingle_slab",
+            "required": false
+        },
+        {
+            "id": "create:oxidized_copper_shingle_slab",
+            "required": false
+        },
+        {
+            "id": "create:copper_shingle_stairs",
+            "required": false
+        },
+        {
+            "id": "create:exposed_copper_shingle_stairs",
+            "required": false
+        },
+        {
+            "id": "create:weathered_copper_shingle_stairs",
+            "required": false
+        },
+        {
+            "id": "create:oxidized_copper_shingle_stairs",
+            "required": false
+        },
+        {
+            "id": "create:waxed_copper_shingles",
+            "required": false
+        },
+        {
+            "id": "create:waxed_exposed_copper_shingles",
+            "required": false
+        },
+        {
+            "id": "create:waxed_weathered_copper_shingles",
+            "required": false
+        },
+        {
+            "id": "create:waxed_oxidized_copper_shingles",
+            "required": false
+        },
+        {
+            "id": "create:waxed_copper_shingle_slab",
+            "required": false
+        },
+        {
+            "id": "create:waxed_exposed_copper_shingle_slab",
+            "required": false
+        },
+        {
+            "id": "create:waxed_weathered_copper_shingle_slab",
+            "required": false
+        },
+        {
+            "id": "create:waxed_oxidized_copper_shingle_slab",
+            "required": false
+        },
+        {
+            "id": "create:waxed_copper_shingle_stairs",
+            "required": false
+        },
+        {
+            "id": "create:waxed_exposed_copper_shingle_stairs",
+            "required": false
+        },
+        {
+            "id": "create:waxed_weathered_copper_shingle_stairs",
+            "required": false
+        },
+        {
+            "id": "create:waxed_oxidized_copper_shingle_stairs",
+            "required": false
+        },
+        {
+            "id": "create:copper_tiles",
+            "required": false
+        },
+        {
+            "id": "create:exposed_copper_tiles",
+            "required": false
+        },
+        {
+            "id": "create:weathered_copper_tiles",
+            "required": false
+        },
+        {
+            "id": "create:oxidized_copper_tiles",
+            "required": false
+        },
+        {
+            "id": "create:copper_tile_slab",
+            "required": false
+        },
+        {
+            "id": "create:exposed_copper_tile_slab",
+            "required": false
+        },
+        {
+            "id": "create:weathered_copper_tile_slab",
+            "required": false
+        },
+        {
+            "id": "create:oxidized_copper_tile_slab",
+            "required": false
+        },
+        {
+            "id": "create:copper_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "create:exposed_copper_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "create:weathered_copper_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "create:oxidized_copper_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "create:waxed_copper_tiles",
+            "required": false
+        },
+        {
+            "id": "create:waxed_exposed_copper_tiles",
+            "required": false
+        },
+        {
+            "id": "create:waxed_weathered_copper_tiles",
+            "required": false
+        },
+        {
+            "id": "create:waxed_oxidized_copper_tiles",
+            "required": false
+        },
+        {
+            "id": "create:waxed_copper_tile_slab",
+            "required": false
+        },
+        {
+            "id": "create:waxed_exposed_copper_tile_slab",
+            "required": false
+        },
+        {
+            "id": "create:waxed_weathered_copper_tile_slab",
+            "required": false
+        },
+        {
+            "id": "create:waxed_oxidized_copper_tile_slab",
+            "required": false
+        },
+        {
+            "id": "create:waxed_copper_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "create:waxed_exposed_copper_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "create:waxed_weathered_copper_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "create:waxed_oxidized_copper_tile_stairs",
+            "required": false
+        },
+        {
+            "id": "minecraft:gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:brick/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:cart/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:coin_heads/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:coin_tails/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:crate_dark/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:crate_light/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:largeingot/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:plates/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:rivets/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:smallingot/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:simple/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:space/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:spaceblack/gold_block",
+            "required": false
+        },
+        {
+            "id": "chisel:star/gold_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:diamond_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:netherite_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:lapis_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:emerald_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:redstone_block",
+            "required": false
+        },
+        {
+            "id": "supplementaries:flint_block",
+            "required": false
+        },
+        {
+            "id": "betterend:thallasium_block",
+            "required": false
+        },
+        {
+            "id": "betterend:terminite_block",
+            "required": false
+        },
+        {
+            "id": "betterend:aeternium_block",
+            "required": false
+        },
+        {
+            "id": "create:andesite_alloy_block",
+            "required": false
+        },
+        {
+            "id": "create:raw_zinc_block",
+            "required": false
+        },
+        {
+            "id": "create:zinc_block",
+            "required": false
+        },
+        {
+            "id": "create:brass_block",
+            "required": false
+        }
+    ]
+}

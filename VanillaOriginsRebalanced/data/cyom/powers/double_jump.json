@@ -1,0 +1,125 @@
+{
+  "type": "origins:multiple",
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 23,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "*:*_resource",
+        "comparison": "<",
+        "compare_to": 1
+      }
+    },
+    "start_value": 1
+  },
+  "jump": {
+    "type": "origins:active_self",
+    "hud_render": {
+      "should_render": false
+    },
+    "key": {
+      "key": "key.jump"
+    },
+    "cooldown": 0,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:add_velocity",
+          "y": 2,
+          "z": 1,
+          "space": "local",
+          "set": true
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "*:*_resource",
+          "change": -1
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "execute at @s run playsound minecraft:entity.ender_dragon.flap master @a[distance=..4] ~ ~ ~ 1 1.4",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "execute at @s run particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0 30",
+          "permission_level": 4
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "*:*_resource",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:on_block",
+          "inverted": true
+        },
+        {
+          "type": "origins:gamemode",
+          "gamemode": "creative",
+          "inverted": true
+        },
+        {
+          "type": "origins:gamemode",
+          "gamemode": "spectator",
+          "inverted": true
+        },
+        {
+          "type": "origins:in_block",
+          "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:block",
+                "block": "minecraft:water",
+                "inverted": true
+              },
+              {
+                "type": "origins:block",
+                "block": "minecraft:lava",
+                "inverted": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "jump_regen": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_resource",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "*:*_resource",
+          "comparison": "<",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:on_block"
+        }
+      ]
+    }
+  },
+  "name": "Cloud Jump",
+  "description": "You gain an extra jump!"
+}

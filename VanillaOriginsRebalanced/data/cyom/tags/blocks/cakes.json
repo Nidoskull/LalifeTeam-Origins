@@ -1,0 +1,24 @@
+{
+    "values": [
+        {
+            "id": "minecraft:cake",
+            "required": false
+        },
+        {
+            "id": "supplementaries:cake",
+            "required": false
+        },
+        {
+            "id": "supplementaries:double_cake",
+            "required": false
+        },
+        {
+            "id": "supplementaries:directional_cake",
+            "required": false
+        },
+        {
+            "id": "supplementaries:pancake",
+            "required": false
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "parent": "slugcat:echoes/root",
+    "criteria": {
+		"used_totem": {
+			"trigger": "minecraft:used_totem",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:totem_of_undying"
+					]
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"used_totem"
+		]
+	],
+    "rewards": {
+        "function": "slugcat:echo/meetecholame"
+    }
+}

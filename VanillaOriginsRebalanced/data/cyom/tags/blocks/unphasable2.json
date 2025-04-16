@@ -1,0 +1,36 @@
+{
+    "values": [
+        {
+            "id": "minecraft:bedrock",
+            "required": false
+        },
+        {
+            "id": "minecraft:command_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:barrier",
+            "required": false
+        },
+        {
+            "id": "minecraft:chain_command_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:repeating_command_block",
+            "required": false
+        },
+        {
+            "id": "minecraft:reinforced_deepslate",
+            "required": false
+        },
+        {
+            "id": "minecraft:netherite_block",
+            "required": false
+        },
+        {
+            "id": "betterend:flavolite_runed_eternal",
+            "required": false
+        }
+    ]
+}

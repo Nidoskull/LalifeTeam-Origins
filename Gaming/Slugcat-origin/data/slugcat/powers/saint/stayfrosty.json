@@ -1,0 +1,467 @@
+{
+    "name": "Cryophobia",
+    "description": "You're twice as resistant to cold as other slugcats thanks to your warm fur coat. That, uh, doesn't mean you're IMMUNE to cold, though.",
+    "type": "origins:multiple",
+    "heatheld": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:spawn_particles",
+                    "count": 3,
+                    "spread": {
+                        "x": 0,
+                        "y": 0.5,
+                        "z": 0
+                    },
+                    "particle": "minecraft:small_flame"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_freezing",
+                    "change": -8,
+                    "operation": "add"
+                }
+            ]
+        },
+        "interval": 30,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {            
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "slugcat:heat_item"
+                                }
+                            }
+                        },
+                        {            
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "slugcat:heat_item"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "heatblocks": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:spawn_particles",
+                    "count": 3,
+                    "spread": {
+                        "x": 0,
+                        "y": 0.5,
+                        "z": 0
+                    },
+                    "particle": "minecraft:small_flame"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_freezing",
+                    "change": -9,
+                    "operation": "add"
+                }
+            ]
+        },
+        "interval": 30,
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "slugcat:heat_block"
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:furnace"
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "value": true,
+                                "comparison": "=="
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:blast_furnace"
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "value": true,
+                                "comparison": "=="
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:smoker"
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "value": true,
+                                "comparison": "=="
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:redstone_lamp"
+                            },
+                            {
+                                "type": "origins:block_state",
+                                "property": "lit",
+                                "value": true,
+                                "comparison": "=="
+                            }
+                        ]
+                    }
+                ]
+            },
+            "radius": 4,
+            "shape": "sphere",
+            "comparison": ">=",
+            "compare_to": 1
+        }
+    },
+    "freezing": {
+        "type": "origins:resource",
+        "max": 200,
+        "min": -200,
+        "hud_render": {
+            "should_render": true,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_freezing",
+                "comparison": ">",
+                "compare_to": -200
+            },
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png"
+        }
+    },
+    "itscold": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:biome",
+                    "condition": {
+                        "type": "origins:temperature",
+                        "compare_to": 0.1,
+                        "comparison": "<="
+                    }
+                },
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "slugcat:heat_block"
+                    },
+                    "radius": 4,
+                    "shape": "sphere",
+                    "comparison": ">=",
+                    "compare_to": 1,
+                    "inverted": true
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "change": 2,
+                    "operation": "add",
+                    "resource": "*:*_freezing"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "count": 3,
+                    "spread": {
+                        "y": 0.5
+                    },
+                    "particle": "minecraft:snowflake"
+                }
+            ]
+        },
+        "interval": 10
+    },
+    "coldshake": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:biome",
+                    "condition": {
+                        "type": "origins:temperature",
+                        "compare_to": 0.1,
+                        "comparison": "<="
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 0,
+                    "comparison": ">="
+                }
+            ]
+        }
+    },
+    "frozen1": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": -100,
+                    "comparison": ">"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:slowness",
+                        "amplifier": 2,
+                        "is_ambient": true,
+                        "show_icon": true,
+                        "show_particles": false
+                    }
+                }
+            ]
+        }
+    },
+    "frozen2": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 0,
+                    "comparison": ">"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:slowness",
+                        "amplifier": 4,
+                        "is_ambient": true,
+                        "show_icon": true,
+                        "show_particles": false
+                    }
+                }
+            ]
+        }
+    },
+    "overlay": {
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/misc/powder_snow_outline.png",
+        "draw_mode": "texture",
+        "draw_phase": "above_hud",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 0,
+                    "comparison": ">"
+                }
+            ]
+        }
+    },
+    "frozen3": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 100,
+                    "comparison": ">"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:slowness",
+                        "amplifier": 4,
+                        "is_ambient": true,
+                        "show_icon": true,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.amethyst_block.hit",
+                    "pitch": 2,
+                    "category": "players"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.amethyst_block.hit",
+                    "pitch": 2,
+                    "category": "players"
+                }
+            ]
+        }
+    },
+    "colorfrozen1": {
+            "type": "origins:model_color",
+            "red": 0.7,
+            "green": 0.7,
+            "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 100,
+                    "comparison": ">"
+                }
+            ]
+        }
+    },
+    "frozen4": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 185,
+                    "comparison": ">="
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.player.hurt_freeze",
+                    "pitch": 2,
+                    "category": "players"
+                }
+            ]
+        }
+    },
+    "frozen5": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 192,
+                    "comparison": ">="
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:damage",
+                    "damage_type": "minecraft:freeze",
+                    "amount": 1
+                }
+            ]
+        }
+    },
+    "colorfrozen2": {
+            "type": "origins:model_color",
+            "red": 0.5,
+            "green": 0.5,
+            "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_freezing",
+                    "compare_to": 185,
+                    "comparison": ">"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "type":"origins:multiple",
+    "name": "Regeneration",
+    "description": "You're very good at regenerating lost... anything, really- as long as you keep yourself hydrated!",
+    "wetness":{
+        "type": "origins:resource",
+        "max": 20,
+        "min": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 1
+        },
+        "max_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:regeneration",
+                "duration": 40
+            }
+        }
+    },
+    "add":{
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:or",
+            "conditions":[
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+                {
+                    "type": "origins:in_rain"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "cyom:wetnoodle_wetness",
+            "change": 3
+        },
+        "interval": 10
+    },
+    "remove":{
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:or",
+            "conditions":[
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+                {
+                    "type": "origins:in_rain"
+                }
+            ],
+            "inverted": true
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "cyom:wetnoodle_wetness",
+            "change": -2
+        },
+        "interval": 10
+    },
+    "helth":{
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "cyom:wetnoodle_wetness",
+            "comparison": ">=",
+            "compare_to": 17
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:regeneration",
+                "duration": 200
+            }
+        },
+        "interval": 20
+    }
+}

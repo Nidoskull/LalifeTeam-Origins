@@ -1,0 +1,27 @@
+{
+	"parent": "slugcat:echoes/root",
+	"criteria": {
+		"in_stronghold": {
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"structure": "minecraft:stronghold"
+							}
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:location"
+		}
+	},
+	"requirements": [
+		["in_stronghold"]
+	],
+    "rewards": {
+        "function": "slugcat:echo/meetecho"
+    }
+}

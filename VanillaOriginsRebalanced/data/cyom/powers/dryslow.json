@@ -1,0 +1,29 @@
+{
+    "name": "Dried Out",
+    "description": "If you're not in water, you're slower and weaker.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -10,
+    "max_stacks": 40,
+    "duration_per_stack": 10,
+    "effects": [
+        {
+            "effect": "minecraft:weakness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    ],
+    "condition": {
+        "type": "origins:or",
+        "conditions":[
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            },
+            {
+                "type": "origins:in_rain"
+            }
+        ],
+        "inverted": true
+    }
+}

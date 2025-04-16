@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Vanilla Origin Rebalancing",
+        "id": "cyom",
+        "pack_format": 10,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "Vanilla Origin Rebalancing!"
+    }
+}

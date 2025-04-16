@@ -1,0 +1,235 @@
+{
+    "name": "Ascension",
+    "description": "Temporarily attune yourself to powers from beyond this world by pressing your secondary button while in the air. While attuned, stare at a mob and hold your secondary ability button to ascend it. Shift+secondary to end attunement early, or wait until you must return to this plane of existance to return to normal gameplay.",
+    "type": "origins:multiple",
+    "attuned_bar": {
+        "type": "origins:resource",
+        "hud_render": {
+            "sprite_location": "slugcat:textures/gui/attuned_bar.png",
+            "icon_index": 0
+        },
+        "max": 12,
+        "min": 0,
+        "start_value": 12,
+        "min_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_is_attuned",
+            "change": 0,
+            "operation": "set"
+        }
+    },
+    "is_attuned": {
+        "type": "origins:resource",
+        "max": 1,
+        "min": 0
+    },
+    "flight": {
+        "type": "origins:creative_flight",
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 1,
+            "resource": "*:*_is_attuned",
+            "comparison": "=="
+        }
+    },
+    "activate": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:on_block",
+            "inverted": true
+        },
+        "key": "key.origins.secondary_active",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_is_attuned",
+                    "change": 1,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound slugcat:entity.saint.ascend player @a"
+                }
+            ]
+        }
+    },
+    "deactivate": {
+        "type": "origins:active_self",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "compare_to": 1,
+                    "resource": "*:*_is_attuned",
+                    "comparison": "=="
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "key": "key.origins.secondary_active",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_is_attuned",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound slugcat:entity.saint.ascend player @a ~ ~ ~ 1 0.65"
+                }
+            ]
+        }
+    },
+    "attune_down": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 1,
+            "resource": "*:*_is_attuned",
+            "comparison": "=="
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_attuned_bar",
+            "change": -1,
+            "operation": "add"
+        },
+        "interval": 20
+    },
+    "attune_up": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 0,
+            "resource": "*:*_is_attuned",
+            "comparison": "=="
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_attuned_bar",
+            "change": 1,
+            "operation": "add"
+        },
+        "interval": 20
+    },
+    "smitecharge": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 1,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_smitecharge",
+                "comparison": ">=",
+                "compare_to": 1
+            }
+        },
+        "max_action": {
+            "type": "origins:raycast",
+            "distance": 16,
+            "block": true,
+            "entity": true,
+            "shape_type": "visual",
+            "fluid_handling": "any",
+            "hit_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_smitecharge",
+                "change": 0,
+                "operation": "set"
+            },
+            "bientity_action": {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "kill"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "playsound slugcat:entity.saint.kill master @a"
+                        }
+                    ]
+                }
+            },
+            "command_along_ray": "particle minecraft:enchanted_hit",
+            "command_step": 1,
+            "command_along_ray_only_on_hit": true
+        }
+    },
+    "charge_up": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_smitecharge",
+                    "change": 3
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:enchant ~ ~ ~ 0.5 0.5 0.5 0.0 4 normal @a"
+                },
+                {
+                    "type": "origins:raycast",
+                    "distance": 16,
+                    "block": true,
+                    "entity": true,
+                    "shape_type": "visual",
+                    "fluid_handling": "any",
+                    "bientity_action": {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:glowing",
+                                "duration": 5
+                            }
+                        }
+                    },
+                    "command_along_ray": "particle minecraft:mycelium",
+                    "command_step": 1,
+                    "command_along_ray_only_on_hit": true
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": true,
+            "inverted": true
+        },
+        "condition": {
+            "type": "origins:resource",
+            "compare_to": 1,
+            "resource": "*:*_is_attuned",
+            "comparison": "=="
+        },
+        "hidden": true
+    },
+    "charge_down": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_smitecharge",
+            "change": -1
+        },
+        "interval": 1
+    }
+}
