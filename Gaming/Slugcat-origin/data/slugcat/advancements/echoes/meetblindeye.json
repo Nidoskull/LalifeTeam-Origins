@@ -1,0 +1,23 @@
+{
+    "parent": "slugcat:echoes/root",
+    "criteria": {
+		"travelled": {
+			"trigger": "minecraft:nether_travel",
+			"conditions": {
+				"distance": {
+					"horizontal": {
+						"min": 7000
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"travelled"
+		]
+	],
+    "rewards": {
+        "function": "slugcat:echo/meetecho"
+    }
+}

@@ -1,0 +1,389 @@
+{
+    "name": "Weather Warning",
+    "description": "You will receive a warning that it is about to start raining.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 22
+    },
+    "warn": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "/function slugcat:rainwarning"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_rain"
+                },
+                {
+                    "type": "origins:exposed_to_sky"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cd_used",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "interval": 20
+    },
+    "rsrc_down": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "comparison": ">=",
+            "compare_to": 1,
+            "resource": "*:*_resource"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1,
+            "operation": "add"
+        },
+        "interval": 20
+    },
+    "cd_used": {
+        "type": "origins:resource",
+        "max": 300,
+        "min": 0,
+        "start_value": 0
+    },
+    "cd_timer": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:living"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cd_used",
+                    "compare_to": 1,
+                    "comparison": ">="
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cd_used",
+            "change": -1,
+            "operation": "add"
+        },
+        "interval": 20
+    },
+    "tick_1": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 22,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_2": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 21,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_3": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 20,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_4": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 19,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_5": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 18,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_6": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 17,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_7": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 16,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_8": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 15,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_9": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 14,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_10": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 13,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_11": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 12,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_12": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 11,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_13": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 10,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_14": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 9,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_15": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 8,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_16": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 7,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_17": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 6,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_18": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 5,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_19": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 4,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_20": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 3,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    },
+    "tick_21": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 2,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tick weather @a"
+        },
+        "interval": 20
+    },
+    "tock_22": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 1,
+            "comparison": "=="
+        },
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "playsound slugcat:weather.rain.tock weather @a"
+        },
+        "interval": 20
+    }
+}

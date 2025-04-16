@@ -1,0 +1,78 @@
+{
+    "parent": "slugcat:echoes/root",
+    "criteria": {
+		"stonypeaks": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:stony_peaks",
+                                "position": {
+                                    "y": {
+                                        "min": 200
+                                    }
+                                }
+							}
+						}
+					}
+				]
+			}
+		},
+        "jaggedpeaks": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:jagged_peaks",
+                                "position": {
+                                    "y": {
+                                        "min": 200
+                                    }
+                                }
+							}
+						}
+					}
+				]
+			}
+        },
+        "frozenpeaks": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:frozen_peaks",
+                                "position": {
+                                    "y": {
+                                        "min": 200
+                                    }
+                                }
+							}
+						}
+					}
+				]
+			}
+        }
+	},
+    "requirements": [
+        [
+            "stonypeaks",
+            "jaggedpeaks",
+            "frozenpeaks"
+        ]
+    ],
+    "rewards": {
+        "function": "slugcat:echo/meetecho"
+    }
+}

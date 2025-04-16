@@ -1,0 +1,148 @@
+{
+    "parent": "slugcat:echoes/root",
+    "criteria": {
+		"ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:ocean"
+							}
+						}
+					}
+				]
+			}
+		},
+        "warm_ocean": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:warm_ocean"
+							}
+						}
+					}
+				]
+			}
+        },
+        "cold_ocean": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:cold_ocean"
+							}
+						}
+					}
+				]
+			}
+        },
+		"deep_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:deep_ocean"
+							}
+						}
+					}
+				]
+			}
+		},
+		"deep_warm_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:deep_warm_ocean"
+							}
+						}
+					}
+				]
+			}
+		},
+		"deep_cold_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:deep_cold_ocean"
+							}
+						}
+					}
+				]
+			}
+		},
+		"frozen_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:frozen_ocean"
+							}
+						}
+					}
+				]
+			}
+		},
+		"deep_frozen_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:deep_frozen_ocean"
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+    "requirements": [
+        [
+            "ocean",
+            "warm_ocean",
+            "cold_ocean",
+			"deep_ocean",
+			"deep_warm_ocean",
+			"deep_cold_ocean",
+			"frozen_ocean",
+			"deep_frozen_ocean"
+        ]
+    ],
+    "rewards": {
+        "function": "slugcat:echo/meetecho"
+    }
+}

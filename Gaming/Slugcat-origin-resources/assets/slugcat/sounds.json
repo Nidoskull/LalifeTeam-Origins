@@ -1,0 +1,181 @@
+{
+    "entity.echo.talk": {
+        "subtitle": "Echo speaks",
+        "sounds": [
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.5
+            },
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.55
+            },
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.6
+            },
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.65
+            },
+            {
+                "name": "minecraft:ambient/cave/cave19",
+                "pitch": 0.7
+            },
+            {
+                "name": "minecraft:ambient/cave/cave13",
+                "pitch": 0.9
+            },
+            {
+                "name": "minecraft:ambient/cave/cave13",
+                "pitch": 1.2
+            }
+        ]
+    },
+    "entity.slugcat.pounce": {
+        "subtitle": "Slugcat pounces",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/jump",
+                "pitch": 1
+            },
+            {
+                "name": "slugcat:sfx/jump",
+                "pitch": 1.2
+            },
+            {
+                "name": "slugcat:sfx/jump",
+                "pitch": 0.9
+            }
+        ]
+    },
+    "entity.slugcat.throw": {
+        "subtitle": "Slugcat throws spear",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/throw",
+                "pitch": 1
+            },
+            {
+                "name": "slugcat:sfx/throw",
+                "pitch": 1.2
+            },
+            {
+                "name": "slugcat:sfx/throw",
+                "pitch": 0.9
+            }
+        ]
+    },
+    "entity.slugcat.die": {
+        "subtitle": "Slugcat dies",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/impact",
+                "pitch": 1
+            },
+            {
+                "name": "slugcat:sfx/impact",
+                "pitch": 1.2
+            },
+            {
+                "name": "slugcat:sfx/impact",
+                "pitch": 0.9
+            }
+        ]
+    },
+    "entity.spearmaster.pull": {
+        "subtitle": "Spearmaster creates needle",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/sm-spearpull",
+                "pitch": 1
+            },
+            {
+                "name": "slugcat:sfx/sm-spearpull2",
+                "pitch": 1
+            }
+        ]
+    },
+    "entity.spearmaster.grab": {
+        "subtitle": "Spearmaster finishes creating needle",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/sm-speargrab",
+                "pitch": 1
+            },
+            {
+                "name": "slugcat:sfx/sm-speargrab",
+                "pitch": 1.1
+            }
+        ]
+    },
+    "entity.saint.ascend": {
+        "subtitle": "Saint ascends",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/ping-a",
+                "pitch": 1
+            },
+            {
+                "name": "slugcat:sfx/ping-a",
+                "pitch": 1.2
+            },
+            {
+                "name": "slugcat:sfx/ping-a",
+                "pitch": 0.9
+            }
+        ]
+    },
+    "entity.saint.kill": {
+        "subtitle": "Mob gets ascended",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/bang",
+                "pitch": 1
+            },
+            {
+                "name": "slugcat:sfx/bang",
+                "pitch": 1.2
+            },
+            {
+                "name": "slugcat:sfx/bang",
+                "pitch": 0.9
+            }
+        ]
+    },
+    "music.echo.else1": {
+        "sounds": [
+            {
+                "name": "slugcat:music/else1",
+                "stream": true
+            }
+        ]
+    },
+    "weather.rain.light":{
+        "subtitle": "Rain falls lightly",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/rain-light",
+                "stream": true
+            }
+        ]
+    },
+    "weather.rain.tick":{
+        "subtitle": "Tick...",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/tick",
+                "stream": false
+            }
+        ]
+    },
+    "weather.rain.tock":{
+        "subtitle": "Tock...",
+        "sounds": [
+            {
+                "name": "slugcat:sfx/tock",
+                "stream": false
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "replace": false,
+    "values": [
+      "#minecraft:strider_warm_blocks",
+      "#minecraft:campfires",
+      "minecraft:fire",
+      "minecraft:torch",
+      "minecraft:wall_torch",
+      "minecraft:lantern",
+      "minecraft:soul_torch",
+      "minecraft:soul_wall_torch",
+      "minecraft:soul_lantern",
+      "minecraft:magma_block",
+      "minecraft:glowstone",
+      "minecraft:jack_o_lantern",
+      "minecraft:lava_cauldron",
+      "minecraft:beacon",
+      "minecraft:pearlescent_froglight",
+      "minecraft:verdant_froglight",
+      "minecraft:ochre_froglight",
+      "minecraft:sea_lantern"
+    ]
+  }

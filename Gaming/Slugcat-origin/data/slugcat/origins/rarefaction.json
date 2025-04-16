@@ -8,7 +8,7 @@
         "moving:state"
     ],
     "icon": {
-        "item": "stick",
+        "item": "minecraft:barrier",
         "amount": 1
     },
     "order": 0,

@@ -1,0 +1,186 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_eye"
+        },
+        "title": {
+            "text": "Ascension"
+        },
+        "description": {
+            "text": "Meet all Echoes and attain true focus."
+        },
+        "background": "minecraft:textures/block/obsidian.png",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "slugcat:echoes/root",
+    "criteria": {
+		"meetbeads": {
+			"trigger": "minecraft:slept_in_bed",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"slugcat:echoes/amberbeads": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"meetblindeye": {
+			"trigger": "minecraft:slept_in_bed",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"slugcat:echoes/blindeye": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+        "meetbrackets": {
+			"trigger": "minecraft:slept_in_bed",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"slugcat:echoes/twelvebrackets": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+        "meetrhinestones": {
+			"trigger": "minecraft:slept_in_bed",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"slugcat:echoes/shatteredglass": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+        "meetspades": {
+			"trigger": "minecraft:slept_in_bed",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"slugcat:echoes/nineteenspades": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+        "meettowers": {
+			"trigger": "minecraft:slept_in_bed",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"slugcat:echoes/distanttowers": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+        "meetdroplets": {
+			"trigger": "minecraft:slept_in_bed",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"slugcat:echoes/largedroplets": true
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+        "meetgravel": {
+			"trigger": "minecraft:slept_in_bed",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"slugcat:echoes/sixgrains": true
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+    "requirements": [
+        ["meetbeads"],
+		["meetblindeye"],
+		["meetbrackets"],
+		["meetrhinestones"],
+		["meetspades"],
+		["meettowers"],
+		["meetdroplets"],
+		["meetgravel"]
+    ],
+    "rewards": {
+        "experience": 500
+    }
+}

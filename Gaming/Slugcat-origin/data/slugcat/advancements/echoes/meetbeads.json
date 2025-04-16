@@ -1,0 +1,100 @@
+{
+    "parent": "slugcat:echoes/root",
+    "criteria": {
+		"taiga": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:taiga",
+                                "position": {
+                                    "y": {
+                                        "min": 200
+                                    }
+                                }
+							}
+						}
+					}
+				]
+			}
+		},
+        "snowtaiga": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:snowy_taiga",
+                                "position": {
+                                    "y": {
+                                        "min": 200
+                                    }
+                                }
+							}
+						}
+					}
+				]
+			}
+        },
+        "oldpinetaiga": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:old_growth_pine_taiga",
+                                "position": {
+                                    "y": {
+                                        "min": 200
+                                    }
+                                }
+							}
+						}
+					}
+				]
+			}
+        },
+        "oldsprucetaiga": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"biome": "minecraft:old_growth_spruce_taiga",
+                                "position": {
+                                    "y": {
+                                        "min": 200
+                                    }
+                                }
+							}
+						}
+					}
+				]
+			}
+        }
+	},
+    "requirements": [
+        [
+            "taiga",
+            "snowtaiga",
+            "oldpinetaiga",
+            "oldsprucetaiga"
+        ]
+    ],
+    "rewards": {
+        "function": "slugcat:echo/meetecho"
+    }
+}

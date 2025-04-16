@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "name": "Fragile",
+    "description": "You are more fragile than other slugcats- only having five hearts, rather than six.",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "value": -2,
+      "operation": "addition"
+    }
+  }

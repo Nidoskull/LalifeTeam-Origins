@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_eye"
+        },
+        "title": {
+            "text": "Echoes Met"
+        },
+        "description": {
+            "text": "Find the rippling Echoes of those that came before and rest to communicate with them in your dreams."
+        },
+        "background": "minecraft:textures/block/obsidian.png",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "endcycle":{
+            "trigger": "minecraft:slept_in_bed"
+        }
+    },
+    "requirements": [
+        ["endcycle"]
+    ],
+    "rewards": {
+        "experience": 1
+    }
+}
