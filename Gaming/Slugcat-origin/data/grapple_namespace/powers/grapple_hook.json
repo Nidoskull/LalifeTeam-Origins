@@ -48,6 +48,6 @@
     },
 
     "invis": {
-        "type": "origins:simple"
+        "type": "origins:invisibility"
     }
 }
