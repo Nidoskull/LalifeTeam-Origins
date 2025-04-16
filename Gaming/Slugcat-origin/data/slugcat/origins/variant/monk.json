@@ -3,6 +3,7 @@
     "description": "Weak of body but strong in spirit. In tune with the mysteries of the world and empathetic to its creatures, your journey will be a significantly more peaceful one.",
     "powers": [
       "slugcat:monk/scale",
+      "slugcat:common/physics",
 		  "slugcat:monk/shelter_nofood",
       "slugcat:common/frozen",
       "slugcat:common/pounce",

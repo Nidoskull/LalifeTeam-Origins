@@ -3,6 +3,7 @@
     "description": "An indulger of the simpler pleasures in life. Carrying the world in your stomach gives many tactical advantages, but comes at an increased cost of sustainability.",
     "powers": [
         "slugcat:gourmand/scale",
+        "slugcat:common/physics",
         "slugcat:gourmand/shelter_food",
         "slugcat:common/frozen",
 		"slugcat:common/pounce",

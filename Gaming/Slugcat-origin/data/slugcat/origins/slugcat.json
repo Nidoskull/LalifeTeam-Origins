@@ -3,7 +3,6 @@
     "description": "What fate, a slugcat. Predator, or prey?",
     "powers": [
         "slugcat:common/fragile",
-        "slugcat:common/physics",
         "slugcat:common/nimble",
         "slugcat:common/pouncejargon",
         "slugcat:common/hungry",

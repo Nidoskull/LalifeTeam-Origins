@@ -3,6 +3,7 @@
     "description": "A nimble omnivore, both predator and prey. Lost in a harsh and indifferent land you must make your own way, with wit and caution as your greatest assets.",
     "powers": [
         "slugcat:survivor_jargon",
+        "slugcat:common/physics",
 		"slugcat:common/pounce",
         "slugcat:common/scale",
 		"slugcat:common/spear/standard",

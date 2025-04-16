@@ -3,6 +3,7 @@
     "description": "Frail and armed with a long tongue. Your journey will be one of perfect enlightenment, but walking this path requires patience, caution, and complete attunement with the world.",
     "powers": [
         "slugcat:saint/evolve",
+        "slugcat:saint/physicssaint",
         "slugcat:saint/fragile",
         "grapple_namespace:grapple",
         "slugcat:saint/stayfrosty",
