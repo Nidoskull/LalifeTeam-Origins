@@ -12,7 +12,6 @@
         "origins:vegetarian",
         "slugcat:common/scale",
 		"slugcat:common/pounce",
-		"slugcat:common/spear/pins",
         "slugcat:common/shelter_food"
     ],
     "icon": {
