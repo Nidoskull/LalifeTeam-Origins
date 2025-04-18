@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "No Movement",
-    "description": "Your physics are drastically different.",
+    "description": "Your physics are drastically different. You cannot move well without your tentacles.",
     "stuck": {
       "type": "origins:attribute",
       "modifier": {
