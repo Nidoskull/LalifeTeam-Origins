@@ -8,28 +8,27 @@
             "should_render": true
         },
         "max": 6,
-        "min": 1,
-        "max_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_maxcountreached",
-            "change": 1,
-            "operation": "set"
-        }
+        "min": 1
     },
-    "maxcountreached": {
+    "currentcount": {
         "type": "origins:resource",
         "hud_render": {
             "should_render": true
         },
-        "max": 1,
-        "min": 0,
-        "max_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_tentacount",
-            "change": 0,
-            "operation": "set"
-        }
+        "max": 6,
+        "min": 0
     },
+
+    "move": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_currentcount",
+            "compare_to": 3,
+            "comparison": ">="
+        },
+        "type": "origins:creative_flight"
+    },
+
     "grab": {
         "type": "origins:active_self",
         "entity_action": {
@@ -47,9 +46,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 0,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": "<"
                             },
                             {
                                 "type": "origins:living"
@@ -85,9 +84,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 1,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": ">="
                             },
                             {
                                 "type": "origins:living"
@@ -136,9 +135,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 0,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": "<"
                             },
                             {
                                 "type": "origins:living"
@@ -174,9 +173,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 1,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": ">="
                             },
                             {
                                 "type": "origins:living"
@@ -225,9 +224,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 0,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": "<"
                             },
                             {
                                 "type": "origins:living"
@@ -263,9 +262,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 1,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": ">="
                             },
                             {
                                 "type": "origins:living"
@@ -314,9 +313,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 0,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": "<"
                             },
                             {
                                 "type": "origins:living"
@@ -352,9 +351,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 1,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": ">="
                             },
                             {
                                 "type": "origins:living"
@@ -403,9 +402,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 0,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": "<"
                             },
                             {
                                 "type": "origins:living"
@@ -441,9 +440,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 1,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": ">="
                             },
                             {
                                 "type": "origins:living"
@@ -492,9 +491,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 0,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": "<"
                             },
                             {
                                 "type": "origins:living"
@@ -530,9 +529,9 @@
                             },
                             {
                                 "type": "origins:resource",
-                                "compare_to": 1,
-                                "resource": "*:*_maxcountreached",
-                                "comparison": "=="
+                                "compare_to": 6,
+                                "resource": "*:*_currentcount",
+                                "comparison": ">="
                             },
                             {
                                 "type": "origins:living"
@@ -572,6 +571,7 @@
             ]
         }
     },
+
     "reset": {
         "type": "origins:action_on_callback",
         "entity_action_respawned": {
@@ -586,31 +586,159 @@
                 {
                     "type": "origins:change_resource",
                     "change": 0,
-                    "resource": "*:*_maxcountreached",
+                    "resource": "*:*_currentcount",
                     "operation": "set"
                 }
             ]
         }
     },
+
     "limitfar": {
         "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:command",
+            "command": "execute if entity @e[type=armor_stand,tag=AnchorPoint,distance=25..35]"
+        },
         "entity_action": {
-            "type": "origins:and",
+            "type": "origins:if_else_list",
             "actions": [
                 {
-                    "type": "origins:execute_command",
-                    "command": "kill @e[type=armor_stand,tag=AnchorPoint,distance=25..40]"
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint1,tag=AnchorPoint,distance=25..35]"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[type=armor_stand,name=AnchorPoint1,tag=AnchorPoint,distance=25..35]"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_currentcount",
+                                "change": -1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint2,tag=AnchorPoint,distance=25..35]"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[type=armor_stand,name=AnchorPoint2,tag=AnchorPoint,distance=25..35]"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_currentcount",
+                                "change": -1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint3,tag=AnchorPoint,distance=25..35]"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[type=armor_stand,name=AnchorPoint3,tag=AnchorPoint,distance=25..35]"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_currentcount",
+                                "change": -1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint4,tag=AnchorPoint,distance=25..35]"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[type=armor_stand,name=AnchorPoint4,tag=AnchorPoint,distance=25..35]"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_currentcount",
+                                "change": -1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint5,tag=AnchorPoint,distance=25..35]"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[type=armor_stand,name=AnchorPoint5,tag=AnchorPoint,distance=25..35]"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_currentcount",
+                                "change": -1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint6,tag=AnchorPoint,distance=25..35]"
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "kill @e[type=armor_stand,name=AnchorPoint6,tag=AnchorPoint,distance=25..35]"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_currentcount",
+                                "change": -1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
                 }
             ]
         },
         "interval": 10
     },
+
     "lookparticle":{
         "type": "origins:action_over_time",
         "interval": 1,
         "entity_action": {
             "type": "origins:execute_command",
-            "command": "execute at @s as @e[distance=0.1..20] at @s positioned ~ ~1 ~ facing entity @s eyes run function slugcat:rottentacle"
+            "command": "execute at @s as @e[distance=0.1..26] at @s positioned ~ ~1 ~ facing entity @s eyes run function slugcat:rottentacle"
         }
     }
 }
