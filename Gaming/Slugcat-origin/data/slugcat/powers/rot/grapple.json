@@ -74,7 +74,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:and",
                             "actions": [
@@ -139,7 +139,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:and",
                                         "actions": [
@@ -191,7 +191,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:and",
                             "actions": [
@@ -256,7 +256,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:and",
                                         "actions": [
@@ -308,7 +308,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {Marker:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:and",
                             "actions": [
@@ -373,7 +373,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Marker:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:and",
                                         "actions": [
@@ -425,7 +425,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {Marker:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:and",
                             "actions": [
@@ -490,7 +490,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Marker:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:and",
                                         "actions": [
@@ -542,7 +542,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {Marker:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:and",
                             "actions": [
@@ -607,7 +607,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Marker:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:and",
                                         "actions": [
@@ -659,7 +659,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {Marker:1b,CustomName:'[{\"text\":\"AnchorPoint6\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint6\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:and",
                             "actions": [
@@ -724,7 +724,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Marker:1b,CustomName:'[{\"text\":\"AnchorPoint6\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,CustomName:'[{\"text\":\"AnchorPoint6\"}]',Invulnerable:1b,NoAI:1b,NoGravity:1b,Silent:1b,Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:and",
                                         "actions": [
