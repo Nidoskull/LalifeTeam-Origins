@@ -61,7 +61,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]'}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]',Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:change_resource",
                             "resource": "*:*_tentacount",
@@ -109,7 +109,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]'}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint1\"}]',Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:change_resource",
                                         "resource": "*:*_tentacount",
@@ -150,7 +150,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]'}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]',Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:change_resource",
                             "resource": "*:*_tentacount",
@@ -198,7 +198,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]'}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint2\"}]',Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:change_resource",
                                         "resource": "*:*_tentacount",
@@ -239,7 +239,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]'}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]',Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:change_resource",
                             "resource": "*:*_tentacount",
@@ -287,7 +287,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]'}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint3\"}]',Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:change_resource",
                                         "resource": "*:*_tentacount",
@@ -328,7 +328,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]'}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]',Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:change_resource",
                             "resource": "*:*_tentacount",
@@ -376,7 +376,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]'}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint4\"}]',Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:change_resource",
                                         "resource": "*:*_tentacount",
@@ -417,7 +417,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]'}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]',Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:change_resource",
                             "resource": "*:*_tentacount",
@@ -465,7 +465,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]'}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint5\"}]',Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:change_resource",
                                         "resource": "*:*_tentacount",
@@ -506,7 +506,7 @@
                         "shape_type": "collider",
                         "entity": false,
                         "block": true,
-                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,AnchorPoint:6}",
+                        "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint6\"}]',Tags:[\"AnchorPoint\"]}",
                         "hit_action": {
                             "type": "origins:change_resource",
                             "resource": "*:*_tentacount",
@@ -554,7 +554,7 @@
                                     "shape_type": "collider",
                                     "entity": false,
                                     "block": true,
-                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint6\"}]'}",
+                                    "command_at_hit": "summon armor_stand ~ ~ ~ {ShowArms:1b,Glowing:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,CustomName:'[{\"text\":\"AnchorPoint6\"}]',Tags:[\"AnchorPoint\"]}",
                                     "hit_action": {
                                         "type": "origins:change_resource",
                                         "resource": "*:*_tentacount",
@@ -599,37 +599,9 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "kill @e[type=armor_stand,name=AnchorPoint1,distance=25..40]"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "kill @e[type=armor_stand,name=AnchorPoint2,distance=25..40]"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "kill @e[type=armor_stand,name=AnchorPoint3,distance=25..40]"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "kill @e[type=armor_stand,name=AnchorPoint4,distance=25..40]"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "kill @e[type=armor_stand,name=AnchorPoint5,distance=25..40]"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "kill @e[type=armor_stand,name=AnchorPoint6,distance=25..40]"
+                    "command": "kill @e[type=armor_stand,tag=AnchorPoint,distance=25..40]"
                 }
             ]
-        },
-        "interval": 10
-    },
-    "standparticle":{
-        "type":"origins:action_over_time",
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Tags:[\"to_be_seen\"]}"
         },
         "interval": 10
     },
@@ -638,15 +610,7 @@
         "interval": 1,
         "entity_action": {
             "type": "origins:execute_command",
-            "command": "execute at @e[type=armor_stand,tag=to_be_seen,limit=1] as @e[distance=0.1..20] at @s positioned ~ ~1 ~ facing entity @e[type=armor_stand,tag=to_be_seen,limit=1] eyes run function slugcat:rottentacle"
+            "command": "execute at @s as @e[distance=0.1..20] at @s positioned ~ ~1 ~ facing entity @s eyes run function slugcat:rottentacle"
         }
-    },
-    "killparticle":{
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "kill @e[type=armor_stand,tag=to_be_seen]"
-        },
-        "interval": 15
     }
 }
