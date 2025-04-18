@@ -21,10 +21,18 @@
 
     "move": {
         "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_currentcount",
-            "compare_to": 3,
-            "comparison": ">="
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_currentcount",
+                    "compare_to": 3,
+                    "comparison": ">="
+                },
+                {
+                    "type": "origins:living"
+                }
+            ]
         },
         "type": "origins:creative_flight"
     },
