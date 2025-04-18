@@ -10,6 +10,19 @@
         "operation": "addition"
       }
     },
+    "nogroundmove":{
+      "type": "origins:action_over_time",
+      "interval": 20,
+      "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:slowness",
+          "show_particles": false,
+          "show_icon": false,
+          "duration": 100
+        }
+      }
+    },
   "float": {
     "type": "origins:action_over_time",
     "entity_action": {
