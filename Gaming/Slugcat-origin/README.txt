@@ -110,19 +110,22 @@ SAINT+
 Not real yet:
 THE ROT:
 Good luck. :)
++ A LOT of health & inbuilt defense
++ Incredibly strong meelee attack
++ Yoink.
++ Creative flight while properly anchored
 - Blind
 - Hungry
 - Cannot wear armor or elytra
 - Cannot use weapons
 - Very short meelee attack reach
-+ A LOT of health & inbuilt defense
-+ Incredibly strong meelee attack
-+ Yoink.
 
 WATCHER*
 + Camouflage yourself!
 + Set up warp points to quickly warp between regions!
-Note: I haven't completed the Watcher yet. I don't think it has any downsides beyond the environmental rot...?
++ More echoes, more growth. Find them all, become something more than yourself.
+- Using warp points too often will tire you out and prevent you from camouflaging.
+Note: I haven't completed the Watcher yet. I don't know of any further downsides it has.
 
 ???*
 + dating sim is canon
