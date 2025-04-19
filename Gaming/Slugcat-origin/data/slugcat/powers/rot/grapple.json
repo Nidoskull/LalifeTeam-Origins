@@ -65,6 +65,10 @@
                                 "comparison": "<"
                             },
                             {
+                                "inverted": true,
+                                "type": "origins:sneaking"
+                            },
+                            {
                                 "type": "origins:living"
                             }
                         ]
@@ -112,6 +116,10 @@
                                 "compare_to": 6,
                                 "resource": "*:*_currentcount",
                                 "comparison": ">="
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:sneaking"
                             },
                             {
                                 "type": "origins:living"
@@ -182,6 +190,10 @@
                                 "comparison": "<"
                             },
                             {
+                                "inverted": true,
+                                "type": "origins:sneaking"
+                            },
+                            {
                                 "type": "origins:living"
                             }
                         ]
@@ -229,6 +241,10 @@
                                 "compare_to": 6,
                                 "resource": "*:*_currentcount",
                                 "comparison": ">="
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:sneaking"
                             },
                             {
                                 "type": "origins:living"
@@ -299,6 +315,10 @@
                                 "comparison": "<"
                             },
                             {
+                                "inverted": true,
+                                "type": "origins:sneaking"
+                            },
+                            {
                                 "type": "origins:living"
                             }
                         ]
@@ -348,6 +368,10 @@
                                 "comparison": ">="
                             },
                             {
+                                "inverted": true,
+                                "type": "origins:sneaking"
+                            },
+                            {
                                 "type": "origins:living"
                             }
                         ]
@@ -364,6 +388,10 @@
                                 "change": -1,
                                 "resource": "*:*_currentcount",
                                 "operation": "add"
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:sneaking"
                             },
                             {
                                 "type": "origins:delay",
@@ -416,6 +444,10 @@
                                 "comparison": "<"
                             },
                             {
+                                "inverted": true,
+                                "type": "origins:sneaking"
+                            },
+                            {
                                 "type": "origins:living"
                             }
                         ]
@@ -463,6 +495,10 @@
                                 "compare_to": 6,
                                 "resource": "*:*_currentcount",
                                 "comparison": ">="
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:sneaking"
                             },
                             {
                                 "type": "origins:living"
@@ -533,6 +569,10 @@
                                 "comparison": "<"
                             },
                             {
+                                "inverted": true,
+                                "type": "origins:sneaking"
+                            },
+                            {
                                 "type": "origins:living"
                             }
                         ]
@@ -580,6 +620,10 @@
                                 "compare_to": 6,
                                 "resource": "*:*_currentcount",
                                 "comparison": ">="
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:sneaking"
                             },
                             {
                                 "type": "origins:living"
@@ -650,6 +694,10 @@
                                 "comparison": "<"
                             },
                             {
+                                "inverted": true,
+                                "type": "origins:sneaking"
+                            },
+                            {
                                 "type": "origins:living"
                             }
                         ]
@@ -697,6 +745,10 @@
                                 "compare_to": 6,
                                 "resource": "*:*_currentcount",
                                 "comparison": ">="
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:sneaking"
                             },
                             {
                                 "type": "origins:living"
@@ -762,7 +814,9 @@
                 {
                     "condition": {
                         "type": "origins:command",
-                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint1,tag=AnchorPoint,distance=25..35]"
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint1,tag=AnchorPoint,distance=25..35]",
+                        "comparison": ">=",
+                        "compare_to": 1
                     },
                     "action": {
                         "type": "origins:and",
@@ -783,7 +837,9 @@
                 {
                     "condition": {
                         "type": "origins:command",
-                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint2,tag=AnchorPoint,distance=25..35]"
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint2,tag=AnchorPoint,distance=25..35]",
+                        "comparison": ">=",
+                        "compare_to": 1
                     },
                     "action": {
                         "type": "origins:and",
@@ -804,7 +860,9 @@
                 {
                     "condition": {
                         "type": "origins:command",
-                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint3,tag=AnchorPoint,distance=25..35]"
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint3,tag=AnchorPoint,distance=25..35]",
+                        "comparison": ">=",
+                        "compare_to": 1
                     },
                     "action": {
                         "type": "origins:and",
@@ -825,7 +883,9 @@
                 {
                     "condition": {
                         "type": "origins:command",
-                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint4,tag=AnchorPoint,distance=25..35]"
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint4,tag=AnchorPoint,distance=25..35]",
+                        "comparison": ">=",
+                        "compare_to": 1
                     },
                     "action": {
                         "type": "origins:and",
@@ -846,7 +906,9 @@
                 {
                     "condition": {
                         "type": "origins:command",
-                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint5,tag=AnchorPoint,distance=25..35]"
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint5,tag=AnchorPoint,distance=25..35]",
+                        "comparison": ">=",
+                        "compare_to": 1
                     },
                     "action": {
                         "type": "origins:and",
@@ -867,7 +929,9 @@
                 {
                     "condition": {
                         "type": "origins:command",
-                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint6,tag=AnchorPoint,distance=25..35]"
+                        "command": "execute if entity @e[type=armor_stand,name=AnchorPoint6,tag=AnchorPoint,distance=25..35]",
+                        "comparison": ">=",
+                        "compare_to": 1
                     },
                     "action": {
                         "type": "origins:and",
