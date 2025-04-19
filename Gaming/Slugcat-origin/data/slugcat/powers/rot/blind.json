@@ -25,6 +25,12 @@
                         "type": "origins:sneaking",
                         "inverted": true
                     }
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:living"
+                    }
                 }
             ]
         },
@@ -53,6 +59,12 @@
                 {
                     "type": "origins:target_condition",
                     "condition": {"type": "apoli:fall_flying"}
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:living"
+                    }
                 }
             ]
         },
@@ -116,6 +128,18 @@
                         "compare_to": 0,
                         "comparison": ">"
                     }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:living"
+                    }
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:living"
+                    }
                 }
             ]
         },
@@ -143,6 +167,18 @@
                         "resource": "slugcat:rot/blind_cansee",
                         "compare_to": 0,
                         "comparison": ">"
+                    }
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:living"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:living"
                     }
                 }
             ]

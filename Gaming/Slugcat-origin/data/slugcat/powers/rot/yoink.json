@@ -31,8 +31,16 @@
                         {
                             "type": "origins:if_else",
                             "condition": {
-                                "type": "origins:nbt",
-                                "nbt": "{Tags: ['cube']}"
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:nbt",
+                                        "nbt": "{Tags: ['cube']}"
+                                    },
+                                    {
+                                        "type": "origins:living"
+                                    }
+                                ]
                             },
                             "if_action": {
                                 "type": "origins:and",
@@ -83,6 +91,9 @@
             "conditions": [
                 {
                     "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:living"
                 }
             ]
         }
@@ -94,7 +105,7 @@
             "actions": [
                 {
                     "condition": {
-                        "type": "origins:or",
+                        "type": "origins:and",
                         "conditions": [
                             {
                                 "type": "origins:raycast",
@@ -104,6 +115,9 @@
                                 "shape_type": "visual",
                                 "fluid_handling": "any",
                                 "inverted": true
+                            },
+                            {
+                                "type": "origins:living"
                             }
                         ]
                     },
@@ -123,6 +137,9 @@
                                 "entity": false,
                                 "shape_type": "visual",
                                 "fluid_handling": "any"
+                            },
+                            {
+                                "type": "origins:living"
                             }
                         ]
                     },
@@ -139,7 +156,15 @@
         },
         "interval": 1,
         "condition": {
-            "type": "origins:sneaking"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:living"
+                }
+            ]
         }
     }
 }
