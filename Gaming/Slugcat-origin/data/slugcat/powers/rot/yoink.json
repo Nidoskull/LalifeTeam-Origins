@@ -1,0 +1,145 @@
+{
+    "name": "Grab",
+    "description": "You can grab entities by sneaking while extending a tentacle.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "May not work as expected with bigger entities."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/star.png",
+            "text": "Made by arcticbonn, originally for Origins 1.19.4. Modified from the Power Library."
+        }
+    ],
+    "type": "origins:multiple",
+    "grab1": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:raycast",
+            "distance": 5,
+            "block": true,
+            "entity": true,
+            "shape_type": "visual",
+            "fluid_handling": "any",
+            "bientity_action": {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:nbt",
+                                "nbt": "{Tags: ['cube']}"
+                            },
+                            "if_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "execute at @e[tag=cube] as @e[tag=cube] facing entity @p feet run tp ~ ~ ~"
+                                    },
+                                    {
+                                        "type": "origins:delay",
+                                        "ticks": 1,
+                                        "action": {
+                                            "type": "origins:execute_command",
+                                            "command": "tag @s remove cube"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:delay",
+                                        "ticks": 1,
+                                        "action": {
+                                            "type": "origins:add_velocity",
+                                            "z": -2,
+                                            "y": 0.5,
+                                            "space": "local"
+                                        }
+                                    }
+                                ]
+                            },
+                            "else_action": {
+                                "type": "origins:execute_command",
+                                "command": "tag @s add cube"
+                            }
+                        }
+                    ]
+                }
+            },
+            "command_at_hit": "particle minecraft:enchanted_hit ~ ~ ~ 0.125 0.25 0.125 1 100 normal",
+            "command_along_ray": "particle minecraft:electric_spark",
+            "command_step": 1,
+            "command_along_ray_only_on_hit": true
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        }
+    },
+    "grab2": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:raycast",
+                                "distance": 3.5,
+                                "block": true,
+                                "entity": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "any",
+                                "inverted": true
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "tp @e[tag=cube] ^ ^ ^3"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:raycast",
+                                "distance": 4,
+                                "block": true,
+                                "entity": false,
+                                "shape_type": "visual",
+                                "fluid_handling": "any"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "execute as @e[tag=cube] at @e[tag=cube] run tag remove @s cube"
+                    }
+                }
+            ]
+        },
+        "falling_action": {
+            "type": "origins:execute_command",
+            "command": "tag @e remove cube"
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    }
+}
