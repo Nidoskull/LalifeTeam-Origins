@@ -42,23 +42,28 @@
     "ORglow":{
         "type": "origins:entity_glow",
         "bientity_condition": {
-            "type": "origins:or",
+            "type": "origins:and",
             "conditions": [
                 {
-                    "type": "origins:target_condition",
-                    "condition": {
-                        "type": "origins:sprinting"
-                    }
-                },
-                {
-                    "type": "origins:target_condition",
-                    "condition": {
-                        "type": "origins:swimming"
-                    }
-                },
-                {
-                    "type": "origins:target_condition",
-                    "condition": {"type": "apoli:fall_flying"}
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:target_condition",
+                            "condition": {
+                                "type": "origins:sprinting"
+                            }
+                        },
+                        {
+                            "type": "origins:target_condition",
+                            "condition": {
+                                "type": "origins:swimming"
+                            }
+                        },
+                        {
+                            "type": "origins:target_condition",
+                            "condition": {"type": "apoli:fall_flying"}
+                        }
+                    ]
                 },
                 {
                     "type": "origins:target_condition",
