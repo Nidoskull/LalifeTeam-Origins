@@ -1,0 +1,18 @@
+{
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:wither",
+            "duration": 100,
+            "amplifier": 1,
+            "show_icon": true,
+            "show_particles": true
+        }
+    },
+    "target_condition": {
+        "type": "origins:in_tag",
+        "tag": "entities:hostile_smart"
+    },
+    "cooldown": 20
+}

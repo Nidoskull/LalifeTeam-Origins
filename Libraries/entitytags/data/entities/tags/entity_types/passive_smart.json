@@ -1,0 +1,10 @@
+{
+	"values": [
+    	{
+			"id": "minecraft:allay",
+			"required": false
+    	},
+			"minecraft:villager",
+			"minecraft:wandering_trader"
+	]
+}

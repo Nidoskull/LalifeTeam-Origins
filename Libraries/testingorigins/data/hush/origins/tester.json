@@ -1,0 +1,19 @@
+{
+    "name": "Testing Origin",
+    "description": "Here to test.",
+    "powers": [
+      "hush:boss",
+      "hush:hostile_smart",
+		  "hush:hostile",
+		  "hush:neutral",
+		  "hush:neutral_smart",
+		  "hush:passive",
+		  "hush:passive_smart"
+    ],
+    "icon": {
+        "item": "oak_leaves",
+        "amount": 1
+    },
+    "order": 1,
+    "impact": 2
+}
