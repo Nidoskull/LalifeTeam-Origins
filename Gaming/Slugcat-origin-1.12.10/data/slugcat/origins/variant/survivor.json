@@ -1,0 +1,18 @@
+{
+    "name": "The Survivor",
+    "description": "A nimble omnivore, both predator and prey. Lost in a harsh and indifferent land you must make your own way, with wit and caution as your greatest assets.",
+    "powers": [
+        "slugcat:survivor_jargon",
+		"slugcat:common/pounce",
+        "slugcat:common/scale",
+		"slugcat:common/spear/standard",
+		"slugcat:common/spear/pins",
+        "slugcat:common/shelter_food"
+    ],
+    "icon": {
+        "item": "minecraft:white_dye",
+        "amount": 1
+    },
+    "order": 0,
+    "impact": 1
+}

@@ -1,0 +1,15 @@
+{
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "slugcat:slugcat"
+            },
+            "origins": [
+                "slugcat:variant/survivor"
+            ]
+        }
+    ],
+    "name": "Variant",
+	"description": "Choose which flavor of scug you are!"
+}

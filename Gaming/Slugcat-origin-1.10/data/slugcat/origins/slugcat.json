@@ -1,0 +1,13 @@
+{
+    "name": "Slugcat",
+    "description": "What fate, a slugcat. Predator, or prey?",
+    "powers": [
+        "slugcat:common/fragile"
+    ],
+    "icon": {
+        "item": "minecraft:stick",
+        "amount": 1
+    },
+    "order": 0,
+    "impact": 3
+}

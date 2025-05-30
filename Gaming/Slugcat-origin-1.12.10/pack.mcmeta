@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "slugcat",
+        "id": "slugcat",
+        "pack_format": 15,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "An Origins pack that adds a Slugcat origin. Or seven."
+    }
+}

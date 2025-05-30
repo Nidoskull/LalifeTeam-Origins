@@ -1,0 +1,7 @@
+{
+    "name": "Hungrier",
+    "description": "You become hungrier over time, even when idle.",
+    "type": "origins:exhaust",
+    "interval": 10,
+    "exhaustion": 0.1
+}
