@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Tool Tiering Tags",
+        "id": "entities",
+        "pack_format": 12,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "A library datapack to define such things as 'all wooden tools' and the like."
+    }
+}
