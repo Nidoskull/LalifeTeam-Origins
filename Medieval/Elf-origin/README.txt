@@ -5,7 +5,7 @@ Power Library usage:
 Infinity coded by Apellonyx#6036 
 Mask of the Wild coded by Ninty#1337
 
-Featuring: (*-marked features are planned/WIP)
+Featuring:
 
 + High Jump
 There's a spring in your step- almost literally! You can jump one and a half blocks, or two and a half in a densely forested biome.
