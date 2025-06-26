@@ -1,0 +1,5 @@
+{
+    "name": "Food Requirement",
+    "description": "You'll need to have enough food in your belly to be able to sleep, too.",
+    "type": "origins:simple"
+}

@@ -2,7 +2,17 @@
     "name": "Slugcat",
     "description": "What fate, a slugcat. Predator, or prey?",
     "powers": [
-        "slugcat:common/fragile"
+        "slugcat:common/fragile",
+        "slugcat:common/nimble",
+        "slugcat:common/pouncejargon",
+        "slugcat:common/hungry",
+        "slugcat:common/rain",
+        "slugcat:common/weather_warning",
+        "slugcat:common/shelter",
+        "slugcat:common/shelterjargon",
+        "slugcat:common/frozenjargon",
+        "slugcat:common/spearjargon",
+		"slugcat:choose_var"
     ],
     "icon": {
         "item": "minecraft:stick",

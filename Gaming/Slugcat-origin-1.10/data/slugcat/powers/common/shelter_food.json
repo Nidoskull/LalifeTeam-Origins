@@ -1,4 +1,6 @@
 {
+    "name": "Food Requirement",
+    "description": "You'll need to have enough food in your belly to be able to sleep, too.",
     "condition": {
         "type": "origins:food_level",
         "comparison": "<",
@@ -6,6 +8,5 @@
     },
     "type": "origins:prevent_sleep",
     "message": "You're too hungry to sleep.",
-    "set_spawn_point": false,
-    "hidden": true
+    "set_spawn_point": false
 }
