@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Entity Hostility Tags",
+        "id": "entities",
+        "pack_format": 12,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "A library datapack to define such things as 'all hostile mobs' and the like."
+    }
+}

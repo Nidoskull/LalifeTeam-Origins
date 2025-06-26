@@ -1,6 +1,13 @@
 {
 	"name": "Pacifist",
 	"description": "You don't like killing things. Your power wanes when you do.",
+	"badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You are penalized more harshly for killing defenseless beasts, rather than defending yourself. However, you are not getting off scot-free just because it's self-defense... Murder of other players is penalized most harshly, and you'll immediately feel sick."
+        }
+    ],
 	"type": "origins:multiple",
 		"pacifist": {
 			"type":"origins:resource",
@@ -62,7 +69,7 @@
 			"cooldown": 1,
 			"target_condition": {
 					"type": "origins:in_tag",
-					"tag": "elf:hostiles"
+					"tag": "entities:hostile"
 			},
 				"entity_action": {
 				"type":"origins:change_resource",
@@ -75,7 +82,7 @@
 			"cooldown": 1,
 			"target_condition": {
 					"type": "origins:in_tag",
-					"tag": "elf:hostile_smart"
+					"tag": "entities:hostile_smart"
 			},
 				"entity_action": {
 				"type":"origins:change_resource",
@@ -88,7 +95,7 @@
 			"cooldown": 1,
 			"target_condition": {
 				"type": "origins:in_tag",
-				"tag": "elf:passives"
+				"tag": "entities:passive"
 			},
 			"entity_action": {
 				"type":"origins:change_resource",
@@ -101,7 +108,7 @@
 			"cooldown": 1,
 			"target_condition": {
 				"type": "origins:in_tag",
-				"tag": "elf:passive_smart"
+				"tag": "entities:passive_smart"
 				},
 			"entity_action": {
 				"type":"origins:change_resource",
@@ -124,7 +131,7 @@
 			"cooldown": 1,
 				"target_condition": {
 					"type": "origins:in_tag",
-					"tag": "elf:consequences"
+					"tag": "entities:boss"
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
@@ -137,7 +144,7 @@
 			"cooldown": 1,
 				"target_condition": {
 					"type": "origins:in_tag",
-					"tag": "elf:neutral"
+					"tag": "entities:neutral"
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
@@ -150,7 +157,7 @@
 			"cooldown": 1,
 				"target_condition": {
 					"type": "origins:in_tag",
-					"tag": "elf:neutral_smart"
+					"tag": "entities:neutral_smart"
 				},
 				"entity_action": {
 				"type":"origins:change_resource",
@@ -180,31 +187,31 @@
 					"conditions": [
 					{
 						"type": "origins:in_tag",
-						"tag": "elf:passives"
+						"tag": "entities:passive"
 					},
 					{
 						"type": "origins:in_tag",
-						"tag": "elf:passive_smart"
+						"tag": "entities:passive_smart"
 					},
 					{
 						"type": "origins:in_tag",
-						"tag": "elf:neutral"
+						"tag": "entities:neutral"
 					},
 					{
 						"type": "origins:in_tag",
-						"tag": "elf:neutral_smart"
+						"tag": "entities:neutral_smart"
 					},
 					{
 						"type": "origins:in_tag",
-						"tag": "elf:hostiles"
+						"tag": "entities:hostile"
 					},
 					{
 						"type": "origins:in_tag",
-						"tag": "elf:hostile_smart"
+						"tag": "entities:hostile_smart"
 					},
 					{
 						"type": "origins:in_tag",
-						"tag": "elf:consequences"
+						"tag": "entities:boss"
 					}
 				]
 				},

@@ -1,4 +1,11 @@
 {
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/star.png",
+            "text": "Made by Apollonyx. Taken from the Power Library."
+        }
+    ],
     "type": "origins:modify_projectile_damage",
     "damage_condition": {
         "type": "origins:or",
