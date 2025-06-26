@@ -1,0 +1,189 @@
+{
+    "name": "Cryophobia",
+    "description": "If you get too cold, you'll freeze up. Bring a heat source!",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You'll need to be holding one of the following items in your hand: (Soul) Torch, (Soul) Lantern, (Soul) Campfire, Glowstone Dust, Blaze Rod, Lava Bucket, Blaze Powder, Magma Cream, Magma Block, any Froglight, Jack-o-Lantern, Shroomlight."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Staying within a few blocks of the following blocks will warm you up: Lava, (Soul) Campfire, (Soul) Torch, (Soul) Lantern, Magma Block, Glowstone Block, Jack-o-Lantern, Lava Cauldron, Beacon, any Froglight, Sea Lantern."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "slugcat:textures/gui/badge/tweak.png",
+            "text": "For editors: Heat-giving items and blocks can be edited with the item tag \"slugcat:heat_item\" and the block tag \"slugcat:heat_block\". The tooltips on this power will NOT update dynamically!"
+        }
+    ],
+    "type": "origins:multiple",
+    "freezing": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 200
+    },
+    "heatup_item": {
+        "type": "origins:action_over_time",
+        "comment": "Held heat sources",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:spawn_particles",
+                    "count": 3,
+                    "spread": {
+                        "x": 0,
+                        "y": 0.5,
+                        "z": 0
+                    },
+                    "particle": "minecraft:small_flame"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_freezing",
+                    "change": -4,
+                    "operation": "add"
+                }
+            ]
+        },
+        "interval": 30,
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "slugcat:heat_item"
+                                }
+                            },
+                            "equipment_slot": "mainhand"
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "slugcat:heat_item"
+                                }
+                            },
+                            "equipment_slot": "offhand"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "heatup_block": {
+        "type": "origins:action_over_time",
+        "comment": "Block heat sources",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:spawn_particles",
+                    "count": 3,
+                    "spread": {
+                        "x": 0,
+                        "y": 0.5,
+                        "z": 0
+                    },
+                    "particle": "minecraft:small_flame"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_freezing",
+                    "change": -5,
+                    "operation": "add"
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "apoli:block_in_radius",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "slugcat:heat_block"
+            },
+            "radius": 3,
+            "shape": "sphere",
+            "compare_to": 1,
+            "comparison": ">="
+        }
+    },
+    "heatup_biome": {
+        "type": "origins:action_over_time",
+        "comment": "Biome heat sources",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:spawn_particles",
+                    "count": 3,
+                    "spread": {
+                        "x": 0,
+                        "y": 0.5,
+                        "z": 0
+                    },
+                    "particle": "minecraft:small_flame"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_freezing",
+                    "change": -5,
+                    "operation": "add"
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": ">=",
+                "compare_to": 0.2
+            }
+        }
+    },
+    "freezeup": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": 1,
+            "resource": "*:*_freezing",
+            "operation": "add"
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:biome",
+                    "condition": {
+                        "type": "origins:temperature",
+                        "compare_to": 0.1,
+                        "comparison": "<="
+                    }
+                },
+                {
+                    "type": "apoli:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "slugcat:heat_block"
+                    },
+                    "radius": 3,
+                    "shape": "sphere",
+                    "compare_to": 1,
+                    "comparison": ">=",
+                    "inverted": true
+                }
+            ]
+        }
+    }
+}
