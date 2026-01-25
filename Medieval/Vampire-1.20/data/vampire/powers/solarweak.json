@@ -1,0 +1,189 @@
+{
+    "name": "Solar Weakness",
+    "description": "The bright light of the sun is too strong for you. It makes you sick, and will burn you if you remain in it.",
+    "badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "Wear a helmet to prevent sun damage. This will damage the helmet, however, and you will still be debuffed."
+		}
+	],
+    "type": "origins:multiple",
+    "condition": {
+        "type":"origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            },
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:exposed_to_sun"
+                            },
+                            {
+                                "type": "origins:biome",
+                                "condition": {
+                                    "type": "origins:precipitation",
+                                    "precipitation": "none"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:exposed_to_sun"
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:in_rain"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "weakness":{
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 30,
+        "duration_per_stack": 40,
+        "tick_rate": 20,
+        "effects": [
+            {
+                "effect": "minecraft:slowness",
+                "duration": 25,
+                "amplifier": 1,
+                "is_ambient": false,
+                "show_particles": true,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:weakness",
+                "duration": 25,
+                "amplifier": 1,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:mining_fatigue",
+                "duration": 25,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    },
+
+
+        "firemeter": {
+            "type": "origins:resource",
+            "min": 0,
+			"max": 100,
+			"hud_render": {
+				"should_render": true,
+				"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+				"bar_index": 15,
+                "condition": {
+                    "type": "origins:resource",
+                    "resource": "*:solarweak_firemeter",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+				}
+        },
+        "sunburns": {
+			"type":"origins:action_over_time",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"vampire:solarweak_firemeter",
+				"change": 1
+				},
+			"interval": 1,
+			"condition": {
+				"type": "origins:and",
+                "conditions": [
+                    {
+                    "type": "origins:exposed_to_sun"
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "head",
+                        "item_condition": {
+                            "type": "origins:empty"
+                        }
+                    }
+                    
+                ],
+                "inverted": false
+			}
+		},
+        "aloevera_sun": {
+			"type":"origins:action_over_time",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"vampire:solarweak_firemeter",
+				"change": -1
+				},
+			"interval": 5,
+			"condition": {
+                    "type": "origins:exposed_to_sun",
+					"inverted": true
+				}
+		},
+        "aloevera_hat": {
+			"type":"origins:action_over_time",
+			"entity_action": {
+				"type":"origins:change_resource",
+				"resource":"vampire:solarweak_firemeter",
+				"change": -1
+				},
+			"interval": 5,
+			"condition":  {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:empty",
+                    "inverted": true
+                }
+            }
+		},
+        "burn": {
+			"type":"origins:burn",
+			"interval": 20,
+			"burn_duration": 2,
+			"condition": {
+				"type":"origins:resource",
+				"resource": "vampire:solarweak_firemeter",
+				"comparison": ">",
+				"compare_to": 85
+			}
+        },
+        "damagegear":{
+            "type":"origins:action_over_time",
+            "entity_action": {
+				"type":"origins:equipped_item_action",
+            	"equipment_slot":"head",
+            	"action": {
+					"type": "origins:damage",
+					"amount": 1,
+					"ignore_unbreaking": true
+				}
+			},
+            	"interval": 10,
+            	"condition": {
+            	    "type":"origins:exposed_to_sun"
+            	}
+        }
+    }

@@ -1,0 +1,43 @@
+{
+    "name": "Nightfall",
+    "description": "You are accustomed to the dark. Your predator abilities are strengthened away from the light.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You gain Night Vision, Speed, and Haste when not exposed to sunlight."
+        }
+    ],
+    "condition": {
+        "inverted": true,
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:action_over_time",
+    "interval": 80,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:night_vision",
+            "duration": 400,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": true
+        },
+        "effects": [
+            {
+                "effect": "minecraft:speed",
+                "duration": 200,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:haste",
+                "duration": 200,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    }
+}
