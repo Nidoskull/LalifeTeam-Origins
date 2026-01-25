@@ -1,0 +1,37 @@
+{
+    "type": "origins:multiple",
+    "name": "Artificial Origin",
+    "description": "You need not eat nor breathe. Your insomnia grows more slowly than other players.",
+    "noeat": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:food"
+        }
+    },
+    "nobreathe": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:gain_air",
+            "value": 10
+        },
+        "interval": 5
+    },
+    "nohunger": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "name": "Decreased exhaustion",
+            "operation": "multiply_base",
+            "value": -1
+        }
+    },
+    "noheal": {
+        "type": "origins:disable_regen"
+    },
+    "lessphantoms": {
+        "type": "origins:modify_insomnia_ticks",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.5
+        }
+    }
+}

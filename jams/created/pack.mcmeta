@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Created",
+        "id": "createdorigin",
+        "pack_format": 15,
+        "authors": [
+            "Nidoskull"
+        ],
+        "description": "The Created origin; a machine with extra integration."
+    }
+}

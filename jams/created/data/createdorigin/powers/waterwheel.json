@@ -1,0 +1,9 @@
+{
+    "name": "Heavyweight",
+    "description": "You need a little help to achieve buoyancy. You can't swim unless you're equipped with a Water Wheel.",
+    "type": "origins:ignore_water",
+    "condition": {
+        "type": "origins:inventory",
+        "inventory_types": ["power"]
+    }
+}

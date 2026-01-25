@@ -1,0 +1,156 @@
+{
+    "name": "Equipment Slots",
+    "description": "Equip specific items to gain access to new abilities.",
+    "type": "origins:multiple",
+    "inventory": {
+        "type": "origins:inventory",
+        "container_type": "hopper",
+        "drop_on_death": true,
+        "key": {
+            "key": "key.saveToolbarActivator"
+        }
+    },
+    "swim": {
+        "type": "origins:ignore_water",
+        "condition": {
+            "type": "origins:inventory",
+            "inventory_types": ["power"],
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": "create:water_wheel"
+            },
+            "power": "*:*_inventory",
+            "inverted": true
+        }
+    },
+    "sleep": {
+        "type": "origins:prevent_sleep",
+        "message": "You lack the equipment to rest",
+        "set_spawn_point": false,
+        "condition": {
+            "type": "origins:inventory",
+            "inventory_types": ["power"],
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": "create:sail"
+            },
+            "power": "*:*_inventory",
+            "inverted": true
+        }
+    },
+    "airspeed": {
+        "type": "origins:attribute_modify_transfer",
+        "class": "modify_air_speed",
+        "attribute": "minecraft:generic.movement_speed",
+        "multiplier": 1,
+        "condition": {
+            "type": "origins:inventory",
+            "inventory_types": ["power"],
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": "create:sail"
+            },
+            "power": "*:*_inventory",
+            "inverted": true
+        }
+    },
+    "mining": {
+        "type": "origins:modify_harvest",
+        "allow": true,
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:natural_stone"
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "inventory_types": ["power"],
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": "create:drill"
+            },
+            "power": "*:*_inventory",
+            "inverted": false
+        }
+    },
+    "haste": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:haste",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": true,
+                "is_ambient": true,
+                "show_icon": true
+            }
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "inventory_types": ["power"],
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": "create:drill"
+            },
+            "power": "*:*_inventory",
+            "inverted": false
+        },
+        "interval": 20
+    },
+    "hugefan": {
+        "type": "apoli:modify_falling",
+        "velocity": 0.01,
+        "take_fall_damage": false,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:inventory",
+                    "inventory_types": ["power"],
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": "create:encased_fan"
+                    },
+                    "power": "*:*_inventory",
+                    "inverted": false
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:sneaking"
+                                },
+                                {
+                                    "type": "origins:fall_flying"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:sneaking",
+                                    "inverted": true
+                                },
+                                {
+                                    "type": "origins:fall_flying",
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "harvest_wheat": {
+        "type": "origins:action_on_block_break",
+        "block_action": {
+            "type": "origins:add_block",
+            "block": ""
+        }
+    }
+}
